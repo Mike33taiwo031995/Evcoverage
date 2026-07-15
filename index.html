@@ -4,6 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Guide: The 3 EV Insurance Mistakes Costing Owners $2,400/Year</title>
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWSZYT2R6F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YWSZYT2R6F', { send_page_view: true, page_title: 'Landing Page View' });
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1441529167720163');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1441529167720163&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0A0508;--surface:#130A10;--surface2:#1A0E15;--line:#2A1A22;--red:#CC2222;--orange:#FF6B35;--cyan:#00AADD;--text:#F2EEF0;--muted:#7A6870;}
@@ -216,6 +243,21 @@ function sendToSheet(firstName, email) {
   }).catch(function(){});
 }
 
+function trackLead(firstName) {
+  if (typeof gtag === "function") {
+    gtag("event", "generate_lead", { event_category: "Lead", event_label: "Landing Page Form", value: 1, currency: "USD" });
+  }
+  if (typeof fbq === "function") {
+    fbq("track", "Lead", { value: 1, currency: "USD" });
+  }
+}
+
+function goToThankYou(firstName) {
+  var url = "thank-you.html";
+  if (firstName) url += "?name=" + encodeURIComponent(firstName);
+  window.location.href = url;
+}
+
 function showSuccess() {
   document.getElementById("formWrap").style.display = "none";
   document.getElementById("successBox").style.display = "block";
@@ -230,7 +272,9 @@ function submitLead() {
   btn.textContent = "Sending...";
   btn.disabled = true;
   sendToSheet(firstName, email);
-  setTimeout(showSuccess, 800);
+  trackLead(firstName);
+  showSuccess();
+  setTimeout(function(){ goToThankYou(firstName); }, 1200);
 }
 
 function bottomSubmit() {
@@ -238,8 +282,10 @@ function bottomSubmit() {
   var email = document.getElementById("b-email").value.trim();
   if (!email || !email.includes("@")) { alert("Please enter a valid email address."); return; }
   sendToSheet(name, email);
+  trackLead(name);
   document.querySelector(".b-row").style.display = "none";
   document.getElementById("b-success").style.display = "block";
+  setTimeout(function(){ goToThankYou(name); }, 1200);
 }
 </script>
 </body>
