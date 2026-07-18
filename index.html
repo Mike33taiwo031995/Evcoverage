@@ -107,6 +107,10 @@ h2.sec-title{font-size:26px;font-weight:700;margin-bottom:10px;}
 .bottom-cta h2{font-size:28px;margin-bottom:10px;}
 .bottom-cta p{color:var(--muted);margin-bottom:24px;font-size:14px;}
 .b-row{display:flex;gap:10px;max-width:460px;margin:0 auto 10px;}
+.handbook-cta{display:block;background:linear-gradient(135deg,#CC2222,#8f1717);border:1px solid #ff4444;border-radius:8px;padding:16px 20px;margin-top:14px;text-align:center;text-decoration:none;transition:transform .15s ease;}
+.handbook-cta:hover{transform:translateY(-2px);}
+.handbook-cta .hc-title{color:#fff;font-size:15px;font-weight:700;margin-bottom:3px;}
+.handbook-cta .hc-sub{color:rgba(255,255,255,.85);font-size:12px;}
 .b-row input{flex:1;background:var(--surface);border:1px solid var(--line);color:var(--text);padding:14px 16px;border-radius:4px;font-size:14px;outline:none;}
 .b-row input:focus{border-color:var(--orange);}
 .b-row input::placeholder{color:var(--muted);}
@@ -157,6 +161,10 @@ footer .wrap{display:flex;justify-content:space-between;font-family:'Courier New
           <p>Your free guide is ready. Download it now.</p>
           <a href="The_3_EV_Insurance_Mistakes_2026.pdf" download class="download-btn">↓ Download Free Guide Now</a>
         </div>
+        <a href="thank-you.html" class="handbook-cta" onclick="trackHandbookClick('Index Top')">
+          <div class="hc-title">Get The Complete EV Insurance Mastery Handbook For A Token</div>
+          <div class="hc-sub">Skip the wait — go straight to the full paid Handbook →</div>
+        </a>
       </div>
     </div>
   </div>
@@ -219,6 +227,10 @@ footer .wrap{display:flex;justify-content:space-between;font-family:'Courier New
     </div>
     <div id="b-success" style="display:none;color:rgba(0,220,120,0.85);font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;margin-top:16px;">✓ Check your inbox — your free guide is on the way.</div>
     <div class="b-trust" style="margin-top:12px;">✓ Free · No spam · Unsubscribe anytime</div>
+    <a href="thank-you.html" class="handbook-cta" style="max-width:460px;margin-left:auto;margin-right:auto;" onclick="trackHandbookClick('Index Bottom')">
+      <div class="hc-title">Get The Complete EV Insurance Mastery Handbook For A Token</div>
+      <div class="hc-sub">Skip the wait — go straight to the full paid Handbook →</div>
+    </a>
   </div>
 </section>
 
@@ -241,6 +253,15 @@ function sendToSheet(firstName, email) {
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({first_name: firstName, email: email})
   }).catch(function(){});
+}
+
+function trackHandbookClick(location) {
+  if (typeof gtag === "function") {
+    gtag("event", "select_content", { event_category: "Handbook CTA", event_label: location, content_type: "handbook_direct_link" });
+  }
+  if (typeof fbq === "function") {
+    fbq("track", "ViewContent", { content_name: "Handbook Direct Link", content_category: location });
+  }
 }
 
 function trackLead(firstName) {
