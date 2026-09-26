@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article class="wrap">
+  <h1 class="post-title">{{ .Title }}</h1>
+  {{ if eq .Section "blog" }}
+  <div class="post-meta">
+    Published {{ .Date.Format "January 2, 2006" }}
+    {{ if ne .Lastmod .Date }} &middot; Updated {{ .Lastmod.Format "January 2, 2006" }}{{ end }}
+    {{ with .Params.author }} &middot; By {{ . }}{{ end }}
+  </div>
+  {{ end }}
+  {{ .Content }}
+
+  {{ if eq .Section "blog" }}
+  {{ $related := where .Site.RegularPages.ByDate.Reverse "Section" "blog" }}
+  {{ $related = where $related "Permalink" "!=" .Permalink }}
+  {{ if gt (len $related) 0 }}
+  <div style="margin-top:44px;padding-top:28px;border-top:1px solid var(--line);">
+    <div style="font-size:14px;font-weight:700;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;">Keep Reading</div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      {{ range first 2 $related }}
+      <a href="{{ .Permalink }}" style="display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;text-decoration:none;box-shadow:0 4px 14px rgba(14,34,51,0.06);">
+        <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px;">{{ .Title }}</div>
+        <div style="font-size:13px;color:var(--muted);">{{ .Description }}</div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+</article>
+{{ end }}
