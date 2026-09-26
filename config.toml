@@ -1,0 +1,22 @@
+baseURL = "https://evinsuranceguide.org/"
+languageCode = "en-us"
+title = "EV Insurance Guide"
+theme = ""
+enableRobotsTXT = true
+
+[params]
+  description = "Independent EV insurance education — real coverage gaps, real fixes."
+  ga4_id = "G-YWSZYT2R6F"
+  pixel_id = "1441529167720163"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.6
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[markup.goldmark.renderer]
+  unsafe = true
