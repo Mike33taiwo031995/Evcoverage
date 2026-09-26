@@ -1,0 +1,10 @@
+{{ $num := .num }}
+{{ if eq $num 3 }}
+<a href="/" class="ebook-cta">
+  <div class="ec-label">FREE GUIDE</div>
+  <div class="ec-title">The 3 EV Insurance Mistakes Costing Owners $2,400/Year</div>
+  <div class="ec-sub">Get the free guide — instant download, no cost →</div>
+</a>
+{{ else }}
+<div class="ad-slot">Ad Slot {{ $num }} — reserved for Google AdSense</div>
+{{ end }}
