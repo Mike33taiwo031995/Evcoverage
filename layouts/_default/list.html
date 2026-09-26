@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="wrap">
+  <h1 class="post-title">{{ .Title }}</h1>
+  {{ .Content }}
+  <div style="display:flex;flex-direction:column;gap:18px;margin-top:20px;">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" style="display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;text-decoration:none;box-shadow:0 4px 14px rgba(14,34,51,0.06);">
+      <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">{{ .Date.Format "January 2, 2006" }}</div>
+      <div style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:6px;">{{ .Title }}</div>
+      <div style="font-size:13px;color:var(--muted);">{{ .Description }}</div>
+    </a>
+    {{ end }}
+  </div>
+</article>
+{{ end }}
