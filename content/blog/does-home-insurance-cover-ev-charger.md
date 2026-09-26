@@ -8,6 +8,12 @@ author: "EV Insurance Guide"
 draft: false
 ---
 
+
+
+![A home EV charger mounted on a house exterior](https://images.pexels.com/photos/27355833/pexels-photo-27355833.jpeg?auto=compress&cs=tinysrgb&w=1200)
+
+
+
 Two EV owners install the exact same Level 2 home charger. One files a claim after a lightning strike fries the unit and gets paid out within two weeks. The other files an almost identical claim and gets denied. The difference usually isn't luck — it's whether the charger was properly declared, permanently installed, and covered under the right part of the policy.
 
 According to industry guidance from insurers including Liberty Mutual and Allstate, a permanently installed home charger is typically treated as part of your dwelling or personal property, and is covered under homeowners insurance when damaged by a covered peril like fire, lightning, or vandalism — subject to your deductible and policy limits. That's the good news. But "typically" and "permanently installed" are both doing a lot of work in that sentence, and that's where most owners get caught out.
@@ -37,16 +43,14 @@ Even a permanently installed charger can run into trouble if:
 
 ### A simple way to check where you stand
 
-<div style="background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:20px 0;">
-<strong>Coverage check, in order:</strong>
-<ol style="margin-top:10px;">
-<li>Is your charger permanently hardwired (not just plugged into an outlet)?</li>
-<li>Did you tell your insurer about it when it was installed?</li>
-<li>Does your state require specific EV charger liability coverage (check California, Oregon, and your own state's requirements)?</li>
-<li>If damage happens, is the cause on the home side (wiring, weather, fire) or the vehicle side (a collision)?</li>
-</ol>
-If you answered "no" or "not sure" to #1 or #2, that's the gap worth closing before you ever need to file a claim.
+<div class="step-flow">
+  <div class="step-flow-item"><div class="step-flow-num" style="background:#0BA5A0;">1</div><div class="step-flow-text">Is your charger permanently hardwired — not just plugged into an outlet?</div></div>
+  <div class="step-flow-item"><div class="step-flow-num" style="background:#F26B2A;">2</div><div class="step-flow-text">Did you tell your insurer about it when it was installed?</div></div>
+  <div class="step-flow-item"><div class="step-flow-num" style="background:#0090C8;">3</div><div class="step-flow-text">Does your state require specific EV charger liability coverage — check California, Oregon, and your own state's rules?</div></div>
+  <div class="step-flow-item"><div class="step-flow-num" style="background:#E8467C;">4</div><div class="step-flow-text">If damage happens, is the cause on the home side (wiring, weather, fire) or the vehicle side (a collision)?</div></div>
 </div>
+
+If you answered "no" or "not sure" to #1 or #2, that's the gap worth closing before you ever need to file a claim.
 
 {{< adslot 4 >}}
 
