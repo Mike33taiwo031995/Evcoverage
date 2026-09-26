@@ -1,7 +1,6 @@
 baseURL = "https://evinsuranceguide.org/"
 languageCode = "en-us"
 title = "EV Insurance Guide"
-theme = ""
 enableRobotsTXT = true
 
 [params]
