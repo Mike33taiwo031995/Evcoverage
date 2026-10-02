@@ -1,0 +1,176 @@
+{{ define "main" }}
+{{ $homeCSS := "css/home.css" | relURL }}
+{{ $homeJS := "js/home.js" | relURL }}
+<link rel="stylesheet" href="{{ $homeCSS }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ .Site.Title | jsonify }},
+    "url": {{ .Site.BaseURL | jsonify }}
+  }
+}
+</script>
+
+<div class="evhome">
+  <section class="eh-hero-wrap" aria-labelledby="eh-title">
+    <div class="eh-hero">
+      <img class="eh-hero-img" src="https://images.pexels.com/photos/20019462/pexels-photo-20019462.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Tesla Model Y parked outdoors in a wide open landscape" width="1600" height="1067" fetchpriority="high">
+      <div class="eh-hero-content">
+        <p class="eh-kicker">A practical guide for EV owners</p>
+        <h1 id="eh-title">Understand EV insurance, wherever you drive.</h1>
+        <p>Understand what to check, what to ask, and where your local rules fit—without the sales pitch.</p>
+        <div class="eh-actions"><a class="eh-button eh-button-light" href="#eh-tools">Explore the tools <span aria-hidden="true">↓</span></a><a class="eh-button eh-button-outline" href="#eh-guide">Start with the basics</a></div>
+      </div>
+      <span class="eh-photo-note">Independent education · no paid carrier placement</span>
+    </div>
+  </section>
+
+  <nav class="eh-page-nav" aria-label="Homepage sections">
+    <a href="#eh-tools">Tools</a>
+    <a href="#eh-quote-comparator">Compare quotes</a>
+    <a href="#eh-map">Regional information</a>
+    <a href="#eh-guide">Coverage guide</a>
+  </nav>
+
+  <section class="eh-intro" aria-label="Editorial principles">
+    <p class="eh-intro-lede">EV insurance is still insurance. The details around the vehicle, its battery, repairs and charging setup are worth asking about.</p>
+    <div><strong>Local first</strong><span>Rules and policy terms vary by location. We make that uncertainty visible.</span></div>
+    <div><strong>Evidence over estimates</strong><span>No global price claims where comparable, sourced data is not available.</span></div>
+  </section>
+
+  <section class="eh-section eh-section-white" id="eh-tools">
+    <div class="eh-container">
+      <header class="eh-section-head"><div><p class="eh-eyebrow">Useful before a quote or renewal</p><h2>Start with the numbers you know.</h2></div><p>Practical tools for clearer questions. Your entries stay in this page; amounts come from you, not a market estimate.</p></header>
+      <div class="eh-tool-grid">
+        <section class="eh-panel eh-calculator" aria-labelledby="eh-gap-heading">
+          <div class="eh-panel-head"><div><h3 id="eh-gap-heading">Loan balance vs. vehicle value</h3><p>See the difference between what you owe and an estimated current value.</p></div><span class="eh-icon" aria-hidden="true">−</span></div>
+          <div class="eh-fields-two">
+            <label class="eh-field"><span>Current loan balance</span><input id="eh-loan" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Enter your amount"></label>
+            <label class="eh-field"><span>Estimated vehicle value</span><input id="eh-value" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Enter your estimate"></label>
+          </div>
+          <label class="eh-field"><span>Currency for both figures</span><select id="eh-gap-currency"><option value="">Choose a currency</option></select></label>
+          <p class="eh-hint">Choose one currency for both amounts. Recognized country selections can preselect it; no currency conversion is performed.</p>
+          <div class="eh-result" id="eh-gap-result" role="status" aria-live="polite"><div><span id="eh-gap-label">Enter both amounts and choose a currency</span><strong id="eh-gap-amount">—</strong></div><b id="eh-gap-state">Awaiting values</b></div>
+          <p class="eh-footnote">Illustrative arithmetic only—not an insurance quote or recommendation to buy coverage. A lender or insurer may calculate values differently. No sample amount is prefilled.</p>
+        </section>
+
+        <section class="eh-panel eh-locator" id="eh-locator" aria-labelledby="eh-locator-heading">
+          <div class="eh-panel-head"><div><h3 id="eh-locator-heading">Find your local context</h3><p>Set a country or area to see what this guide can—and cannot—verify.</p></div><span class="eh-icon" aria-hidden="true">◎</span></div>
+          <label class="eh-field"><span>Country or market</span><input id="eh-country" list="eh-country-suggestions" autocomplete="country-name" placeholder="Type a country or market"><datalist id="eh-country-suggestions"></datalist></label>
+          <label class="eh-field"><span>Postcode / ZIP (optional)</span><input id="eh-postcode" autocomplete="postal-code" placeholder="For your own reference"></label>
+          <p class="eh-hint">Not sent or looked up. This guide does not geocode postcodes.</p>
+          <button class="eh-button eh-button-dark" id="eh-find-location" type="button">Show local information status <span aria-hidden="true">→</span></button>
+          <div class="eh-location-result" id="eh-location-result" role="status" aria-live="polite"><div class="eh-location-heading"><strong id="eh-location-title">A note on local data</strong><span class="eh-badge">Global scope</span></div><p id="eh-location-copy">Choose or type a country for a transparent availability note. Regulations and cover details should be confirmed with local sources and your insurer.</p><a href="#eh-map">See regional coverage notes →</a></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="eh-section eh-quote-section" id="eh-quote-comparator">
+    <div class="eh-container">
+      <header class="eh-section-head"><div><p class="eh-eyebrow">Your quotes, your currency</p><h2>Compare annual premiums you enter.</h2></div><p>Client-side arithmetic, not a market estimate. It sends no data and does not convert currencies.</p></header>
+      <section class="eh-panel eh-quote-panel" aria-label="Annual quote comparator">
+        <div class="eh-quote-pair">
+          <div class="eh-quote-entry">
+            <h3><span>A</span> Quote one</h3>
+            <label class="eh-field"><span>Insurer / quote label (optional)</span><input id="eh-quote-name-a" placeholder="For your own reference"></label>
+            <label class="eh-field"><span>Annual premium</span><input id="eh-quote-a" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Enter the amount shown"></label>
+            <label class="eh-field"><span>Currency</span><select id="eh-quote-currency-a"><option value="">Choose a currency</option></select></label>
+          </div>
+          <div class="eh-quote-entry">
+            <h3><span>B</span> Quote two</h3>
+            <label class="eh-field"><span>Insurer / quote label (optional)</span><input id="eh-quote-name-b" placeholder="For your own reference"></label>
+            <label class="eh-field"><span>Annual premium</span><input id="eh-quote-b" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Enter the amount shown"></label>
+            <label class="eh-field"><span>Currency</span><select id="eh-quote-currency-b"><option value="">Choose a currency</option></select></label>
+          </div>
+        </div>
+        <label class="eh-coverage-check"><input id="eh-same-coverage" type="checkbox"><span><strong>I have checked that both quotes use the same coverage basis.</strong><small>Compare equivalent vehicle details, limits, excess/deductible, add-ons, payment frequency and policy term.</small></span></label>
+        <p class="eh-warning"><strong>Same-currency / same-coverage warning:</strong> premiums are only meaningfully comparable when both amounts use the same currency and the policy cover is genuinely like-for-like. This tool does not check coverage terms or exchange rates.</p>
+        <div class="eh-quote-result" id="eh-quote-result" role="status" aria-live="polite">Enter two annual premiums to see a comparison.</div>
+        <p class="eh-footnote">A lower entered premium does not by itself mean better value or suitable cover. Confirm written policy terms directly with each insurer. Result is based only on your entries.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="eh-section" id="eh-map">
+    <div class="eh-container">
+      <header class="eh-section-head"><div><p class="eh-eyebrow">A world view, without made-up averages</p><h2>Costs are local. So is the evidence.</h2></div><p>Choose a region to inspect information availability. "Unavailable" is a useful answer when evidence is not there.</p></header>
+      <div class="eh-map-layout">
+        <div>
+          <div class="eh-map-stage">
+            <svg class="eh-world" viewBox="0 0 760 380" role="img" aria-labelledby="eh-map-title eh-map-desc">
+              <title id="eh-map-title">Illustrative world regions</title><desc id="eh-map-desc">A simplified world silhouette. Use the labeled region buttons to view information availability.</desc>
+              <path class="eh-land" data-shape="north-america" d="M83 92l29-23 46-8 20 12 41-2 23 18-15 15-27 6-13 16-33 4-13 26-22 7-5 24-21 11-10 36-14 10-14-14 3-27-15-24 5-23-21-12 4-22-20-12 8-18 35-4 14-20zM194 248l23 9 8 21 17 10-4 28-12 19-17-11-4-22-16-18-7-23z"/>
+              <path class="eh-land" data-shape="south-america" d="M269 177l35-8 28 20 6 29-13 28-10 34-16 37-15 17-14-12-1-30-14-24 2-33-12-18z"/>
+              <path class="eh-land" data-shape="europe" d="M337 100l24-11 23 6 12-12 31 7 16 16-10 13-25 1-11 20-19 2-10-14-17 2-14-14z"/>
+              <path class="eh-land" data-shape="africa" d="M375 179l32-9 27 17 9 31-13 32-16 26-18 27-15-8-7-28-13-18 2-30-10-21z"/>
+              <path class="eh-land" data-shape="asia" d="M426 105l29-22 41 4 27 15 52-4 18 16 35-2 23 18-10 20-36 5-10 17-25-5-22 14-19-9-27 6-19-13-24 2-19-15-24 4-11-18-27 1-7-15zM579 178l27-9 22 10 10 23-13 10-17-7-10-15-20 3z"/>
+              <path class="eh-land" data-shape="oceania" d="M614 248l24-11 30 10 16 25-13 17-30-4-16-15z"/>
+            </svg>
+            <div class="eh-map-pins" role="group" aria-label="Choose an illustrative region">
+              <button data-region="north-america" style="--x:14%;--y:35%">N. America</button><button data-region="south-america" style="--x:29%;--y:70%">S. America</button><button data-region="europe" style="--x:45%;--y:26%">Europe</button><button data-region="africa" style="--x:47%;--y:59%">Africa</button><button data-region="asia" style="--x:70%;--y:35%">Asia</button><button data-region="oceania" style="--x:82%;--y:72%">Oceania</button>
+            </div>
+          </div>
+          <p class="eh-map-caption">Illustrative regions only—not regulatory boundaries. Region shapes are schematic and not to scale.</p>
+        </div>
+        <aside class="eh-map-detail" id="eh-region-status" aria-live="polite"><p class="eh-eyebrow">Regional information status</p><h3 id="eh-region-title">North America</h3><p id="eh-region-copy">The companion workbook contains U.S.-only state and vehicle references. Those materials are not a worldwide cost benchmark, and no regional premium figures are published here.</p><div class="eh-availability"><strong>Cost data: not available here.</strong><br>No price scale or color coding is shown because no verified comparable values are published.</div></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="eh-section eh-section-white" id="eh-guide">
+    <div class="eh-container">
+      <header class="eh-section-head"><div><p class="eh-eyebrow">The EV-specific questions</p><h2>Know what to ask before you need to ask.</h2></div><p>Use these as a starting point. Answers depend on policy wording, local rules and details of your vehicle.</p></header>
+      <div class="eh-guide-grid">
+        <article class="eh-guide-card"><span>01 / BATTERY</span><h3>What happens if the battery is damaged?</h3><p>Ask how the policy treats battery damage after a collision, fire, water event or other covered loss. Clarify whether the battery is owned, leased or covered by a separate warranty, and how repair versus replacement decisions are made.</p><a href="/blog/">Read the EV coverage library →</a></article>
+        <article class="eh-guide-card"><span>02 / REPAIR TIME</span><h3>Where can it be repaired?</h3><p>Confirm whether an approved repair network can work on your make and model, what happens if specialist parts or technicians are not locally available, and how transport or temporary mobility is handled.</p></article>
+        <article class="eh-guide-card"><span>03 / AT HOME</span><h3>Is the charger home equipment?</h3><p>A fixed charger and a portable cable may be treated differently. Ask how installation, declared equipment, limits, deductibles and cause of damage affect cover across home and auto policies.</p><a href="/blog/does-home-insurance-cover-ev-charger/">Read the home charger guide →</a></article>
+        <article class="eh-guide-card"><span>04 / FINANCING</span><h3>Could a loan outlast the car's value?</h3><p>Compare your current lender balance with a recent value estimate. If the balance is higher, ask what options apply in your market; the calculator only shows arithmetic and does not determine coverage eligibility.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="eh-section">
+    <div class="eh-container eh-comparison">
+      <div><p class="eh-eyebrow">Compare the cover, not just the total</p><h2>Make each quote answer the same questions.</h2><p>Premiums are not meaningfully comparable if excess, limits, repair terms or add-ons differ. Ask for coverage details in writing and note what remains unclear.</p></div>
+      <div class="eh-checklist">
+        <div><b>01</b><p><strong>Same vehicle and drivers</strong><span>Match model, variant, use, annual distance and driver details.</span></p></div>
+        <div><b>02</b><p><strong>Same cover and deductibles</strong><span>Compare limits, excess or deductible, exclusions and optional benefits.</span></p></div>
+        <div><b>03</b><p><strong>Repair and parts arrangements</strong><span>Ask who chooses the repairer and how specialist parts or delays are handled.</span></p></div>
+        <div><b>04</b><p><strong>Charging equipment stated clearly</strong><span>Check whether your home charger, cables or adapters are included and where.</span></p></div>
+        <div><b>05</b><p><strong>Ask what is not covered</strong><span>Get exclusions and important conditions explained before deciding.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="eh-section eh-section-white">
+    <div class="eh-container eh-renewal"><div><p class="eh-eyebrow">Renewal and claim preparation</p><h2>Keep the useful details together.</h2><p>Gather your policy schedule, vehicle identification and modifications, battery or charger paperwork, lender balance, dated vehicle value source, repair preferences, and notes from previous claims. Save claim photos and correspondence securely.</p></div><a class="eh-button eh-button-dark" href="/blog/">Explore practical guides →</a></div>
+  </section>
+
+  <section class="eh-section" id="eh-faq">
+    <div class="eh-container">
+      <header class="eh-section-head"><div><p class="eh-eyebrow">A few useful clarifications</p><h2>Good questions deserve careful answers.</h2></div><p>There is no single worldwide EV policy. Ask your insurer to point to the policy language for your location.</p></header>
+      <div class="eh-faq-grid">
+        <details><summary>Does an EV need a different kind of insurance?</summary><p>There is no universal answer. Battery, repair arrangements, replacement parts and charging equipment can raise questions worth checking in policy documents.</p></details>
+        <details><summary>Does home insurance cover a home charger?</summary><p>It depends on location, installation type, policy wording, limits and cause of damage. A fixed unit may be treated differently from portable equipment. Tell your home insurer about the installation and ask for the answer in writing. <a href="/blog/does-home-insurance-cover-ev-charger/">Read the charger explainer.</a></p></details>
+        <details><summary>Can you tell me EV insurance costs in my area?</summary><p>Not reliably at present. This guide does not publish verified comparable local prices. Request current quotes with matching details from insurers serving your market.</p></details>
+        <details><summary>Does the gap calculator say whether I need additional cover?</summary><p>No. It subtracts the value and loan balance you enter. It does not account for settlement rules, eligibility, exclusions, local availability or product terms.</p></details>
+        <details><summary>Is the U.S. material a worldwide benchmark?</summary><p>No. The companion handbook and workbook refer to U.S.-only loan-to-value and comparison tools and U.S. state/model information. They are not global figures or representative costs for other markets.</p></details>
+        <details><summary>Is this insurance, legal or financial advice?</summary><p>No. This is educational material, not professional insurance, legal or financial advice. Confirm current local requirements and your policy with a licensed professional.</p></details>
+      </div>
+      <p class="eh-source-note"><strong>Editorial note:</strong> We do not accept payment from carriers for placement or reviews. Claims about local rules or costs should include a source and date; where verified regional information is unavailable, we say so rather than estimating. See <a href="/about/">our editorial approach</a>.</p>
+    </div>
+  </section>
+
+  <section class="eh-section eh-section-white">
+    <div class="eh-container eh-final"><div><p class="eh-eyebrow">Keep exploring</p><h2>A clearer next question is a good start.</h2></div><a class="eh-button eh-button-dark" href="/blog/">Browse all articles →</a></div>
+  </section>
+</div>
+<script src="{{ $homeJS }}" defer></script>
+{{ end }}
