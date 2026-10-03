@@ -7,7 +7,7 @@ lastmod: 2026-09-28
 author: "EV Insurance Guide"
 draft: false
 ---
-
+.
 Quotes for the same repair can vary by thousands of dollars depending on where you get it done — and headlines love to quote the scariest number they can find. Here's a grounded, sourced range instead.
 
 **Short answer:** most sourced 2026 estimates put full out-of-warranty EV battery replacement somewhere between **$4,000 and $25,000+**, driven almost entirely by pack size and vehicle class — and the real number that matters most for most owners is this: under the federal 8-year/100,000-mile battery warranty, real-world failure rates requiring a full replacement sit under 2%. Most people budgeting for this will never actually pay it.
