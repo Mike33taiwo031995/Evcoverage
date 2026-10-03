@@ -6,7 +6,7 @@ date: 2026-09-29
 lastmod: 2026-09-29
 author: "EV Insurance Guide"
 draft: false
----
+---.
 
 Every EV battery loses some capacity over time — that's normal chemistry, not a malfunction. [As covered in our guide on what's actually covered](/blog/is-ev-battery-replacement-covered-by-insurance/), auto insurance treats this the same way it treats worn brake pads: an ownership cost, not an insurable loss. So if insurance doesn't cover degradation, what does?
 
