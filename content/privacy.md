@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 description: "EV Insurance Guide Privacy Policy: how we collect, use, protect, and disclose information through our website, calculators, educational resources, and digital products."
 date: 2026-10-02
-lastmod: 2026-10-02
+lastmod: 2026-10-04
 draft: false
 ---
 
