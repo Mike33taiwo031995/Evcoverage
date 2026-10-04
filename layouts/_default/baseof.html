@@ -143,8 +143,32 @@ article blockquote{border-left:3px solid var(--orange);padding:10px 18px;color:v
 .compare-table tr:last-child td{border-bottom:none;}
 .compare-table .yes{color:#0B9A5C;font-weight:900;font-size:16px;}
 .compare-table .no{color:#D6362B;font-weight:900;font-size:16px;}
-footer{padding:24px 0;border-top:1px solid var(--line);text-align:center;font-size:12px;color:var(--muted);}
-footer a{color:var(--muted);margin:0 8px;}
+footer.site-footer{background:#0E2233;color:rgba(255,255,255,.72);text-align:left;font-size:13px;line-height:1.6;padding:48px 0 0;}
+.sf-inner{max-width:1080px;margin:0 auto;padding:0 22px;}
+.sf-brand{display:flex;align-items:center;gap:8px;font-size:18px;font-weight:800;color:#fff;margin-bottom:10px;}
+.sf-about{max-width:520px;margin:0 0 30px;color:rgba(255,255,255,.72);font-size:14px;}
+.sf-trust-title{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--orange);margin:0 0 14px;}
+.sf-trust{display:grid;grid-template-columns:1fr;gap:12px;align-items:start;margin:0 0 38px;}
+.sf-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:10px;overflow:hidden;}
+.sf-card summary{position:relative;display:block;cursor:pointer;list-style:none;padding:15px 46px 15px 18px;min-height:48px;color:#fff;font-size:14px;font-weight:700;line-height:1.4;}
+.sf-card summary::-webkit-details-marker{display:none;}
+.sf-card summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--orange);font-size:22px;font-weight:600;line-height:1;}
+.sf-card[open] summary::after{content:"\2212";}
+.sf-card summary:hover{background:rgba(255,255,255,.05);}
+.sf-card summary:focus-visible{outline:2px solid var(--orange);outline-offset:-2px;}
+.sf-card p{margin:0;padding:0 18px 16px;color:rgba(255,255,255,.72);font-size:13px;line-height:1.6;}
+.sf-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px 20px;}
+.sf-wide{grid-column:1 / -1;}
+.sf-col h3{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin:0 0 12px;}
+.sf-col ul{list-style:none;margin:0;padding:0;}
+.sf-col li{margin:0 0 9px;}
+footer.site-footer a{color:rgba(255,255,255,.8);text-decoration:none;margin:0;}
+footer.site-footer a:hover{color:#fff;text-decoration:underline;}
+.sf-legal{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:12px;line-height:1.7;color:rgba(255,255,255,.6);}
+.sf-legal p{margin:0 0 10px;}
+.sf-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;margin-top:8px;padding:16px 0 26px;border-top:1px solid rgba(255,255,255,.14);font-size:12px;color:rgba(255,255,255,.55);}
+@media(min-width:620px){.sf-trust{grid-template-columns:1fr 1fr;}}
+@media(min-width:960px){.sf-trust{grid-template-columns:repeat(4,1fr);}.sf-cols{grid-template-columns:1.1fr .9fr 1.9fr .9fr .9fr;}.sf-wide{grid-column:auto;}}
 .legal-updated{font-size:13px;color:var(--muted);margin-bottom:18px;}
 .legal-intro{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 22px;box-shadow:0 4px 14px rgba(14,34,51,0.06);margin:0 0 24px;}
 .legal-intro p:last-child{margin-bottom:0;}
@@ -175,15 +199,75 @@ footer a{color:var(--muted);margin:0 8px;}
 
 {{ block "main" . }}{{ end }}
 
-<footer>
-  <div>EV INSURANCE GUIDE &copy; {{ now.Format "2006" }} &middot; Educational content, not professional insurance advice</div>
-  <div style="margin-top:8px;">
-    <a href="/about/">About</a>&middot;
-    <a href="/contact/">Contact</a>&middot;
-    <a href="/privacy/">Privacy</a>&middot;
-    <a href="/terms/">Terms</a>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-brand"><div class="dot"></div>EV Insurance Guide</div>
+    <p class="sf-about">Independent, plain-language education on electric vehicle insurance: coverage gaps, claims, and cost comparisons.</p>
+
+    <h2 class="sf-trust-title">Why readers trust EV Insurance Guide</h2>
+    <div class="sf-trust">
+      <details class="sf-card"><summary>Independent, with no carrier payments</summary><p>We do not accept payment from insurance carriers for placement or reviews.</p></details>
+      <details class="sf-card"><summary>Sourced, with examples clearly labeled</summary><p>Where we cite data, we name the source and date, and we label hypothetical examples as such.</p></details>
+      <details class="sf-card"><summary>Private tools that run in your browser</summary><p>Our calculators run in your browser. Nothing you type into them is sent to us or stored.</p></details>
+      <details class="sf-card"><summary>Not a lead-selling site</summary><p>We do not sell policies or underwrite coverage, and we do not sell your information to insurers, agents, or brokers.</p></details>
+    </div>
+
+    <nav class="sf-cols" aria-label="Footer">
+      <div class="sf-col">
+        <h3>Free Tools</h3>
+        <ul>
+          <li><a href="/#eh-gap-heading">Loan vs. Vehicle Value Calculator</a></li>
+          <li><a href="/#eh-quote-comparator">Quote Comparator</a></li>
+          <li><a href="/#eh-locator-heading">Local Context Finder</a></li>
+          <li><a href="/#eh-map">World Coverage Map</a></li>
+          <li><a href="/#eh-guide">EV Insurance Questions</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="/free-guide.html">Free Guide</a></li>
+          <li><a href="/blog/">EV Insurance Blog</a></li>
+          <li><a href="/#eh-faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="sf-col sf-wide">
+        <h3>EV Insurance Guides</h3>
+        <ul>
+          {{ range first 6 (where .Site.RegularPages "Section" "blog") }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/about/#our-approach">How We Work</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/contact/">Report a Correction</a></li>
+        </ul>
+      </div>
+      <div class="sf-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms</a></li>
+          <li><a href="/about/#disclaimer">Disclaimer</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="sf-legal">
+      <p>EV Insurance Guide is an independent educational website. We are not an insurance carrier, agency, or broker, and we do not sell insurance policies, underwrite coverage, or provide binding quotes.</p>
+      <p>Content is for general educational purposes and is not insurance, legal, financial, or tax advice. Tool results are estimates only. Coverage, pricing, and eligibility vary by insurer, state, driver, and vehicle, so confirm details with your insurer or a licensed insurance professional.</p>
+    </div>
+    <div class="sf-bottom">
+      <span>&copy; {{ now.Format "2006" }} EV Insurance Guide. All rights reserved.</span>
+      <a href="mailto:support@evinsuranceguide.org">support@evinsuranceguide.org</a>
+    </div>
   </div>
-  
 </footer>
 
 </body>
