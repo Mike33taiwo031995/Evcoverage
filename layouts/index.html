@@ -1,7 +1,8 @@
+{{ define "head" }}
+<link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
+{{ end }}
 {{ define "main" }}
-{{ $homeCSS := "css/home.css" | relURL }}
 {{ $homeJS := "js/home.js" | relURL }}
-<link rel="stylesheet" href="{{ $homeCSS }}">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -14,6 +15,62 @@
     "name": {{ .Site.Title | jsonify }},
     "url": {{ .Site.BaseURL | jsonify }}
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does an EV need a different kind of insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no universal answer. Battery, repair arrangements, replacement parts and charging equipment can raise questions worth checking in policy documents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does home insurance cover a home charger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on location, installation type, policy wording, limits and cause of damage. A fixed unit may be treated differently from portable equipment. Tell your home insurer about the installation and ask for the answer in writing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you tell me EV insurance costs in my area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not reliably at present. This guide does not publish verified comparable local prices. Request current quotes with matching details from insurers serving your market."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the gap calculator say whether I need additional cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It subtracts the value and loan balance you enter. It does not account for settlement rules, eligibility, exclusions, local availability or product terms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the U.S. material a worldwide benchmark?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The companion handbook and workbook refer to U.S.-only loan-to-value and comparison tools and U.S. state/model information. They are not global figures or representative costs for other markets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this insurance, legal or financial advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This is educational material, not professional insurance, legal or financial advice. Confirm current local requirements and your policy with a licensed professional."
+      }
+    }
+  ]
 }
 </script>
 
