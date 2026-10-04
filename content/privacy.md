@@ -6,7 +6,7 @@ lastmod: 2026-10-04
 draft: false
 ---
 
-<p class="legal-updated"><strong>Last Updated: October 2, 2026</strong></p>
+<p class="legal-updated"><strong>Last Updated: October 4, 2026</strong></p>
 
 <div class="legal-intro">
 
@@ -59,7 +59,7 @@ Information published on the Site is for general educational purposes and should
 <p>You are not required to provide personal information simply to read most educational content on our Site, including our [EV insurance blog](/blog/).</p>
 
 <h3>2. Information Automatically Collected</h3>
-<p>When you visit our Site, certain information may be collected automatically through your browser, device, analytics services, cookies, pixels, tags, and similar technologies. This may include IP address, browser type and version, device type, operating system, approximate geographic location, referring website or page, pages viewed, links clicked, time spent on pages, interaction with tools, and date and time of visits. See [Google's explanation of Analytics data collection](https://support.google.com/analytics/answer/11593727?hl=en) for details on what Google Analytics may collect.</p>
+<p>When you visit our Site, certain information may be collected automatically through your browser, device, analytics services, cookies, pixels, tags, and similar technologies. This may include IP address, browser type and version, device type, operating system, approximate geographic location, referring website or page, pages viewed, links clicked, time spent on pages, interaction with tools, and date and time of visits. See [Google's explanation of Analytics data collection](https://support.google.com/analytics/answer/11593727?hl=en) for details on what Google Analytics may collect. Our pages also load fonts from Google Fonts and, on some pages, images from Pexels, so your IP address and browser details are sent to those providers when a page loads.</p>
 
 <h3>3. Information From Third-Party Services</h3>
 <p>We may receive limited information from third-party services that support the Site. For example, if you purchase our paid handbook through a third-party checkout provider, that provider may process information necessary to complete the transaction and may provide us with limited transaction information associated with the purchase.</p>
@@ -85,7 +85,8 @@ Information published on the Site is for general educational purposes and should
 
 <h2 id="downloads">V. Free Downloads, Communications, and Digital Publications</h2>
 <p>EV Insurance Guide makes educational materials available for download, including our [free EV insurance guide](/free-guide.html). Where we request an email address to provide a resource, that information will be used for the purposes disclosed at the time of collection and for related communications where permitted by applicable law.</p>
-<p>We may also use contact information to send educational communications, updates, or information about EV Insurance Guide products where permitted and where appropriate consent has been obtained. You may unsubscribe from promotional email communications at any time using the unsubscribe mechanism in the applicable communication, or by contacting us (see Section XXI).</p>
+<p>When you request our free guide, the first name and email address you enter are sent from your browser to a Google Apps Script that records them in a Google Sheet we control. Google acts as a service provider for this purpose. We use this information to record your request and to contact you about the guide and related EV Insurance Guide resources.</p>
+<p>We may also use contact information to send educational communications, updates, or information about EV Insurance Guide products where permitted and where appropriate consent has been obtained. You may unsubscribe from promotional email communications at any time using the unsubscribe link in the communication where one is provided, or by emailing <a href="mailto:support@evinsuranceguide.org">support@evinsuranceguide.org</a> with "Unsubscribe" in the subject line. We will remove your details from our list.</p>
 
 <h2 id="paid-handbook">VI. Paid Handbook and Third-Party Checkout</h2>
 <p>EV Insurance Guide offers a paid digital handbook. Payments are processed through a third-party checkout provider, Gumroad. EV Insurance Guide does not directly process or store your full credit-card or bank-account information on its own website.</p>
@@ -95,7 +96,7 @@ Information published on the Site is for general educational purposes and should
 <h2 id="sharing">VII. How We Share Information</h2>
 <p>We do not sell your personal information to insurance companies, insurance carriers, insurance agents, or brokers. We do not currently have insurance-carrier partners to whom we transfer visitor information for insurance quoting or underwriting.</p>
 <h3>Service Providers</h3>
-<p>We may use third-party providers that help us operate the Site, including website hosting, analytics, security, email delivery, digital product delivery, and advertising measurement.</p>
+<p>We may use third-party providers that help us operate the Site, including website hosting, analytics, security, email delivery, digital product delivery, and advertising measurement. Providers we currently use include Cloudflare (website hosting, security, and email forwarding), Google (Analytics, Fonts, and Google Sheets/Apps Script for free-guide requests), Meta (Meta Pixel), and Gumroad (checkout for the paid handbook). Images on some pages are loaded from Pexels.</p>
 <h3>Legal and Safety Reasons</h3>
 <p>We may disclose information when reasonably necessary to comply with applicable law, respond to valid legal process, protect our rights, protect safety and security, investigate fraud or abuse, or protect the Site and its users.</p>
 <h3>Business Transfers</h3>
@@ -115,7 +116,7 @@ Information published on the Site is for general educational purposes and should
 <p>No internet transmission or electronic storage system can be guaranteed to be completely secure. While we take reasonable measures to protect information, we cannot guarantee absolute security.</p>
 
 <h2 id="retention">XI. Data Retention</h2>
-<p>We retain information only for as long as reasonably necessary for the purposes described in this Privacy Notice, including to provide requested Services, maintain business records, respond to support requests, maintain security, comply with legal obligations, and prevent fraud or abuse. The precise retention period may vary depending on the type of information and applicable legal requirements.</p>
+<p>We retain information only for as long as reasonably necessary for the purposes described in this Privacy Notice, including to provide requested Services, maintain business records, respond to support requests, maintain security, comply with legal obligations, and prevent fraud or abuse. The precise retention period may vary depending on the type of information and applicable legal requirements. First names and email addresses submitted for the free guide are kept until you ask us to remove them or until we no longer need them for the purposes described above.</p>
 
 <h2 id="international">XII. International Visitors</h2>
 <p>EV Insurance Guide is accessible internationally, although a substantial portion of our audience is expected to be located in the United States. If you access the Site from outside the United States, your information may be processed in the United States or other countries where our service providers operate, where privacy laws may differ from those in your country of residence.</p>
@@ -144,27 +145,4 @@ Information published on the Site is for general educational purposes and should
 <p>Some browsers and devices provide privacy preference signals such as Global Privacy Control ("GPC") intended to communicate a user's privacy choices. Where required by applicable law, EV Insurance Guide will process recognized privacy signals in accordance with applicable legal requirements. Traditional browser "Do Not Track" signals are not universally standardized; our treatment of such signals may depend on the technology, browser, and applicable law.</p>
 
 <h2 id="changes">XX. Changes to This Privacy Notice</h2>
-<p>We may update this Privacy Notice periodically to reflect changes to our Services, technology, information practices, applicable privacy laws, or other operational or legal developments. When we make material changes, we will update the "Last Updated" date above. We encourage visitors to review this page periodically.</p>
-
-<h2 id="contact">XXI. Contact Us</h2>
-<p>If you have questions about this Privacy Notice, our information practices, or your privacy rights, please contact us:</p>
-<p><strong>EV Insurance Guide</strong><br>
-<strong>Email:</strong> <a href="mailto:support@evinsuranceguide.org">support@evinsuranceguide.org</a></p>
-<p>For privacy-related inquiries, please include "Privacy Request" in the subject line where appropriate.</p>
-
-</div>
-
-<div class="legal-disclaimer">
-<h2>Important Disclaimer</h2>
-<p>EV Insurance Guide provides general educational information about electric vehicle insurance and related topics. The information on this Site is not insurance advice, legal advice, financial advice, tax advice, or a substitute for advice from a licensed insurance professional.</p>
-<p>Insurance premiums, coverage, exclusions, deductibles, limits, eligibility requirements, vehicle valuations, underwriting decisions, and policy terms vary by insurer, state, driver, vehicle, and individual circumstances.</p>
-<p>Tool results and other estimates provided by EV Insurance Guide are for informational purposes only and are not binding insurance quotes or guarantees. EV Insurance Guide does not currently underwrite insurance policies, issue insurance policies, determine insurance eligibility, or act as an insurance carrier.</p>
-</div>
-
-<div class="legal-links-box">
-<a href="/">Home</a> &middot;
-<a href="/blog/">EV Insurance Blog</a> &middot;
-<a href="/free-guide.html">Free EV Insurance Guide</a> &middot;
-<a href="/about/">About</a> &middot;
-<a href="/contact/">Contact</a>
-</div>
+<p>We may update this Privacy Notice periodically to reflect changes to our Services, technology, information practices, applicable privacy laws, or other operational or legal developments. When we make material changes, we will update the "Last Updated" date above. We encourage visitors to review th
