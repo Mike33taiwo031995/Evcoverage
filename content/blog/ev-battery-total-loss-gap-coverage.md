@@ -1,13 +1,13 @@
 ---
 title: "Does EV Battery Damage Trigger a Total Loss? (And Why GAP Coverage Matters)"
-description: "A damaged EV battery doesn't automatically total your car — but when repair costs approach the vehicle's value, the math can change fast. Here's how insurers decide, and where GAP coverage fits."
+seo_title: "EV Battery Damage: Total Loss and GAP Coverage Explained"
+description: "Does EV battery damage total your car? Learn how insurers decide a total loss, why repair costs matter, and where GAP coverage fits when you owe more."
 slug: "ev-battery-total-loss-gap-coverage"
 date: 2026-10-01
 lastmod: 2026-10-01
 author: "EV Insurance Guide"
 draft: false
 ---
-
 
 
 ![Close-up of a damaged car bumper and headlight, representing an insurance claim after an accident](https://images.pexels.com/photos/33749906/pexels-photo-33749906.jpeg?auto=compress&cs=tinysrgb&w=1200)
