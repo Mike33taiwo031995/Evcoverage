@@ -1,12 +1,13 @@
 ---
 title: "Does Insurance Cover EV Battery Degradation? (Why the Answer Is Usually No)"
-description: "Battery degradation is a warranty question, not an insurance question — and only above a specific capacity-loss threshold. Here's the real line between the two."
+seo_title: "Does Insurance Cover EV Battery Degradation? The Real Answer"
+description: "Does insurance cover EV battery degradation? It's usually a warranty issue, often tied to a 70% capacity rule. See the line between warranty and insurance."
 slug: "does-insurance-cover-ev-battery-degradation"
 date: 2026-09-29
 lastmod: 2026-09-29
 author: "EV Insurance Guide"
 draft: false
----.
+---
 
 Every EV battery loses some capacity over time — that's normal chemistry, not a malfunction. [As covered in our guide on what's actually covered](/blog/is-ev-battery-replacement-covered-by-insurance/), auto insurance treats this the same way it treats worn brake pads: an ownership cost, not an insurable loss. So if insurance doesn't cover degradation, what does?
 
