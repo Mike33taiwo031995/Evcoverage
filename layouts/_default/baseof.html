@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="robots" content="{{ if .Draft }}noindex, nofollow{{ else }}index, follow{{ end }}">
+<meta name="robots" content="{{ if .Draft }}noindex, nofollow{{ else }}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{{ end }}">
 
 {{ $ogImage := "" }}
 {{ with .Params.image }}{{ $ogImage = . }}{{ else }}{{ if eq .Section "blog" }}{{ with findRE `!\[[^\]]*\]\((https?://[^)\s]+)\)` .RawContent 1 }}{{ $ogImage = replaceRE `^!\[[^\]]*\]\(([^)]+)\)$` "$1" (index . 0) }}{{ end }}{{ if not $ogImage }}{{ $ogImage = .Site.Home.Params.image }}{{ end }}{{ end }}{{ end }}
