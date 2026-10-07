@@ -1,6 +1,7 @@
 ---
 title: "Does Home Insurance Cover Your EV Charger? What Actually Determines It"
-description: "Home insurance usually covers a permanently installed EV charger — but only under specific conditions. Here's exactly what determines whether you're covered."
+seo_title: "Does Home Insurance Cover an EV Charger? What Decides It"
+description: "Does home insurance cover an EV charger? Usually yes if permanently installed, but two conditions decide it. See why claims are denied and how to check."
 slug: "does-home-insurance-cover-ev-charger"
 date: 2026-09-25
 lastmod: 2026-09-25
