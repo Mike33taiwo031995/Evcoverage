@@ -1,6 +1,7 @@
 ---
 title: "EV Battery Warranty vs. Insurance: What's the Difference, and When Does Each Apply?"
-description: "Battery warranty and auto insurance protect against completely different things. Here's a clear side-by-side of what each one actually covers."
+seo_title: "EV Battery Warranty vs. Insurance: What Each Covers"
+description: "EV battery warranty vs. insurance: see a clear side-by-side of what each one covers, where the gap between them is, and which applies to your situation."
 slug: "ev-battery-warranty-vs-insurance"
 date: 2026-09-30
 lastmod: 2026-09-30
