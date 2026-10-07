@@ -1,8 +1,10 @@
 ---
 title: ""
+seo_title: ""
 description: ""
+slug: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
-author: ""
+author: "EV Insurance Guide"
 draft: true
 ---
