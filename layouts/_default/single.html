@@ -1,31 +1,56 @@
+{{ define "head" }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/blog.css" | relURL }}">
+{{ end }}
+
 {{ define "main" }}
+{{ if eq .Section "blog" }}
+<div class="blog-article">
+  <article class="blog-article-inner" data-read-title="{{ .Title }}" data-read-url="{{ .RelPermalink }}">
+    <nav class="blog-breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ "/" | relURL }}">Home</a><span aria-hidden="true">/</span>
+      <a href="{{ "/blog/" | relURL }}">EV insurance guides</a><span aria-hidden="true">/</span>
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
+    <header class="blog-article-header">
+      <p class="blog-eyebrow"><span></span> An EV Insurance Guide explainer</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="blog-article-description">{{ . }}</p>{{ end }}
+      <div class="blog-article-meta">
+        {{ with .Params.author }}<span>By {{ . }}</span>{{ end }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">Published {{ .Date.Format "January 2, 2006" }}</time>
+        {{ if ne .Lastmod .Date }}<time datetime="{{ .Lastmod.Format "2006-01-02" }}">Updated {{ .Lastmod.Format "January 2, 2006" }}</time>{{ end }}
+        <span>{{ .ReadingTime }} min read</span>
+      </div>
+      <div class="blog-article-taxonomies">
+        {{ range .Params.categories }}<a href="{{ printf "/categories/%s/" (urlize .) | relLangURL }}">{{ . }}</a>{{ end }}
+        {{ range .Params.tags }}<a href="{{ printf "/tags/%s/" (urlize .) | relLangURL }}">#{{ . }}</a>{{ end }}
+      </div>
+    </header>
+    <div class="blog-article-content">
+      {{ .Content }}
+    </div>
+    <footer class="blog-article-foot">
+      <h2>Keep learning</h2>
+      <div class="blog-more-links">
+        {{ $related := where .Site.RegularPages "Section" "blog" }}
+        {{ $related = where $related "Permalink" "!=" .Permalink }}
+        {{ range first 3 $related.ByDate.Reverse }}
+        <a href="{{ .RelPermalink }}">{{ .Title }} <span aria-hidden="true">→</span></a>
+        {{ end }}
+        <a href="{{ "glossary/" | relURL }}">Look up EV insurance terms in the glossary <span aria-hidden="true">→</span></a>
+      </div>
+    </footer>
+  </article>
+  <script src="{{ "js/blog.js" | relURL }}" defer></script>
+</div>
+{{ else }}
 <article class="wrap">
   <h1 class="post-title">{{ .Title }}</h1>
-  {{ if eq .Section "blog" }}
-  <div class="post-meta">
-    Published {{ .Date.Format "January 2, 2006" }}
-    {{ if ne .Lastmod .Date }} &middot; Updated {{ .Lastmod.Format "January 2, 2006" }}{{ end }}
-    {{ with .Params.author }} &middot; By {{ . }}{{ end }}
-  </div>
-  {{ end }}
+  {{ if .Description }}<p class="post-meta">{{ .Description }}</p>{{ end }}
   {{ .Content }}
-
-  {{ if eq .Section "blog" }}
-  {{ $related := where .Site.RegularPages.ByDate.Reverse "Section" "blog" }}
-  {{ $related = where $related "Permalink" "!=" .Permalink }}
-  {{ if gt (len $related) 0 }}
-  <div style="margin-top:44px;padding-top:28px;border-top:1px solid var(--line);">
-    <div style="font-size:14px;font-weight:700;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;">Keep Reading</div>
-    <div style="display:flex;flex-direction:column;gap:12px;">
-      {{ range first 2 $related }}
-      <a href="{{ .Permalink }}" style="display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;text-decoration:none;box-shadow:0 4px 14px rgba(14,34,51,0.06);">
-        <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:4px;">{{ .Title }}</div>
-        <div style="font-size:13px;color:var(--muted);">{{ .Description }}</div>
-      </a>
-      {{ end }}
-    </div>
-  </div>
-  {{ end }}
-  {{ end }}
 </article>
+{{ end }}
 {{ end }}

@@ -7,6 +7,8 @@ date: 2026-10-01
 lastmod: 2026-10-01
 author: "EV Insurance Guide"
 draft: false
+categories: ["Claims and GAP"]
+tags: ["total loss", "GAP coverage", "battery damage", "insurance claims"]
 ---
 
 

@@ -7,6 +7,8 @@ date: 2026-09-30
 lastmod: 2026-09-30
 author: "EV Insurance Guide"
 draft: false
+categories: ["Battery and warranty"]
+tags: ["battery warranty", "EV insurance", "battery cover", "warranty vs insurance"]
 ---
 
 By now, if you've read [what insurance actually covers](/blog/is-ev-battery-replacement-covered-by-insurance/) and [where the degradation threshold kicks in](/blog/does-insurance-cover-ev-battery-degradation/), you've probably noticed a pattern: these two systems don't overlap much at all. Here's the clean side-by-side, in one place.

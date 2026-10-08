@@ -1,15 +1,33 @@
+{{ define "head" }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/blog.css" | relURL }}">
+{{ end }}
+
 {{ define "main" }}
-<article class="wrap">
-  <h1 class="post-title">{{ .Title }}</h1>
-  {{ .Content }}
-  <div style="display:flex;flex-direction:column;gap:18px;margin-top:20px;">
-    {{ range .Pages.ByDate.Reverse }}
-    <a href="{{ .Permalink }}" style="display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;text-decoration:none;box-shadow:0 4px 14px rgba(14,34,51,0.06);">
-      <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">{{ .Date.Format "January 2, 2006" }}</div>
-      <div style="font-size:17px;font-weight:700;color:var(--text);margin-bottom:6px;">{{ .Title }}</div>
-      <div style="font-size:13px;color:var(--muted);">{{ .Description }}</div>
-    </a>
-    {{ end }}
-  </div>
-</article>
+{{ $pages := .Pages.ByDate.Reverse }}
+<div class="blog-article">
+  <section class="blog-article-inner" aria-labelledby="listing-title">
+    <nav class="blog-breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ "/" | relURL }}">Home</a><span aria-hidden="true">/</span>
+      <a href="{{ "/blog/" | relURL }}">EV insurance guides</a><span aria-hidden="true">/</span>
+      <span aria-current="page">{{ .Title }}</span>
+    </nav>
+    <header class="blog-article-header">
+      <p class="blog-eyebrow"><span></span> Browse by topic</p>
+      <h1 id="listing-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="blog-article-description">{{ . }}</p>{{ end }}
+    </header>
+    <div class="blog-term-list">
+      {{ range $pages }}
+      <a class="blog-term-card" href="{{ .RelPermalink }}">
+        <strong>{{ .Title }}</strong>
+        <span>{{ .Description }}</span>
+      </a>
+      {{ end }}
+    </div>
+    <p style="margin-top:24px"><a href="{{ "/blog/" | relURL }}">← Browse all EV insurance guides</a></p>
+  </section>
+</div>
 {{ end }}

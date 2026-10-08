@@ -8,6 +8,7 @@
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="robots" content="{{ if .Draft }}noindex, nofollow{{ else }}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{{ end }}">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
 
 {{ $ogImage := "" }}
 {{ with .Params.image }}{{ $ogImage = . }}{{ else }}{{ if eq .Section "blog" }}{{ with findRE `!\[[^\]]*\]\((https?://[^)\s]+)\)` .RawContent 1 }}{{ $ogImage = replaceRE `^!\[[^\]]*\]\(([^)]+)\)$` "$1" (index . 0) }}{{ end }}{{ if not $ogImage }}{{ $ogImage = .Site.Home.Params.image }}{{ end }}{{ end }}{{ end }}
@@ -56,11 +57,16 @@ src="https://www.facebook.com/tr?id={{ .Site.Params.pixel_id }}&ev=PageView&nosc
   "@type": "BlogPosting",
   "headline": {{ .Title | jsonify }},
   "description": {{ .Description | jsonify }},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ .Permalink | jsonify }}},
   {{ with $ogImage }}"image": [{{ . | absURL | jsonify }}],{{ end }}
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "wordCount": {{ .WordCount }},
+  {{ with .Params.tags }}"keywords": {{ . | jsonify }},{{ end }}
+  {{ with .Params.categories }}"articleSection": {{ . | jsonify }},{{ end }}
+  "inLanguage": {{ .Site.Language.LanguageCode | default "en" | jsonify }},
   "author": {
-    "@type": "Person",
+    "@type": "Organization",
     "name": {{ .Params.author | jsonify }},
     "url": "{{ "about/" | absURL }}"
   },
@@ -194,6 +200,7 @@ footer.site-footer a:hover{color:#fff;text-decoration:underline;}
   <a href="/" class="brand"><div class="dot"></div>EV Insurance Guide</a>
   <div class="nav-links">
     <a href="/blog/">Blog</a>
+    <a href="/glossary/">Glossary</a>
     <a href="/about/">About</a>
   </div>
 </nav>
@@ -229,6 +236,7 @@ footer.site-footer a:hover{color:#fff;text-decoration:underline;}
         <ul>
           <li><a href="/free-guide.html">Free Guide</a></li>
           <li><a href="/blog/">EV Insurance Blog</a></li>
+          <li><a href="/glossary/">EV Insurance Glossary</a></li>
           <li><a href="/#eh-faq">FAQ</a></li>
         </ul>
       </div>

@@ -7,6 +7,9 @@ date: 2026-09-25
 lastmod: 2026-09-25
 author: "EV Insurance Guide"
 draft: false
+categories: ["Charging equipment"]
+tags: ["EV charger", "home insurance", "charging equipment", "property cover"]
+popular: true
 ---
 
 

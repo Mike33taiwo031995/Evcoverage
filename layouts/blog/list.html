@@ -1,0 +1,223 @@
+{{ define "head" }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/blog.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+{{ $posts = $posts.ByDate.Reverse }}
+{{ $popular := where $posts "Params.popular" true }}
+{{ $cars := slice
+  (dict "name" "Tesla Model Y" "image" "/images/blog-cars/tesla-model-y.jpg" "alt" "AI-generated editorial image of a white Tesla Model Y on a coastal road" "note" "Battery repair & replacement" "url" "/blog/ev-battery-replacement-cost-2026/")
+  (dict "name" "Hyundai IONIQ 5" "image" "/images/blog-cars/hyundai-ioniq-5.jpg" "alt" "AI-generated editorial image of a teal Hyundai IONIQ 5 in a city at night" "note" "Warranty or insurance?" "url" "/blog/ev-battery-warranty-vs-insurance/")
+  (dict "name" "Ford Mustang Mach-E" "image" "/images/blog-cars/ford-mustang-mach-e.jpg" "alt" "AI-generated editorial image of a red Ford Mustang Mach-E on a desert highway" "note" "Battery wear & degradation" "url" "/blog/does-insurance-cover-ev-battery-degradation/")
+  (dict "name" "Kia EV6" "image" "/images/blog-cars/kia-ev6.jpg" "alt" "AI-generated editorial image of a blue Kia EV6 at a mountain overlook" "note" "Battery damage & total loss" "url" "/blog/ev-battery-total-loss-gap-coverage/")
+  (dict "name" "Volkswagen ID.4" "image" "/images/blog-cars/volkswagen-id4.jpg" "alt" "AI-generated editorial image of an orange Volkswagen ID.4 beside a home charger" "note" "Home charging equipment" "url" "/blog/does-home-insurance-cover-ev-charger/")
+}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "mainEntity": {
+    "@type": "Blog",
+    "name": {{ .Site.Title | jsonify }},
+    "blogPost": [
+      {{ range $index, $post := $posts }}
+        {{ if $index }},{{ end }}
+        {
+          "@type": "BlogPosting",
+          "headline": {{ $post.Title | jsonify }},
+          "description": {{ $post.Description | jsonify }},
+          "url": {{ $post.Permalink | jsonify }},
+          "datePublished": "{{ $post.Date.Format "2006-01-02" }}"
+        }
+      {{ end }}
+    ]
+  }
+}
+</script>
+<div class="blog-list-page">
+  <div class="blog-shell">
+    <header class="blog-intro">
+      <div class="blog-intro-copy">
+        <p class="blog-eyebrow"><span></span> The EV Insurance Guide journal</p>
+        <h1>{{ .Title }}</h1>
+        <p class="blog-intro-text">{{ .Description }}</p>
+        <div class="blog-hero-actions">
+          <a class="blog-button blog-button-primary" href="#all-guides">Explore the guides <span aria-hidden="true">↓</span></a>
+          <a class="blog-button blog-button-light" href="{{ "glossary/" | relURL }}">Open the glossary <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="blog-trust-row" aria-label="Editorial principles">
+          <span><b>01</b> Independent education</span>
+          <span><b>02</b> Clear about what we know</span>
+        </div>
+      </div>
+      <div class="blog-intro-stamp" aria-hidden="true">
+        <span>EV</span>
+        <b>Know what<br>your policy says.</b>
+        <i>Coverage · claims · charging</i>
+      </div>
+    </header>
+
+    <section class="ev-carousel" aria-label="Five popular electric vehicle spotlights" data-ev-carousel>
+      <div class="ev-carousel-heading">
+        <div>
+          <p class="blog-eyebrow"><span></span> The cars behind the coverage questions</p>
+          <h2>Five EVs.<br><em>Coverage, decoded.</em></h2>
+        </div>
+        <div class="ev-carousel-controls">
+          <button class="ev-control ev-prev" type="button" aria-label="Previous featured electric vehicle" data-carousel-prev>←</button>
+          <button class="ev-control ev-pause" type="button" aria-label="Pause featured vehicle slides" aria-pressed="false" data-carousel-pause>Ⅱ</button>
+          <button class="ev-control ev-next" type="button" aria-label="Next featured electric vehicle" data-carousel-next>→</button>
+        </div>
+      </div>
+      <div class="ev-carousel-frame">
+        <div class="ev-carousel-track" data-carousel-track aria-live="off">
+          {{ range $index, $car := $cars }}
+          <article class="ev-slide" data-carousel-slide="{{ $index }}" aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}" {{ if ne $index 0 }}inert{{ end }}>
+            <img src="{{ $car.image | relURL }}" alt="{{ $car.alt }}" width="1024" height="1024" {{ if eq $index 0 }}fetchpriority="high" decoding="async"{{ else }}loading="lazy" decoding="async"{{ end }}>
+            <div class="ev-slide-shade"></div>
+            <div class="ev-slide-copy">
+              <span class="ev-slide-index">{{ printf "%02d" (add $index 1) }} <i>/ 05</i></span>
+              <p>{{ $car.note }}</p>
+              <h3>{{ $car.name }}</h3>
+              <a href="{{ $car.url | relURL }}">Read the related guide <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="ev-slide-art-note">Illustrative vehicle artwork</span>
+          </article>
+          {{ end }}
+        </div>
+        <div class="ev-carousel-dots" role="group" aria-label="Choose a featured electric vehicle">
+          {{ range $index, $car := $cars }}
+          <button type="button" class="ev-dot{{ if eq $index 0 }} is-active{{ end }}" data-carousel-dot="{{ $index }}" aria-label="Show {{ $car.name }}" aria-pressed="{{ if eq $index 0 }}true{{ else }}false{{ end }}"></button>
+          {{ end }}
+        </div>
+      </div>
+      <p class="ev-carousel-caption">These are illustrative images, not vehicle inspections or insurance recommendations. Coverage depends on your policy and location.</p>
+    </section>
+
+    <div class="blog-explore" id="all-guides">
+      <main class="blog-main">
+        <section class="blog-search-panel" aria-labelledby="guides-title">
+          <div class="blog-section-heading">
+            <div>
+              <p class="blog-eyebrow"><span></span> Clear answers, without the sales pitch</p>
+              <h2 id="guides-title">Find your next guide</h2>
+            </div>
+            <span class="blog-count">{{ len $posts }} guides</span>
+          </div>
+          <label class="blog-search-label" for="blog-search">Search by keyword</label>
+          <div class="blog-search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="blog-search" type="search" placeholder="Try “battery”, “charger” or “GAP”" autocomplete="off" aria-controls="blog-card-list">
+            <button type="button" data-search-clear aria-label="Clear search" hidden>Clear</button>
+          </div>
+          <p class="blog-search-hint" id="blog-search-status" aria-live="polite">Search article titles, summaries and topics.</p>
+          <div class="blog-filter-row">
+            <span class="blog-filter-label">Browse topics</span>
+            <div class="blog-filter-chips" role="group" aria-label="Filter articles by category">
+              <button class="blog-filter is-active" type="button" data-category-filter="all" aria-pressed="true">All guides</button>
+              {{ range $term, $taxonomy := .Site.Taxonomies.categories }}
+              <button class="blog-filter" type="button" data-category-filter="{{ urlize $term }}" aria-pressed="false">{{ $taxonomy.Page.Title }}</button>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+
+        <section class="blog-card-grid" id="blog-card-list" aria-label="All EV insurance guides">
+          {{ range $posts }}
+          {{ $post := . }}
+          {{ $image := .Params.image }}
+          {{ if not $image }}
+            {{ $imageMatch := findRE `!\[[^\]]*\]\(([^)]+)\)` .RawContent 1 }}
+            {{ with $imageMatch }}
+              {{ $image = replaceRE `!\[[^\]]*\]\(([^)]+)\)` "$1" (index . 0) }}
+            {{ end }}
+          {{ end }}
+          {{ if not $image }}{{ $image = "/images/blog-cars/tesla-model-y.jpg" }}{{ end }}
+          {{ $categoryTerms := slice }}
+          {{ range .Params.categories }}{{ $categoryTerms = $categoryTerms | append (urlize .) }}{{ end }}
+          {{ $searchText := printf "%s %s %s %s %s" .Title .Description .Plain (delimit .Params.categories " ") (delimit .Params.tags " ") }}
+          <article class="blog-card" data-blog-card data-categories="{{ delimit $categoryTerms "|" }}" data-search="{{ $searchText | plainify | lower }}">
+            <a class="blog-card-image" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+              <img src="{{ $image }}" alt="" loading="lazy" decoding="async">
+              <span>{{ with index .Params.categories 0 }}{{ . }}{{ else }}EV insurance{{ end }}</span>
+            </a>
+            <div class="blog-card-content">
+              <div class="blog-card-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time><span aria-hidden="true">·</span><span>{{ .ReadingTime }} min read</span></div>
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <p class="blog-card-description">{{ .Description }}</p>
+              {{ with .Params.tags }}
+              <div class="blog-card-tags" aria-label="Article tags">
+                {{ range first 3 . }}<a href="{{ printf "/tags/%s/" (urlize .) | relLangURL }}">{{ . }}</a>{{ end }}
+              </div>
+              {{ end }}
+              <a class="blog-read-link" href="{{ .RelPermalink }}">Read the guide <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          {{ end }}
+          <p class="blog-no-results" data-no-results hidden>No guides match that search. Try another keyword or clear the topic filter.</p>
+        </section>
+
+        <section class="blog-topics" aria-labelledby="popular-topics-title">
+          <div>
+            <p class="blog-eyebrow"><span></span> Follow a thread</p>
+            <h2 id="popular-topics-title">Explore every topic</h2>
+          </div>
+          <div class="blog-topic-links">
+            {{ range $term, $taxonomy := .Site.Taxonomies.tags }}
+            <a href="{{ printf "/tags/%s/" (urlize $term) | relLangURL }}"><span aria-hidden="true">#</span>{{ $term }}</a>
+            {{ end }}
+          </div>
+        </section>
+      </main>
+
+      <aside class="blog-sidebar" aria-label="More ways to explore">
+        <section class="blog-side-card blog-popular">
+          <p class="blog-side-kicker">A good place to start</p>
+          <h2>Popular guides</h2>
+          <p class="blog-side-note">Editor-picked reads; not live readership rankings.</p>
+          <ol>
+          {{ range $index, $post := first 4 $popular }}
+            <li><a href="{{ $post.RelPermalink }}"><span>{{ printf "%02d" (add $index 1) }}</span><b>{{ $post.Title }}</b><i aria-hidden="true">↗</i></a></li>
+            {{ end }}
+          </ol>
+        </section>
+
+        <section class="blog-side-card blog-recent" data-recent-section hidden>
+          <p class="blog-side-kicker">Pick up where you left off</p>
+          <h2>Recently read</h2>
+          <ul data-recent-list></ul>
+          <button type="button" data-recent-clear>Clear reading history</button>
+        </section>
+
+        <a class="blog-glossary-card" href="{{ "glossary/" | relURL }}">
+          <span class="blog-glossary-icon" aria-hidden="true">Aa</span>
+          <span class="blog-side-kicker">Plain-English definitions</span>
+          <b>EV insurance glossary</b>
+          <span>Get to know ACV, GAP, deductibles and more <i aria-hidden="true">→</i></span>
+        </a>
+
+        <section class="blog-side-card blog-newsletter-note">
+          <span class="blog-newsletter-icon" aria-hidden="true">✳</span>
+          <h2>Knowledge before quotes.</h2>
+          <p>Start with the coverage basics, then compare written policy terms for your location.</p>
+          <a href="/#eh-tools">Explore the free tools <span aria-hidden="true">↗</span></a>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  {{ $searchIndex := slice }}
+  {{ range $posts }}
+    {{ $searchIndex = $searchIndex | append (dict "title" .Title "url" .RelPermalink "description" .Description "categories" .Params.categories "tags" .Params.tags "content" .Plain) }}
+  {{ end }}
+  <script id="blog-search-index" type="application/json">{{ $searchIndex | jsonify | safeJS }}</script>
+  <script src="{{ "js/blog.js" | relURL }}" defer></script>
+</div>
+{{ end }}

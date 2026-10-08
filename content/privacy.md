@@ -2,11 +2,11 @@
 title: "Privacy Policy"
 description: "EV Insurance Guide Privacy Policy: how we collect, use, protect, and disclose information through our website, calculators, educational resources, and digital products."
 date: 2026-10-02
-lastmod: 2026-10-04
+lastmod: 2026-10-08
 draft: false
 ---
 
-<p class="legal-updated"><strong>Last Updated: October 4, 2026</strong></p>
+<p class="legal-updated"><strong>Last Updated: October 8, 2026</strong></p>
 
 <div class="legal-intro">
 
@@ -77,6 +77,8 @@ Information published on the Site is for general educational purposes and should
 <p>We use Meta Pixel to measure website activity and advertising performance. See [Meta's U.S. Regional Privacy Notice](https://www.facebook.com/privacy/policies/uso/) for information about Meta's processing practices. Depending on your location and applicable law, certain processing may constitute targeted advertising, sharing, or a similar regulated activity. We do not use the Meta Pixel to intentionally collect your insurance policy number, medical records, Social Security number, bank-account number, or credit-card number.</p>
 <h3>Managing Cookies</h3>
 <p>You may be able to control or delete cookies through your browser settings. Disabling certain cookies may affect Site functionality.</p>
+<h3>Recently Read Guides</h3>
+<p>The blog may save the titles and links of up to eight recently read guides, along with a local visit time, in your browser's local storage so the reading-history feature can show them when you return. This history stays on your device and is not sent to EV Insurance Guide. You can clear it using the "Clear reading history" control on the blog or by removing this Site's stored data in your browser settings.</p>
 
 <h2 id="calculators">IV. Our Interactive Tools</h2>
 <p>EV Insurance Guide provides a loan-balance-vs-vehicle-value (GAP) estimator and a quote comparator, both available on our [homepage](/). These tools are intended for educational and estimation purposes. Amounts you enter are processed only in your own browser to generate the requested calculation — nothing you type into these tools is sent to us or stored.</p>

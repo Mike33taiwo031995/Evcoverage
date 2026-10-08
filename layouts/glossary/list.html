@@ -1,0 +1,66 @@
+{{ define "head" }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "css/blog.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+{{ $terms := .Pages.ByTitle }}
+{{ $letters := slice }}
+{{ range $terms }}
+  {{ $letters = $letters | append (upper (substr .Title 0 1)) }}
+{{ end }}
+<div class="glossary-page">
+  <section class="glossary-inner">
+    <nav class="blog-breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ "/" | relURL }}">Home</a><span aria-hidden="true">/</span>
+      <a href="{{ "/blog/" | relURL }}">EV insurance guides</a><span aria-hidden="true">/</span>
+      <span aria-current="page">Glossary</span>
+    </nav>
+    <header class="glossary-hero">
+      <p class="blog-eyebrow"><span></span> The language of electric-car cover</p>
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Description }}</p>
+    </header>
+    <nav class="glossary-alphabet" aria-label="Glossary letters">
+      {{ range $letters | uniq }}<a href="#letter-{{ . | lower }}" aria-label="Terms beginning with {{ . }}">{{ . }}</a>{{ end }}
+    </nav>
+    <div class="glossary-grid">
+      {{ $lastLetter := "" }}
+      {{ range $terms }}
+        {{ $letter := upper (substr .Title 0 1) }}
+        {{ if ne $letter $lastLetter }}
+          <h2 id="letter-{{ $letter | lower }}" class="glossary-letter-heading">{{ $letter }}</h2>
+          {{ $lastLetter = $letter }}
+        {{ end }}
+        <article class="glossary-term-card">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Description }}</p>
+          <a class="glossary-term-link" href="{{ .RelPermalink }}">Read definition <span aria-hidden="true">→</span></a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "name": {{ .Title | jsonify }},
+    "description": {{ .Description | jsonify }},
+    "url": {{ .Permalink | jsonify }},
+    "hasDefinedTerm": [
+      {{ range $index, $term := $terms }}
+        {{ if $index }},{{ end }}
+        {
+          "@type": "DefinedTerm",
+          "name": {{ $term.Title | jsonify }},
+          "description": {{ $term.Description | jsonify }},
+          "url": {{ $term.Permalink | jsonify }}
+        }
+      {{ end }}
+    ]
+  }
+  </script>
+</div>
+{{ end }}

@@ -7,6 +7,9 @@ date: 2026-09-28
 lastmod: 2026-09-28
 author: "EV Insurance Guide"
 draft: false
+categories: ["Battery and warranty"]
+tags: ["battery replacement", "EV battery cost", "repair costs", "battery warranty"]
+popular: true
 ---
 
 Quotes for the same repair can vary by thousands of dollars depending on where you get it done — and headlines love to quote the scariest number they can find. Here's a grounded, sourced range instead.

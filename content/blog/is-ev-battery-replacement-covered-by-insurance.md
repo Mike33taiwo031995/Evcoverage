@@ -7,6 +7,9 @@ date: 2026-09-27
 lastmod: 2026-09-27
 author: "EV Insurance Guide"
 draft: false
+categories: ["Battery and warranty"]
+tags: ["battery replacement", "EV insurance", "battery damage", "insurance claims"]
+popular: true
 ---
 
 
