@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "9lhr8Q0G7rdmkuU1gSJ6V"
+uri = "file://research/notes.md"
+type = "text"
+title = "EV insurance guide research notes"
+description = "Research scope, evidence checklist and regional boundaries for the new EV insurance pillar articles."
+logical_id = "b3716cb1-0681-4ebb-9e68-c2af8cdc4e47"
+content_hash = "sha256:3aa2f13810ad6a4247850d367ebe7151878e3df993dd65b6b328656d2baa9faa"
+size = 3066
+mtime_ms = 1791592180345
+storage_uri = "gcs://replit-rams-assets-worf/rams/assets/repl:617b3c51-01f4-4ebb-9f2c-0035219e5cd5/b3716cb1-0681-4ebb-9e68-c2af8cdc4e47/6b22a21d-259b-412c-ab32-f48f17c21cfa"
+storage_version_token = "1791592184679002"
+content_type = "text/markdown"
