@@ -1,0 +1,593 @@
+{{ define "head" }}
+<style>
+.about{--about-ink:#0e2233;--about-paper:#f5fbff;overflow:hidden;}
+.about .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+.about .narrow{max-width:780px;}
+.about section{padding:clamp(42px,6vw,72px) 0;}
+.about section.alt{background:rgba(255,255,255,.68);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.about [id]{scroll-margin-top:78px;}
+.about h1,.about h2,.about h3,.about h4{line-height:1.25;margin:0 0 .6em;color:var(--text);}
+.about h1{font-size:clamp(2.2rem,5.6vw,4.25rem);letter-spacing:-.045em;max-width:800px;}
+.about h2{font-size:clamp(1.55rem,3.4vw,2.3rem);letter-spacing:-.035em;}
+.about h3{font-size:1.15rem;letter-spacing:-.015em;}
+.about h4{font-size:1.02rem;}
+.about p{margin:0 0 1em;font-size:16px;}
+.about .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.73rem;font-weight:800;color:var(--orange);margin-bottom:.8em;}
+.about .lead{font-size:1.1rem;color:var(--muted);}
+.about .hero{position:relative;background:linear-gradient(122deg,#0e2233 0%,#14394e 72%,#15506a 100%);color:#fff;padding:clamp(56px,9vw,104px) 0 58px;isolation:isolate;}
+.about .hero:after{content:"";position:absolute;z-index:-1;width:min(60vw,760px);aspect-ratio:1;right:-11%;top:-55%;border:1px solid rgba(132,214,239,.2);border-radius:50%;box-shadow:0 0 0 44px rgba(132,214,239,.035),0 0 0 100px rgba(132,214,239,.025);}
+.about .hero h1{color:#fff;}
+.about .hero p{max-width:740px;color:rgba(255,255,255,.82);font-size:1.08rem;}
+.about .hero .wrap{max-width:1080px;}
+.about .hero .eyebrow{color:#ffb174;}
+.about .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:27px;max-width:900px;}
+.about .toc a{background:rgba(255,255,255,.08);color:#fff;text-decoration:none;font-size:.84rem;font-weight:600;padding:8px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.2);transition:background-color .18s ease,border-color .18s ease;}
+.about .toc a:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.38);}
+.about a{ text-underline-offset:3px;text-decoration-thickness:1px;}
+.about a:focus-visible,.about summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px;}
+.about .grid{display:grid;gap:18px;}
+.about .g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));}
+.about .g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));}
+.about .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 5px 18px rgba(14,34,51,.055);}
+.about .card p:last-child{margin-bottom:0;}
+.about .num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--cyan);color:#fff;font-weight:800;font-size:.9rem;margin-bottom:13px;}
+.about .callout{border-left:4px solid var(--orange);background:#fff;padding:18px 22px;border-radius:0 12px 12px 0;margin:1.35em 0;box-shadow:0 5px 18px rgba(14,34,51,.055);}
+.about ul.clean{padding-left:1.2em;margin:0 0 1em;}
+.about ul.clean li{margin-bottom:.4em;padding-left:.15em;}
+.about .team{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));}
+.about .person{background:#fff;border:1px solid var(--line);border-top:4px solid var(--cyan);border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(14,34,51,.07);}
+.about .person .body{padding:22px 23px 25px;}
+.about .person h3{margin-bottom:.15em;}
+.about .role{color:var(--cyan);font-weight:700;font-size:.95rem;margin-bottom:1em;}
+.about .person p{font-size:.95rem;color:var(--muted);}
+.about .person p:first-of-type{color:var(--text);}
+.about details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0 20px;margin-bottom:12px;}
+.about summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;line-height:1.4;}
+.about summary::-webkit-details-marker{display:none;}
+.about summary::after{content:"+";flex:0 0 auto;color:var(--orange);font-size:1.4rem;line-height:1;}
+.about details[open] summary::after{content:"\2212";}
+.about details .ans{padding-bottom:6px;color:var(--muted);}
+.about .resource a{font-weight:600;word-break:break-word;}
+.about .contact a.mail{display:inline-block;font-weight:700;word-break:break-all;}
+.about .split{display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));}
+.about .disc h3{margin-top:1.6em;}
+.about .tagline{font-size:clamp(1.25rem,3vw,1.7rem);font-weight:800;color:var(--cyan);margin:1em 0;}
+@media(max-width:640px){
+  .about .wrap{padding:0 20px;}
+  .about .hero{padding-bottom:46px;}
+  .about .toc{gap:7px;margin-top:21px;}
+  .about .toc a{font-size:.8rem;padding:7px 11px;}
+  .about .card{padding:20px;}
+  .about .person .body{padding:19px 20px 22px;}
+}
+@media(prefers-reduced-motion:reduce){.about .toc a{transition:none;}}
+</style>
+{{ end }}
+{{ define "main" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About EV Insurance Guide",
+  "url": {{ .Permalink | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "EV Insurance Guide",
+    "url": {{ "/" | absURL | jsonify }},
+    "contactPoint": [
+      {"@type": "ContactPoint", "contactType": "customer support", "email": "contact@evinsuranceguide.org"},
+      {"@type": "ContactPoint", "contactType": "editorial", "email": "editorial@evinsuranceguide.org"}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is EV Insurance Guide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EV Insurance Guide is an educational website focused on electric vehicle insurance, battery protection, repair costs, insurance claims, policy comparisons, and other issues relevant to EV ownership."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is EV Insurance Guide an insurance company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We are an educational publisher. We are not an insurance company or agency, and educational content on this site should not be confused with insurance services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does EV Insurance Guide sell insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We do not sell, underwrite, or bind insurance. Where we link to third-party products or services, we disclose any commercial relationship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can EV Insurance Guide guarantee lower insurance premiums?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Premiums depend on individual circumstances and insurer-specific rating practices. Our resources can help you understand your options, but we cannot guarantee a particular price or saving."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does auto insurance cover an EV battery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the cause of the damage, the policy terms, and the circumstances of the claim. Accidental physical damage may be treated differently from ordinary degradation, mechanical failure, or other excluded causes of loss. Review your policy and ask your insurer for clarification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is EV battery degradation covered by insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ordinary battery degradation is generally different from sudden physical damage caused by a covered event. The outcome depends on the policy, the cause of the loss, and the circumstances. Manufacturer warranties may separately address specified battery defects or capacity-related conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does EV Insurance Guide provide personalized insurance advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Our content explains general concepts and helps you identify relevant questions. For advice about a specific policy, claim, or legal obligation, consult your insurer or a qualified professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I report an error or suggest a topic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact our editorial team at editorial@evinsuranceguide.org . Including the article title, the relevant passage, and any supporting evidence helps us investigate."
+      }
+    }
+  ]
+}
+</script>
+<div class="about">
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">About Us</div>
+    <h1>Making Electric Vehicle Insurance Easier to Understand</h1>
+    <p>Electric vehicles are changing how people drive around the world, creating new opportunities for drivers while raising important questions about insurance, repair costs, battery protection, and long-term ownership expenses.</p>
+    <nav class="toc" aria-label="On this page">
+      <a href="#mission">Mission</a>
+      <a href="#what-we-do">What We Do</a>
+      <a href="#standards">Editorial Standards</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#editorial-team">Editorial Team</a>
+      <a href="#funding">How We Make Money</a>
+      <a href="#contact">Contact</a>
+      <a href="#faq">FAQ</a>
+      <a href="#disclosures">Disclosures</a>
+    </nav>
+  </div>
+</header>
+<section>
+  <div class="wrap narrow">
+    <p class="lead">At EV Insurance Guide, our purpose is to help electric vehicle owners and prospective buyers understand the insurance decisions that come with owning and operating an EV.</p>
+    <p>From battery damage and collision coverage to premiums, charging equipment, repair costs, manufacturer warranties, and total-loss settlements, we explore the questions that matter to consumers navigating the evolving relationship between electric vehicles and auto insurance.</p>
+    <p>Our goal is straightforward: to make complex insurance topics easier to understand through clear explanations, practical examples, credible research, and useful educational resources.</p>
+    <p>Whether you drive a Tesla, Ford Mustang Mach-E, Hyundai IONIQ 5, Chevrolet Equinox EV, or another electric vehicle, we aim to help you understand the insurance considerations that may affect your financial protection.</p>
+    <p>We believe that informed insurance decisions begin with understanding your options, asking the right questions, and knowing where to find reliable information. EV Insurance Guide is an educational resource built for consumers who want to make better-informed decisions about electric vehicle insurance.</p>
+  </div>
+</section>
+<section class="alt" id="mission">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Our Mission</div>
+        <h2>Accessible, understandable, useful</h2>
+        <p>Our mission is to make electric vehicle insurance information accessible, understandable, and useful to EV owners and buyers around the world.</p>
+        <p>We explain how insurance policies work, what different types of coverage may protect against, why premiums vary, and how EV-specific repair and battery considerations can affect insurance decisions. We also clarify the differences between auto insurance, manufacturer warranties, extended protection plans, and other products relevant to EV ownership.</p>
+        <p>Insurance decisions carry real financial consequences. A misunderstanding about an exclusion, deductible, coverage limit, or claim settlement can leave a vehicle owner facing unexpected expenses. Our educational content helps readers understand these issues before they purchase a policy, renew coverage, or work through a claim.</p>
+        <p>Every driver and vehicle is different. For that reason, we focus on explaining relevant considerations rather than presenting a single insurance solution as suitable for everyone.</p>
+      </div>
+      <div id="vision">
+        <div class="eyebrow">Our Vision</div>
+        <h2>A trusted educational destination</h2>
+        <p>Our vision is to become a trusted destination for people seeking reliable information about electric vehicle insurance.</p>
+        <p>As EV technology advances, consumers need resources that explain the financial and insurance implications of battery systems, specialized repairs, charging equipment, vehicle depreciation, and changing repair costs. We want EV Insurance Guide to bridge the gap between complex insurance terminology and the practical questions consumers ask when protecting their vehicles.</p>
+        <p>Our long-term goal is to build a comprehensive library of research-based articles, <a href="/#eh-guide">detailed guides</a>, comparison resources, and <a href="/#eh-tools">educational tools</a> that help readers approach EV ownership with greater understanding and confidence.</p>
+        <p>We believe that better information leads to better questions, more careful comparisons, and more informed financial decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="what-we-do">
+  <div class="wrap">
+    <div class="eyebrow">What We Do</div>
+    <h2>Education at the intersection of EVs and auto insurance</h2>
+    <p class="lead" style="max-width:780px">Our resources are organized around the questions drivers encounter when purchasing, insuring, maintaining, repairing, or replacing an electric vehicle.</p>
+    <div class="grid g2" style="margin-top:28px">
+      <div class="card">
+        <div class="num">1</div>
+        <h3>Electric Vehicle Insurance Education</h3>
+        <p>We explain the fundamentals of auto insurance and how different coverage types may apply to electric vehicles, including liability, collision, comprehensive, uninsured and underinsured motorist protection, <a href="/glossary/deductible-and-excess/">deductibles</a>, policy limits, and exclusions. Explore our <a href="/blog/">EV insurance guides</a> and <a href="/glossary/">glossary</a> for more context.</p>
+        <p>Policy terms matter, and drivers should not assume that every insurer provides identical coverage.</p>
+      </div>
+      <div class="card">
+        <div class="num">2</div>
+        <h3>EV Battery Protection and Insurance</h3>
+        <p>A traction battery can represent a substantial share of an electric vehicle's repair and replacement cost. Battery damage raises questions about repair feasibility, <a href="/blog/ev-battery-replacement-cost-2026/">replacement expense</a>, warranties, exclusions, and <a href="/glossary/total-loss/">total-loss decisions</a>. Read about <a href="/blog/is-ev-battery-replacement-covered-by-insurance/">battery replacement and insurance</a> and <a href="/blog/ev-battery-total-loss-gap-coverage/">battery-related total-loss considerations</a>.</p>
+        <p>We help readers distinguish accidental physical damage from <a href="/blog/does-insurance-cover-ev-battery-degradation/">ordinary degradation</a> and mechanical failure, which may be treated differently under policies and warranties. We explain the considerations without promising that any particular claim will be approved.</p>
+      </div>
+      <div class="card">
+        <div class="num">3</div>
+        <h3>EV Insurance Costs and Premium Comparisons</h3>
+        <p>Premiums vary significantly between drivers, vehicles, locations, coverage selections, and insurers. We examine the factors that may influence EV insurance costs, including vehicle value, repair expenses, parts availability, driving history, annual mileage, deductibles, and coverage limits. Use our <a href="/#eh-quote-comparator">quote comparator</a> to compare two premiums you enter.</p>
+        <p>Where credible data is available, we use documented figures and clearly explained comparisons to help readers weigh price against protection.</p>
+      </div>
+      <div class="card">
+        <div class="num">4</div>
+        <h3>Insurance Claims and Accident Guidance</h3>
+        <p>An accident involving an electric vehicle can raise questions beyond conventional vehicle damage, such as battery inspections, repair estimates, claim documentation, and <a href="/glossary/total-loss/">total-loss assessments</a>.</p>
+        <p>We publish educational resources on the general claims process and the questions consumers may wish to consider. For potentially serious battery damage, we encourage readers to follow emergency instructions and seek help from qualified professionals.</p>
+      </div>
+      <div class="card">
+        <div class="num">5</div>
+        <h3>Charging Equipment and Home Protection</h3>
+        <p>Home charging equipment introduces additional questions about property protection and coverage. We explore considerations involving home charging stations, electrical installations, portable chargers, theft, and accidental damage. See our guide to <a href="/blog/does-home-insurance-cover-ev-charger/">home insurance and EV chargers</a>.</p>
+        <p>Coverage can depend on the equipment, its installation, the cause of the loss, and the applicable policy, so we encourage readers to review their policies and ask their insurers for clarification.</p>
+      </div>
+      <div class="card">
+        <div class="num">6</div>
+        <h3>EV Warranties and Extended Protection Plans</h3>
+        <p>Manufacturer warranties, extended protection plans, and auto insurance serve different purposes. We explain those differences and explore questions involving battery defects, capacity-related warranty conditions, accidental damage, and mechanical failures. Read more about <a href="/glossary/battery-warranty/">battery warranties</a> and <a href="/blog/ev-battery-warranty-vs-insurance/">how warranties differ from insurance</a>.</p>
+        <p>Our aim is to help readers understand what each product is designed to address and what to ask before buying additional protection.</p>
+      </div>
+      <div class="card">
+        <div class="num">7</div>
+        <h3>Consumer Research and Practical Resources</h3>
+        <p>Insurance information is hard to evaluate when figures, terminology, and policy conditions appear without context. We make complex information more accessible through explanatory tables, checklists, worked examples, and comparisons.</p>
+        <p>Where appropriate, we identify the sources and assumptions behind our explanations so readers can investigate important issues further.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Who We Serve</div>
+    <h2>Resources for every stage of EV ownership</h2>
+    <div class="grid g3" style="margin-top:24px">
+      <div class="card"><h4>Current EV owners</h4><p>Drivers seeking to understand existing coverage, investigate battery-related protection, compare premiums, or prepare for a potential claim.</p></div>
+      <div class="card"><h4>Prospective EV buyers</h4><p>Consumers researching the financial side of EV ownership, including insurance costs, battery replacement expenses, repair considerations, and depreciation.</p></div>
+      <div class="card"><h4>Drivers comparing policies</h4><p>People looking to understand differences in premiums, deductibles, coverage limits, exclusions, and policy provisions.</p></div>
+      <div class="card"><h4>EV owners dealing with accident damage</h4><p>Drivers researching collision claims, battery inspections, repair decisions, and total-loss settlements.</p></div>
+      <div class="card"><h4>Consumers researching battery warranties</h4><p>People seeking to understand how manufacturer warranties differ from insurance and extended protection products.</p></div>
+      <div class="card"><h4>Families and cost-conscious households</h4><p>Households looking to understand the costs and risks of purchasing and maintaining an electric vehicle.</p></div>
+    </div>
+    <p style="margin-top:22px;color:var(--muted)">Our content focuses primarily on the United States, because insurance regulations, coverage requirements, and policy provisions vary by jurisdiction.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <div class="eyebrow">How We Are Different</div>
+    <h2>What sets EV Insurance Guide apart</h2>
+    <div class="grid g2" style="margin-top:24px">
+      <div class="card">
+        <h3>A Dedicated Focus on Electric Vehicles</h3>
+        <p>We concentrate on insurance questions that arise specifically in EV ownership. Battery damage, specialized repairs, charging equipment, and warranty conditions introduce considerations that general auto insurance explanations do not always address well.</p>
+      </div>
+      <div class="card">
+        <h3>Clear and Practical Explanations</h3>
+        <p>Insurance policies are full of technical terminology. We explain concepts such as <a href="/glossary/deductible-and-excess/">deductibles</a>, exclusions, <a href="/glossary/actual-cash-value/">actual cash value</a>, replacement cost, endorsements, and <a href="/glossary/total-loss/">total-loss settlements</a> in accessible language, without losing the distinctions that matter. Our objective is for readers to understand the implications of policy provisions, not simply memorize definitions.</p>
+      </div>
+      <div class="card">
+        <h3>Research-Based Educational Content</h3>
+        <p>We support important factual claims with credible sources, including official regulatory resources, government publications, manufacturer documentation, established automotive safety organizations, and relevant insurance research. We distinguish documented facts from estimates, illustrative examples, and interpretations, and we explain where coverage depends on individual circumstances or policy wording.</p>
+      </div>
+      <div class="card">
+        <h3>A Consumer-First Approach</h3>
+        <p>Useful insurance education should help readers evaluate their options, not pressure them toward a particular decision. Our resources explain relevant considerations, encourage careful comparisons, and help consumers identify questions to raise with an insurer or qualified professional.</p>
+      </div>
+      <div class="card" style="grid-column:1/-1">
+        <h3>Transparency and Accountability</h3>
+        <p>We communicate the limitations of our content clearly, identify our sources, disclose commercial relationships where applicable, and correct material factual errors when we identify them. Trust is built through accuracy and transparency, not exaggerated claims.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="alt" id="standards">
+  <div class="wrap">
+    <div class="eyebrow">Our Editorial Standards</div>
+    <h2>How we keep our content accurate and trustworthy</h2>
+    <p class="lead" style="max-width:780px">Our editorial standards support the accuracy, usefulness, and integrity of everything we publish on EV Insurance Guide.</p>
+    <div class="grid g2" style="margin-top:26px">
+      <div class="card">
+        <h3>Research and Source Selection</h3>
+        <p>Depending on the subject, we consult sources such as:</p>
+        <ul class="clean">
+          <li>State insurance departments and official regulatory authorities</li>
+          <li>The National Association of Insurance Commissioners</li>
+          <li>The Insurance Information Institute</li>
+          <li>The Insurance Institute for Highway Safety</li>
+          <li>The National Highway Traffic Safety Administration</li>
+          <li>The U.S. Department of Transportation</li>
+          <li>Published manufacturer warranty documents and owner manuals</li>
+          <li>Relevant insurer policy documents</li>
+          <li>Peer-reviewed research and credible industry publications</li>
+        </ul>
+        <p>We use each source within the limits of what it establishes. A manufacturer warranty explains specified warranty conditions, while an auto insurance policy sets out the contractual terms for that policyholder. Neither is a substitute for the other.</p>
+      </div>
+      <div class="card">
+        <h3>Accuracy and Context</h3>
+        <p>Insurance coverage and legal requirements vary by state, insurer, policy form, and individual circumstances. We identify important qualifications and avoid presenting the result of one situation as a universal rule. When information is uncertain or differs between providers, we say so.</p>
+        <h3 style="margin-top:1.2em">Originality and Editorial Integrity</h3>
+        <p>We produce original educational content that offers meaningful explanations, relevant context, and practical value. References to external research identify the source, and third-party material is never presented as our own research. We distinguish factual reporting from estimates, opinions, recommendations, and illustrative scenarios.</p>
+      <p>Insurance rules differ by country, state, and insurer. Many of our examples and sources refer to the United States, where the most documented material is available. Where an article is specific to one jurisdiction, we aim to say so, and we encourage readers elsewhere to check with their national or regional insurance regulator.</p></div>
+      <div class="card">
+        <h3>Review and Updating</h3>
+        <p>Insurance products, vehicle technology, repair practices, and regulations change over time. We review content when significant developments affect its accuracy or usefulness, and articles may display publication and substantive update dates.</p>
+        <h3 style="margin-top:1.2em">Corrections</h3>
+        <p>We encourage readers to report factual errors, outdated information, or material omissions. When a credible concern is raised, we investigate it and correct material inaccuracies. Corrections can be sent to <a href="mailto:editorial@evinsuranceguide.org">editorial@evinsuranceguide.org</a>.</p>
+      </div>
+      <div class="card">
+        <h3>Editorial Independence</h3>
+        <p>Editorial decisions prioritize accuracy, relevance, and usefulness to readers. Where advertising, affiliate arrangements, sponsorships, or referral relationships exist, we disclose them appropriately.</p>
+        <p>Any professional credentials or expert-review claims published on this website are accurate and verifiable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="leadership">
+  <div class="wrap">
+    <div class="eyebrow">Meet Our Leadership Team</div>
+    <h2>The people guiding EV Insurance Guide</h2>
+    <p class="lead" style="max-width:780px">Our organization is structured around leadership responsibilities covering strategy, operations, technology, audience growth, partnerships, and research. The profiles below describe the responsibilities of each position.</p>
+    <div class="team" style="margin-top:28px">
+      <div class="person">
+        <div class="body">
+          <h3>Parker L. Hayes</h3>
+          <div class="role">Chief Executive Officer (CEO)</div>
+          <p>Parker L. Hayes leads the overall strategic direction and organizational development of EV Insurance Guide.</p>
+          <p>The CEO establishes the organization's priorities, supports its long-term objectives, and ensures its activities remain aligned with its mission of providing accessible EV insurance education. Responsibilities include overseeing strategic development, evaluating opportunities for sustainable growth, and coordinating editorial priorities, technology, and business operations.</p>
+          <p>The CEO also champions a culture of accountability, transparency, and responsible publishing, with the objective of building a sustainable educational platform that serves consumers while maintaining clear boundaries between general information and regulated insurance services.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Rowan T. Mitchell</h3>
+          <div class="role">President and Chief Operating Officer (COO)</div>
+          <p>Rowan T. Mitchell oversees the operational activities of EV Insurance Guide.</p>
+          <p>The President and COO translates organizational objectives into practical workflows, coordinates projects, and supports consistent execution across editorial, technology, and marketing functions. Responsibilities include managing publishing schedules, monitoring operational performance, improving internal processes, and keeping website development and content production organized.</p>
+          <p>The role also supports procedures for quality control, website maintenance, and ongoing operational improvement, helping the organization operate efficiently while maintaining the quality and reliability of its educational resources.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Skyler D. Collins</h3>
+          <div class="role">Head of Technology and Digital Operations</div>
+          <p>Skyler D. Collins oversees the technical systems and digital infrastructure that support EV Insurance Guide.</p>
+          <p>Responsibilities include website architecture, deployment workflows, technical performance, security practices, technical SEO, structured data, analytics integrations, and the systems used to publish and maintain content. The role also supports mobile usability, navigation, internal linking, and the identification of technical issues that may affect accessibility or user experience.</p>
+          <p>Where the website uses automated publishing tools or educational features, this role helps keep those systems reliable and maintainable, supporting a secure, functional, and technically sound publishing platform.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Cameron E. Foster</h3>
+          <div class="role">Head of Marketing and Audience Growth</div>
+          <p>Cameron E. Foster leads the marketing and audience-development function at EV Insurance Guide.</p>
+          <p>The role focuses on helping relevant audiences discover our educational resources through organic search, social media, email communications, and other appropriate channels. Responsibilities include developing audience-growth strategies, planning educational campaigns, evaluating engagement data, and supporting consistent brand communication.</p>
+          <p>The position also helps identify subjects that match readers' information needs and opportunities to improve discoverability. Marketing activities represent our services accurately and avoid unsupported promises about insurance savings or claim outcomes.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Blake N. Sullivan</h3>
+          <div class="role">Head of Partnerships and Business Development</div>
+          <p>Blake N. Sullivan oversees partnership development and commercial opportunities for EV Insurance Guide.</p>
+          <p>The role focuses on identifying appropriate relationships with organizations whose work is relevant to electric vehicle ownership, insurance education, automotive research, or digital publishing. Responsibilities include evaluating collaboration opportunities, coordinating commercial relationships, and supporting sustainable business arrangements.</p>
+          <p>Where advertising, affiliate referrals, sponsorships, or other partnerships exist, the role supports accurate communication of their nature and purpose, and ensures commercial relationships are never misrepresented as endorsements or independent verification.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Morgan K. Reed</h3>
+          <div class="role">Head of Data, Analytics and Research</div>
+          <p>Morgan K. Reed leads the data, analytics, and research function at EV Insurance Guide.</p>
+          <p>The role focuses on evaluating quantitative information relevant to EV insurance, including premium comparisons, repair-cost estimates, and battery replacement figures. Responsibilities include checking calculations, documenting assumptions, assessing the limitations of available datasets, and presenting findings through clear tables and visual explanations.</p>
+          <p>The position also interprets website analytics to understand how readers use our resources and where further research may be valuable, with the objective of improving evidence-based publishing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="alt" id="editorial-team">
+  <div class="wrap">
+    <div class="eyebrow">Meet Our Editorial Team</div>
+    <h2>The editors behind our content</h2>
+    <p class="lead" style="max-width:780px">Our editorial function brings together insurance research, automotive knowledge, fact-checking, and content strategy. Each role carries a distinct responsibility in developing educational resources for electric vehicle owners.</p>
+    <div class="team" style="margin-top:28px">
+      <div class="person">
+        <div class="body">
+          <h3>Avery J. Parker</h3>
+          <div class="role">Editorial Director</div>
+          <p>Avery J. Parker oversees the strategic direction and editorial quality of the website's educational content.</p>
+          <p>The role focuses on identifying important consumer questions, setting editorial priorities, maintaining publishing standards, and ensuring that articles communicate complex subjects clearly. The Editorial Director also coordinates content planning and supports consistency across our research, explanatory guides, and consumer resources, so that published material stays relevant, well-structured, properly sourced, and useful.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Riley M. Bennett</h3>
+          <div class="role">Senior Insurance Research Editor</div>
+          <p>Riley M. Bennett oversees research into the insurance concepts and consumer coverage questions addressed by EV Insurance Guide.</p>
+          <p>Responsibilities include researching policy provisions, examining coverage distinctions, and explaining subjects such as collision insurance, comprehensive coverage, deductibles, exclusions, battery damage, and total-loss settlements. The role also identifies where outcomes depend on state regulations, policy wording, or individual circumstances, supporting our goal of making insurance easier for consumers to understand.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Jordan A. Brooks</h3>
+          <div class="role">Automotive and EV Technology Editor</div>
+          <p>Jordan A. Brooks focuses on the automotive and technical subjects that affect electric vehicle ownership and insurance.</p>
+          <p>Areas of responsibility include battery systems, charging equipment, vehicle safety information, manufacturer warranties, repair considerations, and the technical distinction between accidental battery damage and ordinary degradation. The role ensures that automotive explanations are supported by manufacturer documentation, official safety resources, and other relevant evidence, connecting technical information to the insurance issues that influence repair and coverage decisions.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="body">
+          <h3>Quinn R. Morgan</h3>
+          <div class="role">Fact-Checking and Research Editor</div>
+          <p>Quinn R. Morgan supports the accuracy and consistency of the information published on EV Insurance Guide.</p>
+          <p>Responsibilities include checking factual statements against cited sources, verifying dates and numerical claims, reviewing calculations, and identifying qualifications that may materially affect an article's conclusions. The role also helps distinguish official statistics from commercial estimates, survey findings, and illustrative examples, so readers can understand the evidence behind important claims.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap narrow">
+    <div class="eyebrow">Our History</div>
+    <h2>Why EV Insurance Guide exists</h2>
+    <p>EV Insurance Guide was built around a simple observation: electric vehicle owners need accessible insurance information that addresses the particular questions of owning and protecting an EV.</p>
+    <p>Traditional auto insurance resources remain important, but EV ownership introduces additional considerations involving battery systems, specialized repairs, charging equipment, manufacturer warranties, and vehicle replacement costs. Consumers researching these subjects often have to consult several different sources to understand how the technical, financial, and insurance issues fit together.</p>
+    <p>We bring that information together in one accessible destination, and we focus on explaining the concepts behind important insurance decisions rather than presenting isolated facts or generic recommendations.</p>
+    <p>As the platform grows, we are expanding our library of detailed guides, research-based articles, practical comparisons, and educational tools. Our long-term ambition is to build a comprehensive resource that helps consumers approach EV insurance with greater understanding and confidence.</p>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap narrow">
+    <div class="eyebrow">Our Commitment to Readers</div>
+    <h2>What you can expect from us</h2>
+    <p>Consumers should be able to research important financial decisions without being misled by exaggerated promises or unsupported claims. Our commitment is to provide information that is clear, relevant, and appropriately qualified. We aim to:</p>
+    <ul class="clean">
+      <li>Explain insurance terminology in accessible language.</li>
+      <li>Distinguish general education from personalized professional advice.</li>
+      <li>Support important factual claims with credible sources.</li>
+      <li>Explain uncertainty where policy wording or individual circumstances affect the answer.</li>
+      <li>Present examples and calculations with appropriate context.</li>
+      <li>Disclose relevant commercial relationships.</li>
+      <li>Correct material inaccuracies when they are identified.</li>
+      <li>Continually improve the usefulness and accessibility of our resources.</li>
+      <li>Handle personal information responsibly.</li>
+      <li>Keep developing content that addresses the practical questions faced by EV owners.</li>
+    </ul>
+    <p>Our role is to help readers understand the issues they need to investigate and the questions they may wish to ask their insurers or other qualified professionals.</p>
+  </div>
+</section>
+<section id="funding">
+  <div class="wrap">
+    <div class="eyebrow">How We Make Money</div>
+    <h2>Transparency about how we are funded</h2>
+    <p class="lead" style="max-width:780px">We believe readers should know how an educational website pays for itself. Here is where things stand today, and what we commit to if that changes.</p>
+    <div class="grid g3" style="margin-top:24px">
+<div class="card"><h3>Digital Educational Products</h3><p>EV Insurance Guide is currently supported by the sale of our digital educational products, such as our paid EV insurance handbook, which is sold through a third-party checkout provider. Any paid product is described accurately, including its price, purpose, terms, and limitations, and is not a substitute for individualized professional advice where such advice is necessary.</p></div>
+<div class="card"><h3>What We Do Not Do Today</h3><p>At the time of writing, we do not run third-party advertising, publish affiliate links, or publish sponsored content, and we do not accept payment from insurance companies for placement or reviews. Our articles and tools are free to read and use.</p></div>
+<div class="card"><h3>If This Changes</h3><p>If we add advertising, affiliate or referral relationships, or sponsored content in the future, we will update this page and label each one clearly where it appears. Commercial relationships will never be presented as independent research or an impartial recommendation.</p></div>
+</div>
+<h3 style="margin-top:36px">Our approach to commercial independence</h3>
+    <p>We maintain transparency about how the website is funded and distinguish editorial explanations from advertisements and commercial recommendations. We do not claim that every insurer offers identical coverage or that a single provider will always offer the lowest premium. Our priority is to help readers understand their options and make more informed decisions.</p>
+    <div class="callout">
+      <h3>Can we help you find cheaper EV insurance?</h3>
+      <p>Understanding your coverage options may help you manage insurance costs, but no website can guarantee a lower premium for every driver. Prices depend on many factors, including your circumstances, vehicle, location, coverage selections, deductibles, claims history, and each insurer's rating practices. Different insurers may assess similar risks differently, which is one reason comparing multiple quotes can be useful.</p>
+      <p>The lowest premium is not necessarily the best value. A less expensive policy may carry different coverage limits, deductibles, or exclusions that affect the protection it provides. We explain these considerations so you can compare more effectively, and we encourage you to evaluate both price and coverage and to seek clarification from your insurer or a licensed professional when needed.</p>
+    </div>
+    <h3 style="margin-top:32px">Our independence and professional responsibilities</h3>
+    <p>EV Insurance Guide is an educational resource focused on electric vehicle insurance. It is not an insurance company, insurance agency, or insurance brokerage. Our content helps consumers distinguish educational publishing from insurance sales, regulated brokerage services, and personalized professional advice. Any partnerships, expert reviewers, or professional credentials mentioned on this website are verifiable, and where professional review is conducted, the reviewer is identified and the scope of the review is explained.</p>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Our Research Resources</div>
+    <h2>Trusted organizations worth knowing</h2>
+    <p class="lead" style="max-width:780px">We support our explanations with credible research. These organizations provide resources readers may find useful when investigating insurance, vehicle safety, and related subjects. The examples below are U.S. organizations; in other countries, your national or regional insurance regulator and consumer bodies serve the same purpose.</p>
+    <div class="grid g3 resource" style="margin-top:24px">
+      <div class="card"><h4>National Association of Insurance Commissioners (NAIC)</h4><p>Insurance-related resources and information about insurance regulation and consumer protection.</p><a href="https://content.naic.org/" target="_blank" rel="noopener">content.naic.org</a></div>
+      <div class="card"><h4>Insurance Information Institute (III)</h4><p>Educational material and research on insurance and risk.</p><a href="https://www.iii.org/" target="_blank" rel="noopener">iii.org</a></div>
+      <div class="card"><h4>Insurance Institute for Highway Safety (IIHS)</h4><p>Research on vehicle safety, crashworthiness, and related automotive safety topics.</p><a href="https://www.iihs.org/" target="_blank" rel="noopener">iihs.org</a></div>
+      <div class="card"><h4>National Highway Traffic Safety Administration (NHTSA)</h4><p>Information about vehicle safety, recalls, investigations, and other automotive safety matters.</p><a href="https://www.nhtsa.gov/" target="_blank" rel="noopener">nhtsa.gov</a></div>
+      <div class="card"><h4>U.S. Department of Transportation</h4><p>Information about federal transportation policy, safety, and related public resources.</p><a href="https://www.transportation.gov/" target="_blank" rel="noopener">transportation.gov</a></div>
+      <div class="card"><h4>State Insurance Departments</h4><p>State-specific insurance requirements, insurer licensing, and consumer assistance. Consult the department for the state relevant to your circumstances.</p></div>
+    </div>
+    <p style="margin-top:20px;color:var(--muted);font-size:.95rem">These organizations are listed as research resources. Their inclusion does not imply sponsorship, endorsement, partnership, or approval of EV Insurance Guide.</p>
+  </div>
+</section>
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact Us</div>
+    <h2>We welcome your questions and feedback</h2>
+    <p class="lead" style="max-width:780px">We welcome relevant <a href="/contact/">questions</a>, constructive feedback, corrections, and suggestions for future educational resources.</p>
+    <div class="grid g2 contact" style="margin-top:24px">
+      <div class="card">
+        <h4>General Enquiries</h4>
+        <p>Questions about EV Insurance Guide and its educational resources.</p>
+        <a class="mail" href="mailto:contact@evinsuranceguide.org">contact@evinsuranceguide.org</a>
+      </div>
+      <div class="card">
+        <h4>Editorial Enquiries</h4>
+        <p>Questions about published articles, sources, corrections, or editorial standards.</p>
+        <a class="mail" href="mailto:editorial@evinsuranceguide.org">editorial@evinsuranceguide.org</a>
+      </div>
+      <div class="card">
+        <h4>Business and Partnership Enquiries</h4>
+        <p>Commercial enquiries, advertising opportunities, and potential collaborations.</p>
+        <a class="mail" href="mailto:partnerships@evinsuranceguide.org">partnerships@evinsuranceguide.org</a>
+      </div>
+      <div class="card">
+        <h4>Privacy Enquiries</h4>
+        <p>Questions about personal information, privacy practices, or data-related requests.</p>
+        <a class="mail" href="mailto:privacy@evinsuranceguide.org">privacy@evinsuranceguide.org</a>
+      </div>
+    </div>
+    <p style="margin-top:20px;color:var(--muted);font-size:.95rem">Please do not send passwords, payment card details, or unnecessary sensitive personal information through general contact channels.</p>
+  </div>
+</section>
+<section class="alt" id="faq">
+  <div class="wrap narrow">
+    <div class="eyebrow">Frequently Asked Questions</div>
+    <h2>Common questions</h2>
+    <details><summary>What is EV Insurance Guide?</summary><div class="ans"><p>EV Insurance Guide is an educational website focused on electric vehicle insurance, battery protection, repair costs, insurance claims, policy comparisons, and other issues relevant to EV ownership.</p></div></details>
+    <details><summary>Is EV Insurance Guide an insurance company?</summary><div class="ans"><p>No. We are an educational publisher. We are not an insurance company or agency, and educational content on this site should not be confused with insurance services.</p></div></details>
+    <details><summary>Does EV Insurance Guide sell insurance?</summary><div class="ans"><p>No. We do not sell, underwrite, or bind insurance. Where we link to third-party products or services, we disclose any commercial relationship.</p></div></details>
+    <details><summary>Can EV Insurance Guide guarantee lower insurance premiums?</summary><div class="ans"><p>No. Premiums depend on individual circumstances and insurer-specific rating practices. Our resources can help you understand your options, but we cannot guarantee a particular price or saving.</p></div></details>
+    <details><summary>Does auto insurance cover an EV battery?</summary><div class="ans"><p>It depends on the cause of the damage, the policy terms, and the circumstances of the claim. Accidental physical damage may be treated differently from ordinary degradation, mechanical failure, or other excluded causes of loss. Review your policy and ask your insurer for clarification.</p></div></details>
+    <details><summary>Is EV battery degradation covered by insurance?</summary><div class="ans"><p>Ordinary battery degradation is generally different from sudden physical damage caused by a covered event. The outcome depends on the policy, the cause of the loss, and the circumstances. Manufacturer warranties may separately address specified battery defects or capacity-related conditions.</p></div></details>
+    <details><summary>Does EV Insurance Guide provide personalized insurance advice?</summary><div class="ans"><p>No. Our content explains general concepts and helps you identify relevant questions. For advice about a specific policy, claim, or legal obligation, consult your insurer or a qualified professional.</p></div></details>
+    <details><summary>How can I report an error or suggest a topic?</summary><div class="ans"><p>Contact our editorial team at <a href="mailto:editorial@evinsuranceguide.org">editorial@evinsuranceguide.org</a>. Including the article title, the relevant passage, and any supporting evidence helps us investigate.</p></div></details>
+  </div>
+</section>
+<section>
+  <div class="wrap narrow" style="text-align:center">
+    <div class="eyebrow">Our Promise</div>
+    <h2>Better information for every EV driver</h2>
+    <p>Electric vehicle technology continues to evolve, and the insurance questions that come with it will evolve too. We aim to make those questions easier to understand through clear explanations, credible research, practical examples, and responsible publishing.</p>
+    <p>Whether you are researching your first electric vehicle, comparing premiums, reviewing your existing coverage, investigating battery protection, or trying to understand an insurance claim, EV Insurance Guide is here to help you navigate the subject.</p>
+    <p class="tagline">Better information. Clearer decisions. More informed EV ownership.</p>
+    <p>That is the purpose behind EV Insurance Guide.</p>
+  </div>
+</section>
+<section class="alt disc" id="disclosures">
+  <div class="wrap narrow">
+    <div class="eyebrow">Important Information and Disclosures</div>
+    <h2>Disclosures and legal notices</h2>
+    <h3>General Educational Disclaimer</h3>
+    <p>The information published on EV Insurance Guide is intended for general informational and educational purposes. Although we strive to provide accurate and useful information, we cannot guarantee that every statement will remain current, complete, or applicable to every reader's circumstances.</p>
+    <p>Insurance coverage, premiums, exclusions, eligibility, and claim outcomes depend on the applicable contract, insurer, jurisdiction, and individual facts. Nothing on this website is a guarantee of coverage, a promise of insurance savings, or a binding determination of how an insurer will handle a claim. Please review your own policy documents and consult your insurer or a qualified professional for guidance about your specific situation.</p>
+    <h3>Insurance and Financial Decisions</h3>
+    <p>Our content is not a substitute for personalized insurance, legal, tax, or financial advice. The website does not determine whether a particular claim must be paid, whether a specific policy provides coverage, or whether an insurance product is suitable for an individual.</p>
+    <p>Any quote, premium estimate, repair-cost estimate, battery replacement figure, or financial calculation should be understood in the context of its stated source, assumptions, and limitations. Actual prices and outcomes may differ.</p>
+    <h3>Third-Party Information and Links</h3>
+    <p>Our content may reference third-party websites, organizations, manufacturers, insurers, and research publications to help readers locate additional information. We do not control every external website and cannot guarantee the accuracy, availability, or completeness of third-party information. A reference to an organization does not imply sponsorship, endorsement, certification, or partnership unless a specific relationship is expressly disclosed.</p>
+    <h3>Affiliate and Advertising Disclosure</h3>
+    <p>EV Insurance Guide does not currently run advertising or publish affiliate links. If that changes, we will disclose the relationship clearly where it appears and update this page. Commercial relationships do not guarantee that a product is suitable for every reader.</p>
+    <h3>Privacy and Data Protection</h3>
+    <p>We aim to handle personal information responsibly. Our Privacy Policy explains what information is collected, why it is collected, how it is used, whether it is shared, and what choices or rights may be available to visitors. Please consult our <a href="/privacy/">Privacy Policy</a> for further information.</p>
+    <h3>Terms of Use</h3>
+    <p>Use of EV Insurance Guide is subject to our <a href="/terms/">Terms of Use</a>, which govern access to the website, acceptable use, intellectual property, third-party resources, and other applicable provisions.</p>
+    <h3>Copyright and Intellectual Property</h3>
+    <p>Unless otherwise stated, original content published on EV Insurance Guide is protected by applicable intellectual property laws. Third-party names, trademarks, logos, photographs, and other protected materials remain the property of their respective owners. References to vehicle manufacturers, insurers, and other organizations are for identification and informational purposes and do not necessarily indicate an affiliation.</p>
+    <h3>Final Notice</h3>
+    <p>EV Insurance Guide is an educational resource intended to support a better understanding of electric vehicle insurance. Readers remain responsible for reviewing their own insurance policies and obtaining appropriate professional assistance when necessary.</p>
+  </div>
+</section>
+</div>
+{{ end }}
