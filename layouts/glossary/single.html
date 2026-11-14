@@ -27,17 +27,17 @@
     {{ end }}
     <p style="max-width:760px;margin:22px auto 0"><a href="{{ "/glossary/" | relURL }}">← Browse the full glossary</a></p>
   </article>
-  <script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
-    "name": {{ .Title | jsonify }},
-    "description": {{ .Description | jsonify }},
-    "url": {{ .Permalink | jsonify }},
+    "name": {{ .Title | jsonify | safeJS }},
+    "description": {{ .Description | jsonify | safeJS }},
+    "url": {{ .Permalink | jsonify | safeJS }},
     "inDefinedTermSet": {
       "@type": "DefinedTermSet",
       "name": "EV Insurance Glossary",
-      "url": {{ "glossary/" | absURL | jsonify }}
+      "url": {{ "glossary/" | absURL | jsonify | safeJS }}
     }
   }
   </script>
