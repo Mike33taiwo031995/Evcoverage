@@ -7,13 +7,13 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": {{ .Title | jsonify }},
-  "description": {{ .Description | jsonify }},
-  "url": {{ .Permalink | jsonify }},
+  "name": {{ .Title | jsonify | safeJS }},
+  "description": {{ .Description | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
   "isPartOf": {
     "@type": "WebSite",
-    "name": {{ .Site.Title | jsonify }},
-    "url": {{ .Site.BaseURL | jsonify }}
+    "name": {{ .Site.Title | jsonify | safeJS }},
+    "url": {{ .Site.BaseURL | jsonify | safeJS }}
   }
 }
 </script>
