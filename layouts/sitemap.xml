@@ -1,10 +1,13 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{ "free-guide.html" | absURL }}</loc>
+    <loc>{{ "free-guide" | absURL }}</loc>
   </url>
   {{- range .Site.Pages }}
-    {{- if and .Permalink (not .Draft) (ne .Kind "404") (not .Sitemap.Disable) }}
+    {{- $skip := false }}
+    {{- if eq .Kind "taxonomy" }}{{ $skip = true }}{{ end }}
+    {{- if eq .Kind "term" }}{{ if eq .Data.Plural "tags" }}{{ $skip = true }}{{ end }}{{ end }}
+    {{- if and .Permalink (not .Draft) (ne .Kind "404") (not .Sitemap.Disable) (not $skip) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
