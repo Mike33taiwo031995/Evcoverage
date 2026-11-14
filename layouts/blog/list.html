@@ -20,20 +20,20 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": {{ .Title | jsonify }},
-  "description": {{ .Description | jsonify }},
-  "url": {{ .Permalink | jsonify }},
+  "name": {{ .Title | jsonify | safeJS }},
+  "description": {{ .Description | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
   "mainEntity": {
     "@type": "Blog",
-    "name": {{ .Site.Title | jsonify }},
+    "name": {{ .Site.Title | jsonify | safeJS }},
     "blogPost": [
       {{ range $index, $post := $posts }}
         {{ if $index }},{{ end }}
         {
           "@type": "BlogPosting",
-          "headline": {{ $post.Title | jsonify }},
-          "description": {{ $post.Description | jsonify }},
-          "url": {{ $post.Permalink | jsonify }},
+          "headline": {{ $post.Title | jsonify | safeJS }},
+          "description": {{ $post.Description | jsonify | safeJS }},
+          "url": {{ $post.Permalink | jsonify | safeJS }},
           "datePublished": "{{ $post.Date.Format "2006-01-02" }}"
         }
       {{ end }}
