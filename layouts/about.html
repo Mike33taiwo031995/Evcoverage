@@ -69,12 +69,12 @@
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "name": "About EV Insurance Guide",
-  "url": {{ .Permalink | jsonify }},
-  "description": {{ .Description | jsonify }},
+  "url": {{ .Permalink | jsonify | safeJS }},
+  "description": {{ .Description | jsonify | safeJS }},
   "mainEntity": {
     "@type": "Organization",
     "name": "EV Insurance Guide",
-    "url": {{ "/" | absURL | jsonify }},
+    "url": {{ "/" | absURL | jsonify | safeJS }},
     "contactPoint": [
       {"@type": "ContactPoint", "contactType": "customer support", "email": "contact@evinsuranceguide.org"},
       {"@type": "ContactPoint", "contactType": "editorial", "email": "editorial@evinsuranceguide.org"}
