@@ -55,24 +55,24 @@ src="https://www.facebook.com/tr?id={{ .Site.Params.pixel_id }}&ev=PageView&nosc
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": {{ .Title | jsonify }},
-  "description": {{ .Description | jsonify }},
-  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ .Permalink | jsonify }}},
-  {{ with $ogImage }}"image": [{{ . | absURL | jsonify }}],{{ end }}
+  "headline": {{ .Title | jsonify | safeJS }},
+  "description": {{ .Description | jsonify | safeJS }},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ .Permalink | jsonify | safeJS }}},
+  {{ with $ogImage }}"image": [{{ . | absURL | jsonify | safeJS }}],{{ end }}
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   "wordCount": {{ .WordCount }},
-  {{ with .Params.tags }}"keywords": {{ . | jsonify }},{{ end }}
-  {{ with .Params.categories }}"articleSection": {{ . | jsonify }},{{ end }}
-  "inLanguage": {{ .Site.Language.LanguageCode | default "en" | jsonify }},
+  {{ with .Params.tags }}"keywords": {{ . | jsonify | safeJS }},{{ end }}
+  {{ with .Params.categories }}"articleSection": {{ . | jsonify | safeJS }},{{ end }}
+  "inLanguage": {{ .Site.Language.LanguageCode | default "en" | jsonify | safeJS }},
   "author": {
     "@type": "Organization",
-    "name": {{ .Params.author | jsonify }},
+    "name": {{ .Params.author | jsonify | safeJS }},
     "url": "{{ "about/" | absURL }}"
   },
   "publisher": {
     "@type": "Organization",
-    "name": {{ .Site.Title | jsonify }}
+    "name": {{ .Site.Title | jsonify | safeJS }}
   }
 }
 </script>
@@ -84,9 +84,9 @@ src="https://www.facebook.com/tr?id={{ .Site.Params.pixel_id }}&ev=PageView&nosc
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": {{ "/" | absURL | jsonify }}},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": {{ "blog/" | absURL | jsonify }}},
-    {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify }}, "item": {{ .Permalink | jsonify }}}
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": {{ "/" | absURL | jsonify | safeJS }}},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": {{ "blog/" | absURL | jsonify | safeJS }}},
+    {"@type": "ListItem", "position": 3, "name": {{ .Title | jsonify | safeJS }}, "item": {{ .Permalink | jsonify | safeJS }}}
   ]
 }
 </script>
