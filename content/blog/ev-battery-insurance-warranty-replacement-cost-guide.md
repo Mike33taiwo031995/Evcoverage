@@ -158,6 +158,8 @@ For optional repair agreements, California’s regulator specifically advises ch
 
 {{< adslot 4 >}}
 
+If you are gathering records for a claim, our [EV insurance claim-document checklist](/blog/ev-insurance-claim-documents-checklist/) explains how to organise policy documents, inspection findings, approvals and receipts.
+
 ## Frequently asked questions
 
 **Is EV battery insurance a separate policy?**

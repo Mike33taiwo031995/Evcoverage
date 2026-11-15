@@ -4,7 +4,7 @@ seo_title: "Electric Vehicle Repair Near Me: How to Find an EV Shop"
 description: "Searching for electric vehicle repair near me? Learn how to find a qualified EV shop, check high-voltage training and compare dealers with independents."
 slug: "electric-vehicle-repair-near-me"
 date: 2026-10-30
-lastmod: 2026-10-30
+lastmod: 2026-11-15
 author: "EV Insurance Guide"
 draft: false
 categories: ["Repairs and maintenance"]
@@ -215,6 +215,8 @@ EVs are quieter than gasoline cars, but grinding, knocking, vibration or drivetr
 6. **Get the estimate in writing** and keep your invoices.
 
 {{< adslot 4 >}}
+
+Once a shop has the vehicle, our guide to [repair delays, temporary transport and storage](/blog/ev-insurance-repair-delays-rental-storage/) helps you ask who is authorising work and which costs remain subject to policy limits.
 
 ## Frequently asked questions
 

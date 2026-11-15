@@ -43,6 +43,86 @@
 .eh-button-outline { color: white !important; border: 1px solid rgba(255,255,255,.55); background: rgba(14,34,51,.18); }
 .eh-button-dark { background: var(--eh-navy); color: white !important; }
 .eh-button-dark:hover { background: var(--eh-cyan); }
+
+/* Contextual reading links use ordinary anchors: usable without JavaScript. */
+.evhome .eh-reading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 28px;
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid #bedce9;
+  border-left: 4px solid var(--eh-cyan);
+  border-radius: 18px;
+  background: linear-gradient(115deg, #f2faff, #fff 78%);
+  color: var(--eh-navy);
+  text-decoration: none;
+  box-shadow: 0 7px 24px rgba(14, 34, 51, .035);
+  transition: border-color .18s, box-shadow .18s;
+}
+.evhome .eh-reading:hover,
+.evhome .eh-reading:focus-visible {
+  border-color: var(--eh-cyan);
+  box-shadow: 0 12px 28px rgba(14, 34, 51, .09);
+}
+.eh-reading-copy { max-width: 760px; min-width: 0; }
+.eh-reading-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #3d606f;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.eh-reading-copy > strong {
+  display: block;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.22rem, 2.3vw, 1.7rem);
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+.eh-reading-copy > p { margin: 10px 0 13px; color: var(--eh-muted); font-size: .93rem; }
+.eh-reading-action { color: #00678d; font-size: .85rem; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.eh-reading-arrow {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  background: var(--eh-navy);
+  color: white;
+  font-size: 1.3rem;
+}
+.evhome .eh-context-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 12px 0 4px;
+  color: #00678d;
+  font-size: .85rem;
+  font-weight: 700;
+  line-height: 1.55;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.evhome .eh-context-link:hover { color: var(--eh-navy); }
+.evhome .eh-context-link-wide { margin-top: 18px; }
+.eh-guide-card { display: flex; flex-direction: column; }
+.evhome .eh-guide-card > a { margin-top: auto; padding-top: 16px; min-height: 44px; }
+@media (max-width: 600px) {
+  .evhome .eh-reading { align-items: flex-start; gap: 14px; border-radius: 14px; }
+  .eh-reading-arrow { width: 36px; height: 36px; flex-basis: 36px; font-size: 1.1rem; }
+  .eh-reading-label { font-size: .65rem; letter-spacing: .07em; }
+  .eh-renewal > .eh-button { white-space: normal; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .evhome .eh-reading { transition: none; }
+}
 .eh-photo-note { position: absolute; right: 20px; bottom: 18px; color: white; font-size: .68rem; background: rgba(14,34,51,.68); border-radius: 6px; padding: 6px 10px; }
 .eh-intro { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 32px; align-items: center; padding: 38px 0 48px; }
 .eh-intro-lede { font: 500 1.42rem/1.4 'Manrope',sans-serif; letter-spacing: -.035em; }
