@@ -114,7 +114,27 @@
 .evhome .eh-context-link-wide { margin-top: 18px; }
 .eh-guide-card { display: flex; flex-direction: column; }
 .evhome .eh-guide-card > a { margin-top: auto; padding-top: 16px; min-height: 44px; }
+.evhome .eh-reading[hidden],
+.eh-region-intro[hidden],
+.eh-country-guide[hidden] { display: none !important; }
+.eh-region-intro { margin-top: 28px; padding: 28px; border: 1px solid #bedce9; border-radius: 18px; background: #f2faff; }
+.eh-region-intro h3 { margin: 7px 0 10px; font-size: clamp(1.2rem, 2.3vw, 1.7rem); }
+.eh-region-intro > p:last-child { margin-bottom: 0; color: var(--eh-muted); }
+.eh-region-library { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+.eh-region-library a { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 48px; padding: 14px 16px; border: 1px solid #bedce9; border-radius: 10px; background: #fff; color: #00678d; font-size: .85rem; font-weight: 700; text-decoration: none; }
+.eh-region-library a:hover { background: #e8f7ff; text-decoration: underline; text-underline-offset: 3px; }
+.eh-country-guide { display: grid; gap: 7px; padding: 15px; margin: 14px 0 7px; border-left: 3px solid var(--eh-cyan); border-radius: 8px; background: #f0f9ff; overflow-wrap: anywhere; }
+.eh-country-guide > span { color: #3d606f; font-size: .74rem; font-weight: 600; }
+.eh-country-guide > a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 4px; }
+.eh-country-guide > small { font-size: .7rem; color: var(--eh-muted); }
+.evhome .eh-map-pins button { min-height: 44px; min-width: 44px; }
 @media (max-width: 600px) {
+  .eh-region-library { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .eh-region-library a { font-size: .78rem; padding: 12px; }
+  .evhome .eh-map-stage { flex-direction: column; min-height: 0; padding: 18px 8px 10px; }
+  .evhome .eh-map-pins { position: relative; inset: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; width: 100%; padding: 12px; }
+  .evhome .eh-map-pins button { position: static; transform: none; border-radius: 10px; font-size: .8rem; }
+  .evhome .eh-map-pins button:hover { transform: none; }
   .evhome .eh-reading { align-items: flex-start; gap: 14px; border-radius: 14px; }
   .eh-reading-arrow { width: 36px; height: 36px; flex-basis: 36px; font-size: 1.1rem; }
   .eh-reading-label { font-size: .65rem; letter-spacing: .07em; }

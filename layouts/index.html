@@ -119,12 +119,13 @@
         </section>
 
         <section class="eh-panel eh-locator" id="eh-locator" aria-labelledby="eh-locator-heading">
-          <div class="eh-panel-head"><div><h3 id="eh-locator-heading">Find EV Insurance Information for Your Country or Region</h3><p>Choose a country or area to see what this guide can and cannot verify about EV insurance there. A postcode is optional, is not sent anywhere and is not looked up.</p></div><span class="eh-icon" aria-hidden="true">◎</span></div>
+          <div class="eh-panel-head"><div><h3 id="eh-locator-heading">Find Your Regional EV Insurance Guide</h3><p>Choose a country or area to see the relevant regional guide here and below the map. Guides use clearly labelled country examples, not a single rule for every market. A postcode is optional and is not looked up.</p></div><span class="eh-icon" aria-hidden="true">◎</span></div>
           <label class="eh-field"><span>Country or market</span><input id="eh-country" list="eh-country-suggestions" autocomplete="country-name" placeholder="Type a country or market"><datalist id="eh-country-suggestions"></datalist></label>
           <label class="eh-field"><span>Postcode / ZIP (optional)</span><input id="eh-postcode" autocomplete="postal-code" placeholder="For your own reference"></label>
           <p class="eh-hint">Not sent or looked up. This guide does not geocode postcodes.</p>
-          <button class="eh-button eh-button-dark" id="eh-find-location" type="button">Show local information status <span aria-hidden="true">→</span></button>
-          <div class="eh-location-result" id="eh-location-result" role="status" aria-live="polite"><div class="eh-location-heading"><strong id="eh-location-title">A note on local data</strong><span class="eh-badge">Global scope</span></div><p id="eh-location-copy">Choose or type a country for a transparent availability note. Regulations and cover details should be confirmed with local sources and your insurer.</p><a href="#eh-map">See regional coverage notes →</a></div>
+          <button class="eh-button eh-button-dark" id="eh-find-location" type="button">Show my regional guide <span aria-hidden="true">→</span></button>
+          <noscript><p class="eh-footnote">Country matching needs JavaScript. You can still open any of the six regional guides linked below the map.</p></noscript>
+          <div class="eh-location-result" id="eh-location-result" role="status" aria-live="polite"><div class="eh-location-heading"><strong id="eh-location-title">Choose your regional starting point</strong><span class="eh-badge">Regional guides</span></div><p id="eh-location-copy">Choose a country above or a region on the map for a relevant reading guide. No postcode lookup or live quotation is performed.</p><div class="eh-country-guide" id="eh-country-guide" hidden><span id="eh-country-guide-label">Regional reading</span><a id="eh-country-guide-link" href="#eh-map">Find your regional guide</a><small>A regional overview, not an individual country quote or legal assessment.</small></div><a href="#eh-map">Explore all six regions →</a></div>
           <a class="eh-context-link" href="{{ "blog/how-to-use-ev-insurance-tools/#understand-the-regional-information-notes" | relURL }}">What does the regional information status mean? <span aria-hidden="true">→</span></a>
         </section>
       </div>
@@ -167,7 +168,7 @@
 
   <section class="eh-section" id="eh-map">
     <div class="eh-container">
-      <header class="eh-section-head"><div><p class="eh-eyebrow">A world view, without made-up averages</p><h2>EV Insurance Costs by Region: What Is and Isn't Available</h2></div><p>Pick a region to see whether EV insurance cost information is available. "Unavailable" is a useful answer when evidence is not there, and this guide does not publish worldwide cost averages.</p></header>
+      <header class="eh-section-head"><div><p class="eh-eyebrow">Local context, clearly labelled</p><h2>EV Insurance Guides by Region: Start with Local Rules</h2></div><p>Choose a map region to see its guide below. Choosing a country in the tool above selects its region automatically. Each guide identifies its country examples; none supplies a regional premium average or replaces your own policy.</p></header>
       <div class="eh-map-layout">
         <div>
           <div class="eh-map-stage">
@@ -180,18 +181,30 @@
               <path class="eh-land" data-shape="asia" d="M426 105l29-22 41 4 27 15 52-4 18 16 35-2 23 18-10 20-36 5-10 17-25-5-22 14-19-9-27 6-19-13-24 2-19-15-24 4-11-18-27 1-7-15zM579 178l27-9 22 10 10 23-13 10-17-7-10-15-20 3z"/>
               <path class="eh-land" data-shape="oceania" d="M614 248l24-11 30 10 16 25-13 17-30-4-16-15z"/>
             </svg>
-            <div class="eh-map-pins" role="group" aria-label="Choose an illustrative region">
+            <div class="eh-map-pins" role="group" aria-label="Choose a region for its insurance guide">
               <button data-region="north-america" style="--x:14%;--y:35%">N. America</button><button data-region="south-america" style="--x:29%;--y:70%">S. America</button><button data-region="europe" style="--x:45%;--y:26%">Europe</button><button data-region="africa" style="--x:47%;--y:59%">Africa</button><button data-region="asia" style="--x:70%;--y:35%">Asia</button><button data-region="oceania" style="--x:82%;--y:72%">Oceania</button>
             </div>
           </div>
           <p class="eh-map-caption">Illustrative regions only—not regulatory boundaries. Region shapes are schematic and not to scale.</p>
         </div>
-        <aside class="eh-map-detail" id="eh-region-status" aria-live="polite"><p class="eh-eyebrow">Regional information status</p><h3 id="eh-region-title">North America</h3><p id="eh-region-copy">The companion workbook contains U.S.-only state and vehicle references. Those materials are not a worldwide cost benchmark, and no regional premium figures are published here.</p><div class="eh-availability"><strong>Cost data: not available here.</strong><br>No price scale or color coding is shown because no verified comparable values are published.</div></aside>
+        <aside class="eh-map-detail" id="eh-region-status" aria-live="polite"><p class="eh-eyebrow">Regional reading guide</p><h3 id="eh-region-title">Choose your region</h3><p id="eh-region-copy">Six regional guides are available below. Choose a map region or a recognised country above to see the matching guide. Country examples are clearly labelled; no regional premium dataset or live quote is provided.</p><div class="eh-availability"><strong>Guidance is available; local quotes are not.</strong><br>Region groupings are for navigation, not legal boundaries. Confirm current local requirements and your contract.</div></aside>
       </div>
-      <a class="eh-reading eh-reading-local" href="{{ "blog/ev-insurance-rules-by-state/" | relURL }}">
-        <div class="eh-reading-copy"><span class="eh-reading-label">Start with your jurisdiction · U.S. guide</span><strong>Which rules apply where you drive?</strong><p>For U.S. readers: a practical route to state guidance, lender requirements and policy wording—not a worldwide price estimate.</p><span class="eh-reading-action">Read the U.S. state-checking guide</span></div>
-        <span class="eh-reading-arrow" aria-hidden="true">↗</span>
-      </a>
+      <div class="eh-regional-reading" aria-live="polite" aria-atomic="true">
+        <div class="eh-region-intro" id="eh-region-guide-intro"><p class="eh-eyebrow">Six regions, clearer starting points</p><h3>Find the guide for where you drive.</h3><p>Choose a map region or a country above. The matching article will appear here; every guide is also linked below.</p></div>
+        <a class="eh-reading eh-reading-local" id="eh-region-guide" href="{{ "blog/" | relURL }}" hidden>
+          <div class="eh-reading-copy"><span class="eh-reading-label" id="eh-region-guide-label">Your regional reading guide</span><strong id="eh-region-guide-title">Start with the right local questions.</strong><p id="eh-region-guide-copy">Choose a region for its country examples and practical insurance checklist.</p><span class="eh-reading-action" id="eh-region-guide-action">Choose a regional guide</span></div>
+          <span class="eh-reading-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <nav class="eh-region-library" aria-label="Regional EV insurance guides">
+        <a href="{{ "blog/ev-insurance-north-america-guide/" | relURL }}" data-guide-region="north-america" data-guide-label="North America · U.S., Canada and Mexico examples" data-guide-title="One region. Different insurance systems." data-guide-copy="Check local requirements, battery protection and cross-border questions. Canadian and Mexican readers get their own starting points—not U.S.-only advice.">North America <span aria-hidden="true">↗</span></a>
+        <a href="{{ "blog/ev-insurance-south-america-guide/" | relURL }}" data-guide-region="south-america" data-guide-label="South America · Brazil, Chile, Colombia and Argentina examples" data-guide-title="Know what protects people—and what protects your EV." data-guide-copy="Separate injury schemes, liability and own-car protection before comparing battery, repair and travel terms.">South America <span aria-hidden="true">↗</span></a>
+        <a href="{{ "blog/ev-insurance-europe-guide/" | relURL }}" data-guide-region="europe" data-guide-label="Europe · EU and UK examples" data-guide-title="Crossing a border? Check what follows you." data-guide-copy="Understand compulsory liability, optional protection and foreign-use questions without treating Europe as one insurance jurisdiction.">Europe <span aria-hidden="true">↗</span></a>
+        <a href="{{ "blog/ev-insurance-africa-guide/" | relURL }}" data-guide-region="africa" data-guide-label="Africa · Nigeria, Kenya, Morocco and South Africa examples" data-guide-title="Start with your country, then check your EV." data-guide-copy="Verify the provider, separate compulsory protection from battery and vehicle cover, and plan for repair and claim questions.">Africa <span aria-hidden="true">↗</span></a>
+        <a href="{{ "blog/ev-insurance-asia-guide/" | relURL }}" data-guide-region="asia" data-guide-label="Asia · India, Singapore, Japan and UAE examples" data-guide-title="Familiar insurance terms can mean different protection." data-guide-copy="See why injury, liability, battery damage and your own vehicle need separate questions in each market.">Asia <span aria-hidden="true">↗</span></a>
+        <a href="{{ "blog/ev-insurance-oceania-guide/" | relURL }}" data-guide-region="oceania" data-guide-label="Oceania · Australia, New Zealand and Pacific-market cautions" data-guide-title="Injury protection is not your EV repair policy." data-guide-copy="Separate compulsory arrangements, motor property cover and battery repairs. Australian and New Zealand examples are not rules for every Pacific market.">Oceania <span aria-hidden="true">↗</span></a>
+      </nav>
+      <p class="eh-source-note">Navigation follows broad <a href="https://unstats.un.org/unsd/methodology/m49/overview/" target="_blank" rel="noopener noreferrer">UN statistical groupings</a>, with Central America and the Caribbean grouped under North America here. Transcontinental places and territories still require their own local checks.</p>
     </div>
   </section>
 

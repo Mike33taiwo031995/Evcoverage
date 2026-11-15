@@ -123,7 +123,7 @@ The NAIC directory identifies state departments; it does not replace their indiv
 
 If the issue crosses insurance, finance and technical matters, keep the answers separate and identify what remains unresolved. A single informal “you should be fine” may answer none of the important details.
 
-For the homepage's broader regional feature, see [how the EV insurance tools work](/blog/how-to-use-ev-insurance-tools/). This U.S. article is a first jurisdiction-specific guide, not evidence that equivalent country guides or worldwide pricing are already available.
+For Canadian and Mexican examples, see the [North America regional guide](/blog/ev-insurance-north-america-guide/). The homepage also links the other five regions. These guides provide named country examples and verification questions, not worldwide pricing or a complete legal register for every country.
 
 ## Frequently asked questions
 
