@@ -87,6 +87,8 @@
       if (byId('eh-gap-currency')) byId('eh-gap-currency').value = currency;
       if (byId('eh-quote-currency-a')) byId('eh-quote-currency-a').value = currency;
       if (byId('eh-quote-currency-b')) byId('eh-quote-currency-b').value = currency;
+      if (byId('eh-loan')) refreshGap();
+      if (byId('eh-quote-a')) refreshQuotes();
     });
   }
 

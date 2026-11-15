@@ -4,7 +4,7 @@ seo_title: "EV Collision Repair: Costs, Battery Damage and Claims"
 description: "EV collision repair averaged $5,684 per repairable claim vs $4,955 for gas cars in Q2 2026. Learn about battery damage, insurance and total loss."
 slug: "electric-vehicle-collision-repair"
 date: 2026-11-06
-lastmod: 2026-11-06
+lastmod: 2026-11-15
 author: "EV Insurance Guide"
 draft: false
 categories: ["Claims and total loss"]
@@ -159,6 +159,8 @@ You generally have the right to choose your shop. Maine's regulator says you are
 5. Will you call me for approval if the estimate grows after teardown?
 
 {{< adslot 4 >}}
+
+Still waiting for a repair decision or a part? Our guide to [EV repair delays, rental cover and storage charges](/blog/ev-insurance-repair-delays-rental-storage/) explains which timelines and payment arrangements to track separately.
 
 ## Frequently asked questions
 

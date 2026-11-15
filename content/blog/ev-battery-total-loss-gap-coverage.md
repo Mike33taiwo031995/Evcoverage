@@ -4,7 +4,7 @@ seo_title: "EV Battery Damage: Total Loss and GAP Coverage Explained"
 description: "Does EV battery damage total your car? Learn how insurers decide a total loss, why repair costs matter, and where GAP coverage fits when you owe more."
 slug: "ev-battery-total-loss-gap-coverage"
 date: 2026-10-01
-lastmod: 2026-10-01
+lastmod: 2026-11-15
 author: "EV Insurance Guide"
 draft: false
 categories: ["Claims and GAP"]
@@ -83,6 +83,8 @@ The CFPB is explicit that GAP has real eligibility restrictions. It's generally 
 This is the fourth piece in our EV battery insurance series — see [EV Battery Warranty vs. Insurance](/blog/ev-battery-warranty-vs-insurance/) for how warranty and insurance divide responsibility in the first place, and our companion piece on what happens immediately after an accident for how the inspection process that leads to these numbers actually works.
 
 {{< adslot 5 >}}
+
+Before a loss occurs, use our [loan-versus-value calculator guide](/blog/ev-loan-balance-vs-value-calculator-guide/) to understand the figures you enter and why the result is not a GAP eligibility decision.
 
 ### Frequently asked questions
 
