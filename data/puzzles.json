@@ -1,0 +1,47 @@
+{
+  "epoch": "2026-11-16T00:00:00Z",
+  "items": [
+    {
+      "id": "find-86",
+      "enabled": true,
+      "image": "/images/puzzles/find-86.webp",
+      "width": 736,
+      "height": 1104,
+      "alt": "A grid of numbers with one 86 hidden among the 68s.",
+      "prompt": "Where is 86? Enter its row and column.",
+      "help": "Count from the top-left number, starting at 1. Enter row, column—for example, 3, 4.",
+      "placeholder": "Row, column",
+      "mode": "position",
+      "answers": ["11,7"],
+      "explanation": "The 86 is in row 11, column 7, counting from the top-left number."
+    },
+    {
+      "id": "odd-letter",
+      "enabled": true,
+      "image": "/images/puzzles/odd-letter.webp",
+      "width": 736,
+      "height": 1104,
+      "alt": "A ten-by-ten grid of letters with one different letter.",
+      "prompt": "Which letter is the odd one out?",
+      "help": "Type the different letter. You do not need to enter its position.",
+      "placeholder": "Your answer",
+      "mode": "text",
+      "answers": ["f", "letter f", "the letter f"],
+      "explanation": "F is the odd letter, in row 5, column 7."
+    },
+    {
+      "id": "different-fish",
+      "enabled": true,
+      "image": "/images/puzzles/different-fish.webp",
+      "width": 735,
+      "height": 919,
+      "alt": "Four numbered illustrations of fish and fishing rods.",
+      "prompt": "Which fish has different body markings?",
+      "help": "Compare the fish, not the reels. Enter the panel number: 1, 2, 3 or 4.",
+      "placeholder": "Panel number",
+      "mode": "text",
+      "answers": ["4", "four", "number 4", "panel 4", "fish 4"],
+      "explanation": "The fish in panel 4 lacks the body stripes visible on the other three fish."
+    }
+  ]
+}

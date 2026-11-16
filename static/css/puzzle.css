@@ -1,0 +1,38 @@
+.ep-section { background: #fff8f1; }
+.ep-card { display: grid; grid-template-columns: 1fr 1.05fr; grid-template-areas: "intro visual" "play visual"; gap: 0 36px; padding: clamp(22px,4vw,48px); border: 1px solid #edd9c8; border-radius: 24px; background: #fff; box-shadow: 0 18px 60px rgba(68,42,20,.06); }
+.ep-intro { grid-area: intro; }
+.ep-intro h2 { margin: 12px 0 16px; max-width: 600px; font-size: clamp(1.65rem,3vw,2.6rem); line-height: 1.13; letter-spacing: -.04em; text-wrap: balance; }
+.ep-schedule { font-size: .77rem; color: #72523b; }
+.ep-visual { position: relative; grid-area: visual; align-self: center; display: grid; place-items: center; height: 540px; padding: 10px 10px 58px; border: 1px solid #e4e9ed; border-radius: 16px; background: #f6f8f9; overflow: hidden; min-width: 0; }
+.ep-visual > img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.ep-zoom { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; padding: 10px 18px; border: 1px solid #b9ceda; border-radius: 30px; background: #fff; color: #0e2233; font-size: .75rem; font-weight: 700; white-space: nowrap; }
+.ep-play { grid-area: play; align-self: start; min-width: 0; }
+.ep-play h3 { margin: 20px 0 8px; font-size: 1.1rem; line-height: 1.35; }
+.ep-help { color: #526b7d; font-size: .79rem; line-height: 1.6; }
+.ep-answer-row { display: flex; flex-wrap: wrap; gap: 9px; }
+.ep-play label { display: block; margin: 18px 0 8px; font-size: .8rem; font-weight: 700; }
+.ep-play input { flex: 1 1 150px; width: 100%; min-width: 0; min-height: 48px; border: 1px solid #bcced8; border-radius: 10px; padding: 12px; color: #0e2233; background: #fff; font: inherit; font-size: 1rem; }
+.ep-play button,.ep-dialog button { min-height: 48px; padding: 12px 17px; border: 0; border-radius: 10px; background: #0e2233; color: #fff; font: inherit; font-size: .8rem; font-weight: 700; cursor: pointer; }
+.ep-play button:disabled { background: #537065; cursor: default; }
+.ep-play input:disabled { background: #f3faf6; color: #315c48; opacity: 1; }
+.ep-feedback { margin: 16px 0 0; font-size: .85rem; line-height: 1.65; overflow-wrap: anywhere; color: #684530; }
+.ep-feedback:empty { display: none; }
+.ep-flower { display: inline-block; width: 26px; height: 26px; vertical-align: -.32em; margin-left: 4px; }
+.ep-feedback[data-state="correct"] { padding: 14px 16px; border: 1px solid #b9ddc8; border-radius: 12px; background: #eef9f2; color: #20543b; font-size: 1.1rem; font-weight: 700; }
+.ep-attempts,.ep-next,.ep-explanation { font-size: .73rem; line-height: 1.6; color: #526b7d; }
+.ep-explanation { color: #315c48; }
+.ep-next { padding-top: 12px; border-top: 1px solid #e4e9ed; }
+.ep-dialog { width: min(96vw,1000px); max-width: 96vw; max-height: 94dvh; border: 0; border-radius: 16px; padding: 18px; background: #fff; color: #0e2233; font: 15px/1.5 system-ui,sans-serif; }
+.ep-dialog::backdrop { background: rgba(7,22,35,.78); }
+.ep-dialog-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.ep-dialog > p { color: #526b7d; font-size: 13px; }
+.ep-dialog-image { max-height: calc(94dvh - 135px); overflow: auto; border-radius: 8px; background: #f3f7fa; }
+.ep-dialog-image > img { display: block; max-width: none; width: auto; height: auto; margin: auto; }
+.ep-section [hidden] { display: none !important; }
+.ep-section :is(a,button,input):focus-visible,.ep-dialog button:focus-visible { outline: 3px solid #cf5f24; outline-offset: 3px; }
+@media(max-width:760px) {
+  .ep-card { grid-template-columns: minmax(0,1fr); grid-template-areas: "intro" "visual" "play"; gap: 16px; }
+  .ep-visual { height: 470px; }
+  .ep-play h3 { margin-top: 4px; }
+  .ep-intro h2 { font-size: clamp(1.55rem,6vw,2.1rem); }
+}
