@@ -44,95 +44,95 @@
       "explanation": "The fish in panel 4 lacks the body stripes visible on the other three fish."
     },
     {
-      "id": "animal-tree", "source_number": 2, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "animal-tree", "source_number": 2, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/animal-tree.webp", "width": 736, "height": 920,
       "alt": "Animal silhouettes arranged around a tree.", "prompt": "How many animals can you find?",
       "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["13", "thirteen", "13 animals", "thirteen animals"], "explanation": "The intended total is 13 animals."
     },
     {
-      "id": "striped-hidden-image", "source_number": 6, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "striped-hidden-image", "source_number": 6, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/striped-hidden-image.webp", "width": 720, "height": 796,
       "alt": "A striped picture containing a hidden image.", "prompt": "What is hidden in this picture?",
       "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["cat", "a cat", "the cat"], "explanation": "The hidden animal is a cat."
     },
     {
-      "id": "missing-bone-piece", "source_number": 7, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "missing-bone-piece", "source_number": 7, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/missing-bone-piece.webp", "width": 735, "height": 919,
       "alt": "A missing-piece picture puzzle with numbered options.", "prompt": "Which piece fits the gap?",
-      "help": "Two pieces share a label. Include the piece's location in your answer.", "placeholder": "Piece number and location",
-      "mode": "text", "answers": [], "explanation": ""
+      "help": "Enter the piece number in figures or words.", "placeholder": "Piece number",
+      "mode": "text", "answers": ["7", "seven", "piece 7", "piece seven", "number 7", "number seven"], "explanation": "The intended matching piece is number 7."
     },
     {
-      "id": "slide-race", "source_number": 8, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "slide-race", "source_number": 8, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/slide-race.webp", "width": 720, "height": 834,
-      "alt": "People on different slides in a picture puzzle.", "prompt": "Who reaches the bottom first?",
-      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "alt": "Four slides with different shapes, arranged from left to right.", "prompt": "Which slide is straight?",
+      "help": "Count the slides from left to right, starting at 1. Enter the number or its name.", "placeholder": "Slide number",
+      "mode": "text", "answers": ["1", "one", "first", "the first", "slide 1", "slide one", "first slide", "leftmost", "the leftmost"], "explanation": "Slide 1, the leftmost slide, is straight."
     },
     {
-      "id": "boy-drink-pipes", "source_number": 9, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "boy-drink-pipes", "source_number": 9, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/boy-drink-pipes.webp", "width": 650, "height": 812,
       "alt": "A boy and drinks connected by crossing pipes.", "prompt": "Which drink reaches the boy?",
       "help": "Trace the pipe and enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["tea", "coffee", "tea or coffee"], "explanation": "The supplied answer key accepts tea or coffee."
     },
     {
-      "id": "bucket-tap-pipes", "source_number": 10, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "bucket-tap-pipes", "source_number": 10, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/bucket-tap-pipes.webp", "width": 480, "height": 718,
       "alt": "Four taps and crossing pipes leading toward a bucket.", "prompt": "Which tap fills the bucket?",
-      "help": "Trace the pipe and enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "help": "Count the taps from left to right, starting at 1. Enter the tap number in figures or words.", "placeholder": "Tap number",
+      "mode": "text", "answers": ["2", "two", "second", "the second", "tap 2", "tap two", "second tap", "number 2", "number two"], "explanation": "The intended answer is tap 2, counting from the left."
     },
     {
-      "id": "man-drink-pipes", "source_number": 11, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "man-drink-pipes", "source_number": 11, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/man-drink-pipes.webp", "width": 736, "height": 1104,
       "alt": "A man and four drinks connected by crossing pipes.", "prompt": "Which drink reaches the man?",
       "help": "Trace the pipe and enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["juice", "fruit juice", "the juice"], "explanation": "The intended drink is juice."
     },
     {
-      "id": "green-hidden-cats", "source_number": 12, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "green-hidden-cats", "source_number": 12, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/green-hidden-cats.webp", "width": 720, "height": 1107,
       "alt": "Cats camouflaged in a green forest illustration.", "prompt": "How many cats can you find?",
       "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["13", "thirteen", "13 cats", "thirteen cats"], "explanation": "The intended total is 13 green cats, including hidden ones."
     },
     {
-      "id": "nested-animal-silhouettes", "source_number": 13, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "nested-animal-silhouettes", "source_number": 13, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/nested-animal-silhouettes.webp", "width": 320, "height": 224,
       "alt": "A small illustration of nested animal silhouettes.", "prompt": "How many animals can you find?",
       "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["6", "six", "6 animals", "six animals"], "explanation": "The intended total is 6 animals."
     },
     {
-      "id": "orange-hidden-cats", "source_number": 14, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "orange-hidden-cats", "source_number": 14, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/orange-hidden-cats.webp", "width": 736, "height": 1308,
       "alt": "An orange illustration containing multiple cat faces.", "prompt": "How many cats can you find?",
       "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["15", "fifteen", "15 cats", "fifteen cats"], "explanation": "The intended total is 15 cats, including the hidden faces."
     },
     {
-      "id": "dogs-in-tree", "source_number": 15, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "dogs-in-tree", "source_number": 15, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/dogs-in-tree.webp", "width": 735, "height": 728,
       "alt": "Dogs hidden among the branches and leaves of a tree.", "prompt": "How many dogs can you find?",
       "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["8", "eight", "8 dogs", "eight dogs"], "explanation": "The intended total is 8 dogs, including hidden ones."
     },
     {
-      "id": "find-the-mistake", "source_number": 16, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "find-the-mistake", "source_number": 16, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/find-the-mistake.webp", "width": 480, "height": 360,
-      "alt": "A find-the-mistake puzzle with a printed number sequence.", "prompt": "What is the mistake?",
-      "help": "Describe the mistake using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "alt": "A find-the-mistake puzzle with a printed number sequence.", "prompt": "Which whole number comes immediately before 1?",
+      "help": "Look at the start of the sequence. Enter the starting number before 1, in figures or words.", "placeholder": "Your answer",
+      "mode": "text", "answers": ["0", "zero", "number 0", "number zero"], "explanation": "0 (zero) is the whole number immediately before 1."
     },
     {
-      "id": "elephant-hidden-animals", "source_number": 17, "enabled": false, "answer_status": "pending_confirmation",
+      "id": "elephant-hidden-animals", "source_number": 17, "enabled": true, "answer_status": "user_confirmed",
       "image": "/images/puzzles/elephant-hidden-animals.webp", "width": 593, "height": 818,
       "alt": "An elephant outline containing other animal silhouettes.", "prompt": "How many animals can you find?",
       "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
-      "mode": "text", "answers": [], "explanation": ""
+      "mode": "text", "answers": ["9", "nine", "9 animals", "nine animals"], "explanation": "The intended total is 9 animals."
     }
   ]
 }
