@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const DAY = 86400000;
+  const PROGRESS_KEY = 'ev-puzzle:progress:v1';
   const RETRY = 'oh wow! That was cool and almost correct, try again this ones';
   const normalize = (value) => String(value).normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -34,7 +35,35 @@
     const answer = normalize(value);
     return !!answer && puzzle.answers.some((expected) => normalize(expected) === answer);
   }
-  if (typeof module !== 'undefined' && module.exports) module.exports = { pool, schedule, matches, RETRY };
+  // A UTC calendar day matches the shared puzzle schedule, including 12/8-hour tiers.
+  // Browser-local progress is convenience tracking, not secure contest validation.
+  function trackProgress(value, now, correct = false) {
+    const today = Math.floor(now / DAY);
+    if (!Number.isSafeInteger(today) || today < 0) return null;
+    const raw = value && typeof value === 'object' ? value : {};
+    const integer = (n) => Number.isSafeInteger(n) && n >= 0;
+    const progress = {
+      version: 1,
+      visits: integer(raw.visits) ? Math.min(raw.visits, 1000000) : 0,
+      lastVisitDay: integer(raw.lastVisitDay) ? raw.lastVisitDay : null,
+      streak: integer(raw.streak) ? Math.min(raw.streak, 1000000) : 0,
+      lastCorrectDay: integer(raw.lastCorrectDay) ? raw.lastCorrectDay : null,
+      earned: raw.earned === true
+    };
+    if (progress.lastCorrectDay === null || today - progress.lastCorrectDay > 1) progress.streak = 0;
+    if (progress.lastVisitDay === null || today > progress.lastVisitDay) {
+      progress.visits += 1;
+      progress.lastVisitDay = today;
+    }
+    if (correct && (progress.lastCorrectDay === null || today > progress.lastCorrectDay)) {
+      progress.streak = today - progress.lastCorrectDay === 1 && progress.lastCorrectDay !== null
+        ? progress.streak + 1 : 1;
+      progress.lastCorrectDay = today;
+      if (progress.streak >= 5) progress.earned = true;
+    }
+    return progress;
+  }
+  if (typeof module !== 'undefined' && module.exports) module.exports = { pool, schedule, matches, trackProgress, RETRY };
   if (typeof document === 'undefined') return;
   const root = document.getElementById('eh-puzzle'), data = document.getElementById('ep-data');
   if (!root || !data) return;
@@ -45,7 +74,31 @@
   const get = (id) => document.getElementById('ep-' + id);
   const form = get('form'), input = get('answer'), feedback = get('feedback');
   const memory = Object.create(null);
+  let progressMemory = null, storageAvailable = true;
   let current = null, key = '', state = { attempts: 0, solved: false }, timer;
+  function updateProgress(correct = false) {
+    if (document.hidden && !correct) return;
+    let saved = progressMemory;
+    try { saved = JSON.parse(localStorage.getItem(PROGRESS_KEY)) || saved; }
+    catch (_) { storageAvailable = false; }
+    const progress = trackProgress(saved, Date.now(), correct);
+    progressMemory = progress;
+    try {
+      const serialized = JSON.stringify(progress);
+      if (localStorage.getItem(PROGRESS_KEY) !== serialized) localStorage.setItem(PROGRESS_KEY, serialized);
+      storageAvailable = true;
+    } catch (_) { storageAvailable = false; }
+    const text = (id, value) => { if (get(id).textContent !== value) get(id).textContent = value; };
+    get('progress').hidden = false;
+    text('visits', `Days visited: ${progress.visits}. Each UTC day counts once.`);
+    text('streak', `Correct-answer streak: ${Math.min(progress.streak, 5)} of 5 consecutive days.${progress.streak > 5 ? ` ${progress.streak} days running!` : ''}`);
+    get('meter').value = Math.min(progress.streak, 5);
+    text('progress-note', storageAvailable
+      ? 'Unlimited tries. Answer correctly at least once each UTC day. A missed correct-answer day resets the streak. Progress stays in this browser; clearing site data or changing devices starts fresh.'
+      : 'Unlimited tries. Browser storage is unavailable, so progress may be lost when you close or reload this page. Enable site storage to save your five-day streak.');
+    get('claim').hidden = !progress.earned;
+    get('reward-link').hidden = !progress.earned;
+  }
   function load(storageKey) {
     let value = memory[storageKey];
     try { value = JSON.parse(localStorage.getItem(storageKey)) || value; } catch (_) { /* optional storage */ }
@@ -64,7 +117,7 @@
     get('attempts').textContent = state.attempts
       ? `${state.solved ? 'Solved in' : 'Attempts:'} ${state.attempts}${state.solved ? (state.attempts === 1 ? ' try.' : ' tries.') : ''}` : '';
     if (state.solved) {
-      feedback.textContent = 'Congratulations! ';
+      feedback.textContent = "Oh wow! Congratulations, you are truly a smart EV Owner, comeback tomorrow for a little tougher one, let's see if you can get that one too ";
       // Draw the flower so it also renders on devices without emoji fonts.
       const ns = 'http://www.w3.org/2000/svg';
       const flower = document.createElementNS(ns, 'svg');
@@ -81,6 +134,12 @@
       for (const [attribute, value] of Object.entries({ cx: 12, cy: 12, r: 3.8, fill: '#f3c64e' })) centre.setAttribute(attribute, value);
       flower.appendChild(centre);
       feedback.appendChild(flower);
+      const reward = document.createElement('span');
+      reward.className = 'ep-reward';
+      const label = document.createElement('strong');
+      label.textContent = 'Good news: ';
+      reward.append(label, 'Only for smart EV owners, you will earn The 3 EV Insurance Mistakes guide for $0 if you answer our puzzles correctly for 5 consecutive days.');
+      feedback.appendChild(reward);
       feedback.dataset.state = 'correct';
     }
   }
@@ -104,6 +163,7 @@
       feedback.textContent = ''; delete feedback.dataset.state;
       showState();
     }
+    updateProgress(state.solved);
     get('schedule').textContent = current.frequency === 1 ? 'A fresh puzzle every 24 hours.'
       : current.frequency === 2 ? 'A fresh puzzle every 12 hours.' : 'A fresh puzzle every 8 hours.';
     const date = new Date(current.next);
@@ -132,6 +192,7 @@
     state.attempts += 1;
     state.solved = matches(current.puzzle, input.value);
     save();
+    updateProgress(state.solved);
     if (!state.solved) {
       feedback.textContent = RETRY;
       feedback.dataset.state = 'retry';
@@ -144,6 +205,10 @@
   window.addEventListener('pageshow', render);
   window.addEventListener('storage', (event) => {
     if (event.key === key) { state = load(key); showState(); }
+    if (event.key === PROGRESS_KEY || event.key === key || event.key === null) {
+      if (event.key === null || (event.key === PROGRESS_KEY && event.newValue === null)) progressMemory = null;
+      updateProgress();
+    }
   });
   const dialog = get('dialog');
   get('zoom').addEventListener('click', (event) => {
