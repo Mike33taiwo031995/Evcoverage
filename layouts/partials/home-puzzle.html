@@ -1,0 +1,41 @@
+{{ $items := where .Site.Data.puzzles.items "enabled" true }}
+{{ if gt (len $items) 0 }}
+{{ $first := index $items 0 }}
+<section class="eh-section ep-section" id="eh-puzzle" aria-labelledby="ep-heading" data-nosnippet>
+  <div class="eh-container">
+    <div class="ep-card">
+      <header class="ep-intro">
+        <p class="eh-eyebrow">A quick puzzle break</p>
+        <h2 id="ep-heading">Smart EV owners get this in max of two tries, let's see if you will get it once.</h2>
+        <p class="ep-schedule" id="ep-schedule">A fresh puzzle every day.</p>
+      </header>
+      <div class="ep-visual">
+        <img id="ep-image" src="{{ $first.image | relURL }}" width="{{ $first.width }}" height="{{ $first.height }}" alt="{{ $first.alt }}" loading="lazy" decoding="async">
+        <a id="ep-zoom" class="ep-zoom" href="{{ $first.image | relURL }}" target="_blank" rel="noopener noreferrer">Zoom picture <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="ep-play">
+        <h3 id="ep-question">{{ $first.prompt }}</h3>
+        <p class="ep-help" id="ep-help">{{ $first.help }}</p>
+        <form id="ep-form" novalidate hidden>
+          <label for="ep-answer">Your answer</label>
+          <div class="ep-answer-row">
+            <input id="ep-answer" type="text" maxlength="120" placeholder="{{ $first.placeholder }}" autocomplete="off" spellcheck="false" aria-describedby="ep-help ep-feedback">
+            <button id="ep-submit" type="submit">Check answer <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+        <noscript><p class="ep-help">Turn on JavaScript to check your answer and load the scheduled puzzle. You can still zoom the picture.</p></noscript>
+        <p id="ep-feedback" class="ep-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+        <p id="ep-explanation" class="ep-explanation" hidden></p>
+        <p id="ep-attempts" class="ep-attempts"></p>
+        <p class="ep-next" id="ep-next"></p>
+      </div>
+    </div>
+  </div>
+  <dialog id="ep-dialog" class="ep-dialog" aria-labelledby="ep-dialog-title">
+    <div class="ep-dialog-bar"><strong id="ep-dialog-title">Puzzle close-up</strong><button type="button" id="ep-close" autofocus>Close <span aria-hidden="true">×</span></button></div>
+    <p>Scroll to inspect the full-size picture.</p>
+    <div class="ep-dialog-image"><img id="ep-large" src="{{ $first.image | relURL }}" alt="{{ $first.alt }}" loading="lazy"></div>
+  </dialog>
+  <script type="application/json" id="ep-data">{{ dict "epoch" .Site.Data.puzzles.epoch "items" $items | jsonify | safeJS }}</script>
+</section>
+{{ end }}

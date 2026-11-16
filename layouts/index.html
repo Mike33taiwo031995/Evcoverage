@@ -1,5 +1,6 @@
 {{ define "head" }}
 <link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/puzzle.css" | relURL }}">
 {{ end }}
 {{ define "main" }}
 {{ $homeJS := "js/home.js" | relURL }}
@@ -208,6 +209,8 @@
     </div>
   </section>
 
+  {{ partial "home-puzzle.html" . }}
+
   <section class="eh-section eh-section-white" id="eh-guide">
     <div class="eh-container">
       <header class="eh-section-head"><div><p class="eh-eyebrow">The EV-specific questions</p><h2>EV Insurance Questions to Ask: Battery, Repair, Charger and Loan</h2></div><p>Use these as a starting point. Answers depend on policy wording, local rules and details of your vehicle.</p></header>
@@ -259,4 +262,5 @@
   </section>
 </div>
 <script src="{{ $homeJS }}" defer></script>
+<script src="{{ "js/puzzle.js" | relURL }}" defer></script>
 {{ end }}
