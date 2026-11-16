@@ -42,6 +42,97 @@
       "mode": "text",
       "answers": ["4", "four", "number 4", "panel 4", "fish 4"],
       "explanation": "The fish in panel 4 lacks the body stripes visible on the other three fish."
+    },
+    {
+      "id": "animal-tree", "source_number": 2, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/animal-tree.webp", "width": 736, "height": 920,
+      "alt": "Animal silhouettes arranged around a tree.", "prompt": "How many animals can you find?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "striped-hidden-image", "source_number": 6, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/striped-hidden-image.webp", "width": 720, "height": 796,
+      "alt": "A striped picture containing a hidden image.", "prompt": "What is hidden in this picture?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "missing-bone-piece", "source_number": 7, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/missing-bone-piece.webp", "width": 735, "height": 919,
+      "alt": "A missing-piece picture puzzle with numbered options.", "prompt": "Which piece fits the gap?",
+      "help": "Two pieces share a label. Include the piece's location in your answer.", "placeholder": "Piece number and location",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "slide-race", "source_number": 8, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/slide-race.webp", "width": 720, "height": 834,
+      "alt": "People on different slides in a picture puzzle.", "prompt": "Who reaches the bottom first?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "boy-drink-pipes", "source_number": 9, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/boy-drink-pipes.webp", "width": 650, "height": 812,
+      "alt": "A boy and drinks connected by crossing pipes.", "prompt": "Which drink reaches the boy?",
+      "help": "Trace the pipe and enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "bucket-tap-pipes", "source_number": 10, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/bucket-tap-pipes.webp", "width": 480, "height": 718,
+      "alt": "Four taps and crossing pipes leading toward a bucket.", "prompt": "Which tap fills the bucket?",
+      "help": "Trace the pipe and enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "man-drink-pipes", "source_number": 11, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/man-drink-pipes.webp", "width": 736, "height": 1104,
+      "alt": "A man and four drinks connected by crossing pipes.", "prompt": "Which drink reaches the man?",
+      "help": "Trace the pipe and enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "green-hidden-cats", "source_number": 12, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/green-hidden-cats.webp", "width": 720, "height": 1107,
+      "alt": "Cats camouflaged in a green forest illustration.", "prompt": "How many cats can you find?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "nested-animal-silhouettes", "source_number": 13, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/nested-animal-silhouettes.webp", "width": 320, "height": 224,
+      "alt": "A small illustration of nested animal silhouettes.", "prompt": "How many animals can you find?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "orange-hidden-cats", "source_number": 14, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/orange-hidden-cats.webp", "width": 736, "height": 1308,
+      "alt": "An orange illustration containing multiple cat faces.", "prompt": "How many cats can you find?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "dogs-in-tree", "source_number": 15, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/dogs-in-tree.webp", "width": 735, "height": 728,
+      "alt": "Dogs hidden among the branches and leaves of a tree.", "prompt": "How many dogs can you find?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "find-the-mistake", "source_number": 16, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/find-the-mistake.webp", "width": 480, "height": 360,
+      "alt": "A find-the-mistake puzzle with a printed number sequence.", "prompt": "What is the mistake?",
+      "help": "Describe the mistake using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
+    },
+    {
+      "id": "elephant-hidden-animals", "source_number": 17, "enabled": false, "answer_status": "pending_confirmation",
+      "image": "/images/puzzles/elephant-hidden-animals.webp", "width": 593, "height": 818,
+      "alt": "An elephant outline containing other animal silhouettes.", "prompt": "How many animals can you find?",
+      "help": "Enter your answer using letters or numbers.", "placeholder": "Your answer",
+      "mode": "text", "answers": [], "explanation": ""
     }
   ]
 }

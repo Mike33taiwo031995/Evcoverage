@@ -19,7 +19,7 @@
         <form id="ep-form" novalidate hidden>
           <label for="ep-answer">Your answer</label>
           <div class="ep-answer-row">
-            <input id="ep-answer" type="text" maxlength="120" placeholder="{{ $first.placeholder }}" autocomplete="off" spellcheck="false" aria-describedby="ep-help ep-feedback">
+            <input id="ep-answer" type="text" inputmode="text" maxlength="120" placeholder="{{ $first.placeholder }}" autocomplete="off" spellcheck="false" aria-describedby="ep-help ep-feedback">
             <button id="ep-submit" type="submit">Check answer <span aria-hidden="true">→</span></button>
           </div>
         </form>
@@ -27,6 +27,14 @@
         <p id="ep-feedback" class="ep-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
         <p id="ep-explanation" class="ep-explanation" hidden></p>
         <p id="ep-attempts" class="ep-attempts"></p>
+        <div id="ep-progress" class="ep-progress" hidden>
+          <p id="ep-visits"></p>
+          <label for="ep-meter" id="ep-streak">Correct-answer streak: 0 of 5 consecutive days.</label>
+          <progress id="ep-meter" max="5" value="0" aria-labelledby="ep-streak"></progress>
+          <p id="ep-progress-note" class="ep-help"></p>
+          <p id="ep-claim" class="ep-claim" hidden>Five consecutive days completed! Your free guide is ready.</p>
+          <a id="ep-reward-link" class="ep-reward-link" href="/free-guide" hidden>Get your free EV guide <span aria-hidden="true">→</span></a>
+        </div>
         <p class="ep-next" id="ep-next"></p>
       </div>
     </div>
