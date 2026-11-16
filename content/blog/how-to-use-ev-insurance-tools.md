@@ -88,11 +88,13 @@ If a quote changes after you alter cover, repeat the document comparison as well
 
 ## Understand the regional information notes
 
-The country field and map indicate the site's information status. In the reviewed implementation, the optional postcode is not looked up and the map does not display a verified regional premium dataset. [1][2]
+The country field now identifies a navigation region and displays its reading guide both beside the country result and below the map. The six regional guides use clearly labelled country examples; they are not complete national rulebooks. The optional postcode is not looked up, and the map does not display a verified regional premium dataset. [1][2]
 
 Selecting a country does not fetch a quote from an insurer or prove that a policy feature is available there. It may help preselect a supported currency, but that is a convenience setting, not a statement about legal requirements.
 
 For U.S. readers, our [state-rules verification guide](/blog/ev-insurance-rules-by-state/) explains how to find the appropriate regulator. The NAIC directory lists state insurance departments; it is not a worldwide regulator directory. [7]
+
+For other starting points, see the [Africa regional guide](/blog/ev-insurance-africa-guide/) or the [Europe regional guide](/blog/ev-insurance-europe-guide/), and use the homepage map to reach the other four. A guide being available does not mean a price dataset or an individual country assessment is available.
 
 For other markets, use the relevant local authority and insurer. This site does not fill a missing local price series with an imported U.S. average or an invented exchange-rate conversion.
 
@@ -158,10 +160,10 @@ No. Tool inputs being processed locally is distinct from the website's analytics
 
 ## Sources
 
-Reviewed in November 2026. Tool statements refer to the identified repository version, not untested future changes.
+Reviewed in November 2026. Tool statements describe the website revision prepared with this guide. The main-branch code links change as approved website updates are merged.
 
-1. [Reviewed homepage JavaScript](https://github.com/Mike33taiwo031995/Evcoverage/blob/ab9d089f13237e9bca77e096f46d845bcbc47156/static/js/home.js).
-2. [Reviewed homepage template](https://github.com/Mike33taiwo031995/Evcoverage/blob/ab9d089f13237e9bca77e096f46d845bcbc47156/layouts/index.html).
+1. [Homepage JavaScript](https://github.com/Mike33taiwo031995/Evcoverage/blob/main/static/js/home.js).
+2. [Homepage template](https://github.com/Mike33taiwo031995/Evcoverage/blob/main/layouts/index.html).
 3. [CFPB: Vehicle value and outstanding loans](https://www.consumerfinance.gov/ask-cfpb/what-are-the-5-cs-of-credit-en-2045/).
 4. [NAIC: Auto insurance shopping tool](https://content.naic.org/sites/default/files/consumer-auto-shopping-tool.pdf).
 5. [CFPB: Guaranteed Asset Protection](https://www.consumerfinance.gov/ask-cfpb/what-is-guaranteed-auto-protection-gap-insurance-en-797/).
