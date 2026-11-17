@@ -4,13 +4,13 @@ seo_title: "Does Car Insurance Cover a Flood-Damaged Electric Car?"
 description: "Comprehensive car insurance may cover a flood-damaged EV. Learn about battery safety, saltwater exposure, claims, deductibles and total-loss decisions."
 slug: "does-car-insurance-cover-flood-damaged-electric-car"
 date: 2026-11-15
-lastmod: 2026-11-15
+lastmod: 2026-11-17
 author: "EV Insurance Guide"
 draft: false
 categories: ["Disasters and risk"]
 tags: ["flood damage", "comprehensive coverage", "battery safety", "insurance claims", "total loss"]
 popular: false
-image: "/images/blog-cars/kia-ev6.jpg"
+image: "/images/editorial/ev-flood-assessment-1024.webp"
 ---
 
 The floodwater has gone, but two questions remain: is your electric car safe to approach, and which insurance policy should you call? Those questions need separate answers. An insurer's willingness to consider a claim is not permission to start, charge or move the vehicle yourself.
@@ -24,6 +24,8 @@ This guide explains the U.S. insurance position, the difference between saltwate
 **Jump to:** [Coverage](#what-insurance-covers-a-flood-damaged-electric-car) · [Immediate safety steps](#what-should-you-do-immediately-after-flooding) · [Total loss](#will-a-flooded-ev-be-repaired-or-declared-a-total-loss) · [FAQs](#frequently-asked-questions)
 
 ## What insurance covers a flood-damaged electric car?
+
+{{< editorial-image name="ev-flood-assessment" alt="Illustration of an electric crossover on a dry assessment area after storm flooding" caption="Flood exposure needs careful claims handling and safe professional assessment. A dry-looking exterior is not proof that starting or charging the vehicle is safe." >}}
 
 Start with your auto policy's declarations page: the summary identifying your vehicle, coverages and deductibles. The Texas Department of Insurance and Maryland Insurance Administration both direct flooded-car owners to comprehensive coverage, sometimes called “other than collision.” [1][3]
 
@@ -40,6 +42,8 @@ California's insurance guide makes the distinction clear: comprehensive can cove
 These are coverage checks, not individual claim decisions. [1][2][4][10]
 
 ## Does home insurance or NFIP flood insurance cover the car?
+
+{{< editorial-image name="sealed-battery-pack" alt="Illustration of a sealed high-voltage EV battery enclosure on a workshop platform" caption="A vehicle's traction battery is not automatically covered as household contents. Check the auto policy and any applicable warranty separately." >}}
 
 Do not confuse “insurance against a flood” with the specific policy that insures a vehicle. FEMA's National Flood Insurance Program, or NFIP, summary lists most self-propelled vehicles, including cars and their parts, among excluded property. Parking the EV in an insured garage does not remove that exclusion. [4]
 

@@ -1,0 +1,18 @@
+{{- $name := .Get "name" -}}
+{{- $image := index .Site.Data.editorial_images $name -}}
+{{- if not $image -}}
+  {{- errorf "Missing editorial image %q in %s" $name .Page.File.Path -}}
+{{- else -}}
+<figure class="ev-editorial-figure">
+  <img
+    src="{{ $image.src | relURL }}"
+    srcset="{{ $image.small | relURL }} 480w, {{ $image.src | relURL }} 768w, {{ $image.large | relURL }} 1024w"
+    sizes="(max-width: 780px) calc(100vw - 32px), 740px"
+    width="{{ $image.width }}"
+    height="{{ $image.height }}"
+    loading="lazy"
+    decoding="async"
+    alt="{{ .Get "alt" }}">
+  <figcaption>{{ .Get "caption" }} <span class="ev-editorial-credit">{{ $image.credit }}</span></figcaption>
+</figure>
+{{- end -}}

@@ -1,0 +1,44 @@
+.blog-article-content .ev-editorial-figure {
+  width: 100%;
+  margin: 34px 0;
+  overflow: hidden;
+  border: 1px solid #dce5ee;
+  border-radius: 17px;
+  background: #f5f8fc;
+}
+
+.blog-article-content .ev-editorial-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  margin: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.blog-article-content .ev-editorial-figure figcaption {
+  padding: 15px 18px 17px;
+  border-top: 3px solid #f1a26f;
+  color: #43576c;
+  font-size: .82rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.ev-editorial-credit {
+  display: block;
+  margin-top: 5px;
+  color: #5c6d7e;
+  font-size: .75rem;
+}
+
+@media (max-width: 480px) {
+  .blog-article-content .ev-editorial-figure {
+    margin: 26px 0;
+    border-radius: 12px;
+  }
+  .blog-article-content .ev-editorial-figure figcaption {
+    padding: 12px 14px 14px;
+  }
+}
