@@ -6,9 +6,10 @@ slug: "what-happens-to-electric-car-after-crash"
 date: 2026-11-19T00:00:00+01:00
 publishDate: 2026-11-19T00:00:00+01:00
 lastmod: 2026-11-19T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
-categories: ["Claims and total loss"]
+categories: ["Coverage and claims"]
 tags: ["crash", "collision", "ev safety", "claims"]
 popular: false
 image: "/images/editorial/ev-collision-assessment-1024.webp"
@@ -31,6 +32,8 @@ For the technical side of the workshop process, use our separate [electric vehic
 Tell responders the vehicle is electric. Do not touch exposed electrical parts, attempt battery repairs, disconnect unfamiliar cables or return to a hazardous car for your belongings.
 
 If it is safe and lawful, exchange details and record the scene. If it is not safe, leave the documentation to responders and collect reference numbers later. Local reporting duties vary; contact the relevant authorities rather than assuming every jurisdiction uses the same threshold.
+
+{{< editorial-graphic name="what-happens-to-electric-car-after-crash-infographic" >}}
 
 ## The post-crash timeline
 
@@ -75,6 +78,8 @@ That does not mean every collision damages the battery. It means the repair plan
 Ask what inspection has been completed, what remains unknown and whether further dismantling requires permission. If additional damage is found, ask for the revised estimate and insurer authorization before assuming all extra work is approved.
 
 {{< adslot 2 >}}
+
+{{< editorial-graphic name="what-happens-to-electric-car-after-crash-chart" >}}
 
 ## If the car can be repaired
 

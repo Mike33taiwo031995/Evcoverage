@@ -6,9 +6,10 @@ slug: "electric-car-insurance-cost"
 date: 2026-11-24T00:00:00+01:00
 publishDate: 2026-11-24T00:00:00+01:00
 lastmod: 2026-11-24T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
-categories: ["Costs and pricing"]
+categories: ["Ownership costs"]
 tags: ["insurance cost", "premiums", "insurance quotes", "deductibles"]
 popular: false
 image: "/images/editorial/ev-vehicle-valuation-1024.webp"
@@ -52,6 +53,8 @@ Compare the actual vehicles you are considering. A vehicle with a lower purchase
 
 Our [EV repair-cost guide](/blog/electric-vehicle-repair-costs/) distinguishes repair scenarios. The [battery replacement guide](/blog/ev-battery-replacement-cost-2026/) explains why battery figures need context rather than becoming a universal annual ownership expense.
 
+{{< editorial-graphic name="electric-car-insurance-cost-infographic" >}}
+
 ## Normalize the quotes before choosing
 
 {{< editorial-image name="ev-policy-review" alt="Illustration of motor insurance documents being reviewed beside a laptop and car key" caption="A useful price comparison starts with matching the vehicle, drivers, coverage period, limits, deductibles and important extras." >}}
@@ -85,6 +88,8 @@ With no claim, A costs less in this simplified comparison. With that one covered
 The practical question is whether the saving compensates you for the risk you retain. Rental benefits also need their own limit comparison rather than being treated as unlimited.
 
 {{< adslot 2 >}}
+
+{{< editorial-graphic name="electric-car-insurance-cost-chart" >}}
 
 ## Ways to look for savings without quietly losing protection
 

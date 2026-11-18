@@ -1,0 +1,10 @@
+{{- $name := .Get "name" -}}
+{{- $graphic := index .Site.Data.editorial_graphics $name -}}
+{{- if not $graphic -}}
+  {{- errorf "Missing editorial graphic %q in %s" $name .Page.File.Path -}}
+{{- else -}}
+<figure class="ev-editorial-graphic" data-editorial-kind="{{ if strings.HasSuffix $name "-chart" }}chart{{ else }}infographic{{ end }}">
+  <img src="{{ $graphic.src | relURL }}" width="{{ $graphic.width }}" height="{{ $graphic.height }}" loading="lazy" decoding="async" alt="{{ $graphic.alt }}">
+  <figcaption><strong>{{ $graphic.label }}</strong> {{ $graphic.caption }}</figcaption>
+</figure>
+{{- end -}}

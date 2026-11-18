@@ -3,9 +3,11 @@ title: "What Electric Vehicles Does Ford Make Right Now? (2026 Guide)"
 seo_title: "What Electric Vehicles Does Ford Make? 2026 Lineup"
 description: "Ford currently sells the Mustang Mach-E and E-Transit; the F-150 Lightning ended and the Fathom pickup arrives in 2027. See models, ranges and prices."
 slug: "what-electric-vehicles-does-ford-make"
-date: 2026-11-05
-lastmod: 2026-11-05
-author: "EV Insurance Guide"
+date: 2026-11-05T00:00:00+01:00
+publishDate: 2026-11-05T00:00:00+01:00
+lastmod: 2026-11-05T00:00:00+01:00
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Costs and pricing"]
 tags: ["ford ev", "mustang mach-e", "e-transit", "ford fathom", "f-150 lightning"]

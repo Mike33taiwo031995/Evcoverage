@@ -3,14 +3,16 @@ title: "How to Use the Free EV Insurance Tools—and Know Their Limits"
 seo_title: "EV Insurance Tools: A Guide to Inputs and Results"
 description: "Use the EV loan calculator, quote comparator and regional notes. Learn which inputs to use, what results mean and what to ask your insurer or lender."
 slug: "how-to-use-ev-insurance-tools"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Avery J. Parker"
+author_id: "avery-j-parker"
 draft: false
 categories: ["Insurance coverage"]
 tags: ["insurance tools", "insurance quotes", "auto loans", "regional information"]
 popular: false
-image: "/images/blog-cars/tesla-model-y.jpg"
+image: "/images/editorial/ev-finance-planning-1024.webp"
 ---
 
 A calculator can return the correct arithmetic and still be the wrong answer to your insurance question. Subtracting two premiums does not establish equivalent cover. Subtracting a vehicle estimate from a loan balance does not establish an insurance payout.
@@ -44,6 +46,8 @@ Date your notes and distinguish a quote from an issued policy, a trade-in estima
 
 If a record is missing, the next action is to obtain it. The site cannot recreate a lender statement, policy condition or professional assessment from an empty field.
 
+{{< editorial-image name="ev-finance-planning" alt="Calculator and vehicle finance paperwork ready for a loan comparison" caption="Gather the loan balance and a dated value estimate before entering figures. The tool does not fetch either number." >}}
+
 ## Use the loan-versus-value calculator
 
 Enter the balance, estimated vehicle value and a single currency for both. The calculation subtracts value from balance and labels whether the balance or value is higher.
@@ -66,6 +70,8 @@ The CFPB describes GAP as a separate product with restrictions intended to addre
 
 Keep your planning result separate from any agreement. If you already hold GAP or another finance-related product, read that document and ask its provider what it does rather than assuming the homepage has checked it.
 
+{{< editorial-image name="quote-comparison-desk" alt="Two insurance document folders and calculator prepared for comparison" caption="The quote comparator subtracts the amounts you enter; it cannot tell whether the policies offer equivalent protection." >}}
+
 ## Prepare annual quotes for a fair comparison
 
 Use written premiums for the same period and currency. Confirm the vehicle, drivers, use, limits, deductibles and optional products before ticking the comparable-coverage acknowledgement.
@@ -85,6 +91,8 @@ After the required entries and acknowledgement, it shows whether the entered tot
 If it declines to compare, read the message and fix the identified issue. A missing currency or unmatched period is useful information, not an obstacle to bypass with a guessed entry.
 
 If a quote changes after you alter cover, repeat the document comparison as well as the arithmetic. The lower amount may now represent a different package.
+
+{{< editorial-image name="ev-contract-details" alt="Policy documents being read carefully at a desk" caption="Regional links are a starting point for reading local examples, not a postcode lookup, live quotation or legal decision." >}}
 
 ## Understand the regional information notes
 

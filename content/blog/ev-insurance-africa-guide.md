@@ -3,14 +3,16 @@ title: "EV Insurance in Africa: Nigeria, Kenya, Morocco and South Africa"
 seo_title: "EV Insurance in Africa: Four Markets, Different Rules"
 description: "Check EV insurance in Nigeria, Kenya, Morocco and South Africa. Separate required cover from battery protection, repair costs and cross-border questions."
 slug: "ev-insurance-africa-guide"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Avery J. Parker"
+author_id: "avery-j-parker"
 draft: false
 categories: ["Insurance coverage"]
 tags: ["africa", "regional guides", "motor insurance", "coverage checklist"]
 popular: false
-image: "/images/blog-cars/hyundai-ioniq-5.jpg"
+image: "/images/editorial/africa-ev-1024.webp"
 ---
 
 The most important EV insurance question is not simply whether a policy is called comprehensive. It is what happens after a particular loss: who pays for the other vehicle, who assesses your battery, and which repair or recovery costs remain yours?
@@ -28,6 +30,8 @@ Use the place where the vehicle is registered and kept, its actual use and any p
 Keep four questions separate: what the law requires, what a lender requires, what the policy covers, and what the repairer can safely perform. One answer does not settle the other three.
 
 The [regional selector on our homepage](/#eh-map) is a navigation tool. A country being associated with Africa does not mean its local insurance arrangements have been individually reviewed in this article.
+
+{{< editorial-image name="africa-ev" alt="Generic electric vehicle at a charging point in an illustrative West African urban setting" caption="Start with the country examples below, then confirm your local policy and requirements." >}}
 
 ## Compare the four examples without mixing them
 
@@ -82,6 +86,8 @@ The National Financial Ombud's non-life tips emphasise complying with policy sec
 
 Keep the question specific: “Which clause applies if this vehicle is stolen from this location?” is more useful than asking whether EVs are generally insured.
 
+{{< editorial-image name="sealed-battery-pack" alt="Intact sealed electric vehicle battery enclosure in a workshop" caption="Ask how your policy treats the battery, cause of damage and proposed repairs; the regional label does not decide cover." >}}
+
 ## Ask how the battery, charger and cause of loss are treated
 
 Ask the insurer to distinguish accidental damage from a defect, ordinary wear or gradual capacity loss. Do not assume that an EV-specific advertisement guarantees every battery problem is insured.
@@ -101,6 +107,8 @@ Ask separately about storage, towing and temporary transport. A broad statement 
 Use our [repair-delay and storage guide](/blog/ev-insurance-repair-delays-rental-storage/) as a list of planning questions, not a statement of local statutory rights. If a facility proposes additional work, obtain the required approval before assuming reimbursement.
 
 For an imported vehicle, ask what happens if the required part or technical support is not locally available. Do not replace an unanswered question with an invented estimate of how long the repair will take.
+
+{{< editorial-image name="ev-contract-details" alt="Vehicle owner reviewing insurance contract pages at a desk" caption="Confirm the country, currency, territory and policy wording with the relevant local provider before relying on a general regional guide." >}}
 
 ## Check travel, value and premiums using actual documents
 

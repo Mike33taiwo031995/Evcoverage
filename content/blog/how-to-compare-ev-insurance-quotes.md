@@ -3,14 +3,16 @@ title: "How to Compare EV Insurance Quotes Without Comparing Different Cover"
 seo_title: "Compare EV Insurance Quotes: A Like-for-Like Checklist"
 description: "Compare EV insurance quotes using matching limits, deductibles, battery and repair terms. See what to check before treating a lower premium as good value."
 slug: "how-to-compare-ev-insurance-quotes"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
 categories: ["Insurance coverage"]
 tags: ["insurance quotes", "deductibles", "repair terms", "coverage comparison"]
 popular: false
-image: "/images/blog-cars/kia-ev6.jpg"
+image: "/images/editorial/quote-comparison-desk-1024.webp"
 ---
 
 Two prices look easy to compare until one quote has a different deductible, another leaves out rental reimbursement and neither clearly explains the proposed repair arrangements. The lower premium is still a real number. It just may not be the price of the same protection.
@@ -39,6 +41,8 @@ For a hypothetical comparison, two annual totals in the same currency can be ent
 
 If the quotes cover different periods, obtain matching written figures where possible. Arithmetic cannot remove uncertainty about a future renewal price or whether a payment includes every fee.
 
+{{< editorial-image name="quote-comparison-desk" alt="Two insurance folders, calculator and unbranded EV keys arranged for comparison" caption="Compare matching limits, deductibles and benefits before deciding which annual premium is lower." >}}
+
 ## Build a comparison sheet that exposes differences
 
 Use a table like this alongside the insurer documents. Fill it with the actual quoted terms, not assumptions based on a product name.
@@ -65,6 +69,8 @@ That means two policies can both be called “car insurance” while offering ve
 Ask the insurer to identify the limits and deductibles in the written quote. Keep collision and comprehensive deductibles in separate comparison rows if they differ.
 
 This guide does not recommend a personal limit or deductible. A lawful minimum, a lender's requirement and protection suited to an individual's circumstances are different questions.
+
+{{< editorial-image name="sealed-battery-pack" alt="Closed EV traction battery enclosure on a professional workshop platform" caption="Ask about the cause of battery damage, not simply whether a quote says it includes the battery." >}}
 
 ## Ask about the cause of battery damage
 
@@ -95,6 +101,8 @@ Washington's regulator warns that repair delays can exhaust rental limits before
 Keep the quote separate from an advertisement about convenience. Ask the insurer to identify the written terms and any approved booking process.
 
 Our [repair-delay and rental-cover guide](/blog/ev-insurance-repair-delays-rental-storage/) explains why the repair schedule and the benefit schedule need separate tracking.
+
+{{< editorial-image name="charger-equipment" alt="Intact wall-mounted home EV charger with its cable neatly stored" caption="Charging equipment needs its own question: do not assume the car policy and home policy treat it alike." >}}
 
 ## Keep charging equipment and finance products visible
 

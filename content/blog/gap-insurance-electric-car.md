@@ -6,9 +6,10 @@ slug: "gap-insurance-electric-car"
 date: 2026-11-26T00:00:00+01:00
 publishDate: 2026-11-26T00:00:00+01:00
 lastmod: 2026-11-26T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
-categories: ["Claims and total loss"]
+categories: ["Finance and total loss"]
 tags: ["gap insurance", "car finance", "total loss", "electric cars"]
 popular: false
 image: "/images/editorial/ev-finance-planning-1024.webp"
@@ -23,6 +24,8 @@ That is not an EV-only problem. It happens when the amount you owe and the amoun
 This U.S.-focused guide is about comparing and buying the contract. For the mechanics of a battery-related write-off, use our existing [battery damage, total loss and GAP explainer](/blog/ev-battery-total-loss-gap-coverage/).
 
 {{< adslot 1 >}}
+
+{{< editorial-graphic name="gap-insurance-electric-car-infographic" >}}
 
 ## The gap begins with two different numbers
 
@@ -51,6 +54,8 @@ Suppose a covered total loss has these simplified figures:
 The **$5,000 difference is not automatically the GAP benefit**. A contract may treat the deductible separately, exclude certain financed amounts, impose a cap or calculate the eligible shortfall differently.
 
 Ask the provider to work through its wording using an example. An explanation that stops at “it pays whatever you owe” is not enough.
+
+{{< editorial-graphic name="gap-insurance-electric-car-chart" >}}
 
 ## GAP is not battery repair insurance
 

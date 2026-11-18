@@ -3,9 +3,11 @@ title: "BEV Electric Vehicle: Meaning, Technology and How It Works"
 seo_title: "BEV Electric Vehicle: Meaning, Technology, How It Works"
 description: "A BEV is a battery electric vehicle with no gasoline engine. Learn how BEVs work, their parts, charging levels, range, pros and cons, and BEV vs PHEV."
 slug: "bev-electric-vehicle-meaning-technology-how-it-works"
-date: 2026-11-06
-lastmod: 2026-11-06
-author: "EV Insurance Guide"
+date: 2026-11-06T00:00:00+01:00
+publishDate: 2026-11-06T00:00:00+01:00
+lastmod: 2026-11-06T00:00:00+01:00
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Battery and warranty"]
 tags: ["bev", "battery electric vehicle", "ev technology", "ev charging", "bev vs phev"]

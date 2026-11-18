@@ -3,14 +3,16 @@ title: "EV Insurance in Oceania: Australia, New Zealand and Pacific Questions"
 seo_title: "EV Insurance in Oceania: Australia and New Zealand"
 description: "Check EV insurance in Australia and New Zealand, with Pacific cautions. Separate injury schemes from property cover, battery repairs and motor claim terms."
 slug: "ev-insurance-oceania-guide"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Avery J. Parker"
+author_id: "avery-j-parker"
 draft: false
 categories: ["Insurance coverage"]
 tags: ["oceania", "regional guides", "australia", "new zealand", "coverage checklist"]
 popular: false
-image: "/images/blog-cars/tesla-model-y.jpg"
+image: "/images/editorial/oceania-ev-1024.webp"
 ---
 
 A compulsory injury arrangement and a policy that repairs a damaged EV are not the same protection. Confusing them can leave a large gap between the insurance document you recognise and the bill you expect someone to pay.
@@ -28,6 +30,8 @@ For New Zealand, use New Zealand sources and your contract. Do not transfer an A
 The [homepage regional selector](/#eh-map) groups countries and areas for navigation. It does not establish that every jurisdiction in Oceania has the same legal requirements, products or complaint process.
 
 If you are importing a vehicle, moving or planning travel, explain those circumstances early. A guide about ordinary local use cannot confirm acceptance of a different arrangement.
+
+{{< editorial-image name="oceania-ev" alt="Generic electric vehicle at a charging point in an illustrative Australian suburban setting" caption="Start with the country examples below, then confirm your local policy and requirements." >}}
 
 ## Separate injury protection from vehicle and property protection
 
@@ -99,6 +103,8 @@ This article does not establish Fiji's motor-insurance minimums or extend its ex
 
 For a vehicle brought from another market, explain the specification, ownership and intended use. Ask about acceptance, assessment, repair arrangements and territorial conditions before depending on the policy.
 
+{{< editorial-image name="sealed-battery-pack" alt="Intact sealed electric vehicle battery enclosure in a workshop" caption="Ask how your policy treats the battery, cause of damage and proposed repairs; the regional label does not decide cover." >}}
+
 ## Ask how batteries, charging equipment and repair time are handled
 
 Describe the cause of a potential loss. Accident damage, a suspected defect and ordinary capacity decline should not be combined into a single question about whether “the battery” is covered.
@@ -108,6 +114,8 @@ Our [battery insurance and warranty guide](/blog/ev-battery-insurance-warranty-r
 For charging equipment, identify ownership and installation details. The [home-charger guide](/blog/does-home-insurance-cover-ev-charger/) is a useful question list, not a universal rule allocating costs between home and motor insurance.
 
 Ask who authorises inspections, parts and additional work, and how temporary transport or storage is funded. The [repair-delay guide](/blog/ev-insurance-repair-delays-rental-storage/) helps keep those timelines separate without inventing local benefits.
+
+{{< editorial-image name="ev-contract-details" alt="Vehicle owner reviewing insurance contract pages at a desk" caption="Confirm the country, currency, territory and policy wording with the relevant local provider before relying on a general regional guide." >}}
 
 ## Compare the offer and organise the claim record
 

@@ -3,9 +3,11 @@ title: "Section 179 Tax Deduction for Electric Vehicles: 2026 Rules, Limits and 
 seo_title: "Section 179 for Electric Work Vehicles: 2026 Rules"
 description: "Section 179 for electric work vehicles in 2026: $2.56M limit, $32,000 heavy SUV cap, 50% business-use test, bonus depreciation and rules to check."
 slug: "section-179-tax-deduction-electric-vehicles"
-date: 2026-11-06
-lastmod: 2026-11-06
-author: "EV Insurance Guide"
+date: 2026-11-06T00:00:00+01:00
+publishDate: 2026-11-06T00:00:00+01:00
+lastmod: 2026-11-06T00:00:00+01:00
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
 categories: ["Costs and pricing"]
 tags: ["section 179", "ev tax deduction", "business ev", "bonus depreciation", "ev depreciation"]

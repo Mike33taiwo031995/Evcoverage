@@ -10,11 +10,11 @@
 {{ $posts = $posts.ByDate.Reverse }}
 {{ $popular := where $posts "Params.popular" true }}
 {{ $cars := slice
-  (dict "name" "Tesla Model Y" "image" "/images/blog-cars/tesla-model-y.jpg" "alt" "AI-generated editorial image of a white Tesla Model Y on a coastal road" "note" "Battery repair & replacement" "url" "/blog/ev-battery-replacement-cost-2026/")
-  (dict "name" "Hyundai IONIQ 5" "image" "/images/blog-cars/hyundai-ioniq-5.jpg" "alt" "AI-generated editorial image of a teal Hyundai IONIQ 5 in a city at night" "note" "Warranty or insurance?" "url" "/blog/ev-battery-warranty-vs-insurance/")
-  (dict "name" "Ford Mustang Mach-E" "image" "/images/blog-cars/ford-mustang-mach-e.jpg" "alt" "AI-generated editorial image of a red Ford Mustang Mach-E on a desert highway" "note" "Battery wear & degradation" "url" "/blog/does-insurance-cover-ev-battery-degradation/")
-  (dict "name" "Kia EV6" "image" "/images/blog-cars/kia-ev6.jpg" "alt" "AI-generated editorial image of a blue Kia EV6 at a mountain overlook" "note" "Battery damage & total loss" "url" "/blog/ev-battery-total-loss-gap-coverage/")
-  (dict "name" "Volkswagen ID.4" "image" "/images/blog-cars/volkswagen-id4.jpg" "alt" "AI-generated editorial image of an orange Volkswagen ID.4 beside a home charger" "note" "Home charging equipment" "url" "/blog/does-home-insurance-cover-ev-charger/")
+  (dict "name" "Tesla Model Y" "image" "/images/blog-cars/tesla-model-y.jpg" "alt" "Illustrative image of a white Tesla Model Y on a coastal road" "note" "Battery repair & replacement" "url" "/blog/ev-battery-replacement-cost-2026/")
+  (dict "name" "Hyundai IONIQ 5" "image" "/images/blog-cars/hyundai-ioniq-5.jpg" "alt" "Illustrative image of a teal Hyundai IONIQ 5 in a city at night" "note" "Warranty or insurance?" "url" "/blog/ev-battery-warranty-vs-insurance/")
+  (dict "name" "Ford Mustang Mach-E" "image" "/images/blog-cars/ford-mustang-mach-e.jpg" "alt" "Illustrative image of a red Ford Mustang Mach-E on a desert highway" "note" "Battery wear & degradation" "url" "/blog/does-insurance-cover-ev-battery-degradation/")
+  (dict "name" "Kia EV6" "image" "/images/blog-cars/kia-ev6.jpg" "alt" "Illustrative image of a blue Kia EV6 at a mountain overlook" "note" "Battery damage & total loss" "url" "/blog/ev-battery-total-loss-gap-coverage/")
+  (dict "name" "Volkswagen ID.4" "image" "/images/blog-cars/volkswagen-id4.jpg" "alt" "Illustrative image of an orange Volkswagen ID.4 beside a home charger" "note" "Home charging equipment" "url" "/blog/does-home-insurance-cover-ev-charger/")
 }}
 <script type="application/ld+json">
 {
@@ -34,7 +34,13 @@
           "headline": {{ $post.Title | jsonify | safeJS }},
           "description": {{ $post.Description | jsonify | safeJS }},
           "url": {{ $post.Permalink | jsonify | safeJS }},
-          "datePublished": "{{ $post.Date.Format "2006-01-02" }}"
+          "author": {
+            "@type": "Person",
+            "name": {{ $post.Params.author | jsonify | safeJS }},
+            "url": {{ with index $post.Site.Data.authors $post.Params.author_id }}{{ .url | absURL | jsonify | safeJS }}{{ else }}{{ "about/#editorial-team" | absURL | jsonify | safeJS }}{{ end }}
+          },
+          "datePublished": "{{ $post.PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+          "dateModified": "{{ $post.Lastmod.Format "2006-01-02T15:04:05Z07:00" }}"
         }
       {{ end }}
     ]
@@ -149,7 +155,7 @@
               <span>{{ with index .Params.categories 0 }}{{ . }}{{ else }}EV insurance{{ end }}</span>
             </a>
             <div class="blog-card-content">
-              <div class="blog-card-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time><span aria-hidden="true">·</span><span>{{ .ReadingTime }} min read</span></div>
+              <div class="blog-card-meta"><time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">{{ .PublishDate.Format "Jan 2, 2006" }}</time><span aria-hidden="true">·</span><span>{{ .ReadingTime }} min read</span></div>
               <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
               <p class="blog-card-description">{{ .Description }}</p>
               {{ with .Params.tags }}

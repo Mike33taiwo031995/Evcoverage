@@ -6,9 +6,10 @@ slug: "war-exclusion-car-insurance-policy"
 date: 2026-11-20T00:00:00+01:00
 publishDate: 2026-11-20T00:00:00+01:00
 lastmod: 2026-11-20T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
-categories: ["Insurance coverage"]
+categories: ["Coverage and claims"]
 tags: ["policy exclusions", "war exclusion", "comprehensive coverage"]
 popular: false
 image: "/images/editorial/ev-contract-details-1024.webp"
@@ -43,6 +44,8 @@ In that September 2018 edition, Part D concerns damage to the insured auto. Its 
 This is an example of contract structure, not a statement that every insurer uses that form, that your policy has the same language or that a 2018 edition is the current wording for all customers.
 
 The important lesson is the interaction: **a listed peril does not override every exclusion elsewhere in the contract.**
+
+{{< editorial-graphic name="war-exclusion-car-insurance-policy-infographic" >}}
 
 ## Similar damage does not establish the same cause
 
@@ -79,6 +82,8 @@ If a claim is excluded because of an applicable war provision, calling the damag
 Keep the cause-of-loss question separate from the repair question. Our [battery insurance and warranty guide](/blog/ev-battery-insurance-warranty-replacement-cost-guide/) explains the other reasons a battery expense may fall under insurance, warranty or neither.
 
 For ordinary fire coverage questions unconnected with conflict, read [EV battery fire and insurance](/blog/does-insurance-cover-ev-battery-fire/).
+
+{{< editorial-graphic name="war-exclusion-car-insurance-policy-chart" >}}
 
 ## If an insurer invokes the exclusion
 

@@ -1,8 +1,8 @@
 ---
 title: "Terms of Service"
 description: "Terms of Service for EV Insurance Guide — the rules for using our website, blog content, interactive tools, free guide, and paid handbook."
-date: 2026-10-02
-lastmod: 2026-10-03
+date: 2026-10-02T00:00:00+01:00
+lastmod: 2026-10-03T00:00:00+01:00
 draft: false
 ---
 

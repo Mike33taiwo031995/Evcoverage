@@ -3,9 +3,11 @@ title: "Electric Vehicle Repair Near Me: How to Find the Right EV Repair Shop"
 seo_title: "Electric Vehicle Repair Near Me: How to Find an EV Shop"
 description: "Searching for electric vehicle repair near me? Learn how to find a qualified EV shop, check high-voltage training and compare dealers with independents."
 slug: "electric-vehicle-repair-near-me"
-date: 2026-10-30
-lastmod: 2026-11-17
-author: "EV Insurance Guide"
+date: 2026-10-30T00:00:00+01:00
+publishDate: 2026-10-30T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Repairs and maintenance"]
 tags: ["ev repair", "repair shops", "high-voltage safety", "ev maintenance", "ase certification"]

@@ -6,7 +6,8 @@ slug: "electric-vehicle-auto-body-repair"
 date: 2026-11-21T00:00:00+01:00
 publishDate: 2026-11-21T00:00:00+01:00
 lastmod: 2026-11-21T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Repairs and maintenance"]
 tags: ["body repair", "repair estimates", "collision", "repair shops"]
@@ -51,6 +52,8 @@ Manufacturer networks can be useful. For example, [Tesla's collision support pag
 
 Use our [EV repair-shop checklist](/blog/electric-vehicle-repair-near-me/) to compare capability before travel distance or a headline labor rate.
 
+{{< editorial-graphic name="electric-vehicle-auto-body-repair-infographic" >}}
+
 ## Read the estimate in layers
 
 ### Diagnosis and inspection
@@ -84,6 +87,8 @@ Ask which checks are required by the particular repair and where the results wil
 If work is subcontracted, ask who performs it, how its cost is approved and who handles a problem afterward.
 
 {{< adslot 2 >}}
+
+{{< editorial-graphic name="electric-vehicle-auto-body-repair-chart" >}}
 
 ## Insurance approval and your authorization are different
 

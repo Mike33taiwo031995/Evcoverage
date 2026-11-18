@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "timezone": "Africa/Lagos",
+  "posts": [
+    {
+      "slug": "does-insurance-cover-ev-battery-fire",
+      "publishDate": "2026-11-17T00:00:00+01:00"
+    },
+    {
+      "slug": "hurricane-storm-damage-electric-car-insurance",
+      "publishDate": "2026-11-18T00:00:00+01:00"
+    },
+    {
+      "slug": "what-happens-to-electric-car-after-crash",
+      "publishDate": "2026-11-19T00:00:00+01:00"
+    },
+    {
+      "slug": "war-exclusion-car-insurance-policy",
+      "publishDate": "2026-11-20T00:00:00+01:00"
+    },
+    {
+      "slug": "electric-vehicle-auto-body-repair",
+      "publishDate": "2026-11-21T00:00:00+01:00"
+    },
+    {
+      "slug": "how-much-does-it-cost-to-charge-electric-car",
+      "publishDate": "2026-11-22T00:00:00+01:00"
+    },
+    {
+      "slug": "ev-insurance",
+      "publishDate": "2026-11-23T00:00:00+01:00"
+    },
+    {
+      "slug": "electric-car-insurance-cost",
+      "publishDate": "2026-11-24T00:00:00+01:00"
+    },
+    {
+      "slug": "tesla-insurance-coverage-cost-comparison",
+      "publishDate": "2026-11-25T00:00:00+01:00"
+    },
+    {
+      "slug": "gap-insurance-electric-car",
+      "publishDate": "2026-11-26T00:00:00+01:00"
+    }
+  ],
+  "standard": {
+    "inlinePictures": 2,
+    "infographics": 1,
+    "charts": 1,
+    "tablesMinimum": 1
+  }
+}

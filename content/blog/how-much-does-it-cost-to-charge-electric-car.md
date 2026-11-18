@@ -6,9 +6,10 @@ slug: "how-much-does-it-cost-to-charge-electric-car"
 date: 2026-11-22T00:00:00+01:00
 publishDate: 2026-11-22T00:00:00+01:00
 lastmod: 2026-11-22T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
-categories: ["Charging and home"]
+categories: ["Ownership costs"]
 tags: ["charging costs", "home charging", "public charging", "ownership budget"]
 popular: false
 image: "/images/editorial/ev-home-charging-1024.webp"
@@ -38,6 +39,8 @@ For a simple bill check:
 
 Then add any applicable session, parking, idle or other fees and taxes.
 
+{{< editorial-graphic name="how-much-does-it-cost-to-charge-electric-car-infographic" >}}
+
 ## A transparent cost table
 
 Assume, only for this example, that the car requires **30 kWh purchased per 100 miles**. That is an illustrative wall-energy figure, not a claim about every EV.
@@ -51,6 +54,8 @@ Assume, only for this example, that the car requires **30 kWh purchased per 100 
 The table excludes subscriptions, installation, parking, idle fees and other charges. Its purpose is to show how strongly the tariff changes the answer without changing the car.
 
 At 1,000 miles, the assumed energy purchase is 300 kWh. Multiply that by your actual rate for a more relevant starting point than an online claim that charging costs one fixed amount.
+
+{{< editorial-graphic name="how-much-does-it-cost-to-charge-electric-car-chart" >}}
 
 ## What does a single home charge cost?
 
