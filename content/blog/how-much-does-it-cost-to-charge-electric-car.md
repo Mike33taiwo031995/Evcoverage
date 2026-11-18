@@ -8,7 +8,7 @@ publishDate: 2026-11-22T00:00:00+01:00
 lastmod: 2026-11-22T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Ownership costs"]
+categories: ["Charging and home"]
 tags: ["charging costs", "home charging", "public charging", "ownership budget"]
 popular: false
 image: "/images/editorial/ev-home-charging-1024.webp"
