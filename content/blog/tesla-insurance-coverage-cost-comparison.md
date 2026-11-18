@@ -6,9 +6,10 @@ slug: "tesla-insurance-coverage-cost-comparison"
 date: 2026-11-25T00:00:00+01:00
 publishDate: 2026-11-25T00:00:00+01:00
 lastmod: 2026-11-25T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
-categories: ["Insurance coverage"]
+categories: ["Insurance basics"]
 tags: ["tesla insurance", "tesla", "insurance quotes", "driving data"]
 popular: false
 image: "/images/editorial/tesla-model-y-editorial-1024.webp"
@@ -44,6 +45,8 @@ Before joining any driving-data program, ask what data is collected, whose drivi
 
 Review the current disclosures for your state. Do not assume a driving-assistance feature makes you immune from a claim, establishes fault or guarantees a discount.
 
+{{< editorial-graphic name="tesla-insurance-coverage-cost-comparison-infographic" >}}
+
 ## Compare these items side by side
 
 {{< editorial-image name="ev-contract-details" alt="Illustration of insurance contract papers, a magnifying glass and a car key on a desk" caption="Compare the quoted coverage and state-specific disclosures. A branded policy name does not establish the limits, price or treatment of driving data." >}}
@@ -61,6 +64,8 @@ Review the current disclosures for your state. Do not assume a driving-assistanc
 | Final price | Use the same coverage period | Include payment fees where applicable |
 
 Do not enter “included” because a marketing page mentions a benefit. Confirm that it appears in your quote and contract.
+
+{{< editorial-graphic name="tesla-insurance-coverage-cost-comparison-chart" >}}
 
 ## Is Tesla Insurance cheaper?
 

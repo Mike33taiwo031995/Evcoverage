@@ -3,9 +3,11 @@ title: "Why Are People Switching from Tesla to Ford Electric Vehicles?"
 seo_title: "Why Are People Switching from Tesla to Ford EVs?"
 description: "Is there a Tesla-to-Ford switch? Loyalty data says it's unproven, but some buyers weigh the Mach-E. Compare price, range, charging and ownership costs."
 slug: "why-are-people-switching-from-tesla-to-ford-electric-vehicles"
-date: 2026-11-05
-lastmod: 2026-11-05
-author: "EV Insurance Guide"
+date: 2026-11-05T00:00:00+01:00
+publishDate: 2026-11-05T00:00:00+01:00
+lastmod: 2026-11-05T00:00:00+01:00
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Costs and pricing"]
 tags: ["tesla vs ford", "mustang mach-e", "tesla model y", "ev comparison", "supercharger access"]

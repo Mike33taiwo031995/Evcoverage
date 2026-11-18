@@ -3,14 +3,16 @@ title: "EV Insurance Repair Delays: Towing, Storage, Parts and Rental Cover"
 seo_title: "EV Insurance Repair Delays: Rental and Storage Cover"
 description: "EV repairs and rental benefits can run on different timelines. Check towing, storage, parts approval and transport limits before a delay becomes your bill."
 slug: "ev-insurance-repair-delays-rental-storage"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
 categories: ["Claims and total loss"]
 tags: ["repair delays", "rental reimbursement", "storage fees", "insurance claims"]
 popular: false
-image: "/images/blog-cars/ford-mustang-mach-e.jpg"
+image: "/images/editorial/ev-repair-estimate-1024.webp"
 ---
 
 Your EV is still at the repair shop, but the rental booking ends tomorrow. The shop says a part is on order; the insurer says the transport benefit has a limit. Neither statement, on its own, tells you who must pay for the next day.
@@ -29,6 +31,8 @@ Keep confirmed dates separate from estimates. A part request, a projected delive
 
 For the technical work rather than the delay administration, read our [EV collision repair guide](/blog/electric-vehicle-collision-repair/). This article does not prescribe inspections or decide whether the vehicle is repairable.
 
+{{< editorial-image name="ev-repair-estimate" alt="Repair professional and EV owner reviewing workshop paperwork" caption="Ask for the next confirmed step and keep dated updates; an estimate is not a guaranteed completion date." >}}
+
 ## Put the important timelines on one page
 
 Use a short record that identifies the next decision, the person responsible and when you expect an update. Do not turn an estimated repair date into a promised transport entitlement.
@@ -46,6 +50,8 @@ Use a short record that identifies the next decision, the person responsible and
 This is an editorial tracking tool, not a list of benefits all policies provide. Its purpose is to expose a missing answer before you incur a charge.
 
 Update the page when the situation changes. Keep the previous written decision if an approval or cost position is revised.
+
+{{< editorial-image name="ev-professional-recovery" alt="Professional vehicle recovery scene with an electric vehicle and recovery truck" caption="Recovery must follow the vehicle's condition and manufacturer instructions. Do not move a damaged EV merely to copy an illustration." >}}
 
 ## Arrange EV recovery around the vehicle's condition
 
@@ -86,6 +92,8 @@ Washington's regulator advises discussing proposed parts with the adjuster and n
 A manufacturer's warranty remedy is a separate issue. Ford's U.S. 2026 warranty guide permits specified new, remanufactured or refurbished components in warranty circumstances; that wording does not determine an insurer's accident-repair obligation. [6]
 
 If a proposed part is unsuitable according to the repairer, ask for the technical reason in writing. This guide does not tell you to substitute a part or pressure a shop to bypass manufacturer procedures.
+
+{{< editorial-image name="ev-policy-review" alt="EV owner reading insurance documents at a clear desk" caption="Read the rental or temporary-transport limits before extending a booking or assuming every delay is covered." >}}
 
 ## Read temporary-transport terms before extending a booking
 

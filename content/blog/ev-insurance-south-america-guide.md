@@ -3,14 +3,16 @@ title: "EV Insurance in South America: Brazil, Chile, Colombia and Argentina"
 seo_title: "EV Insurance in South America: Four Markets Explained"
 description: "Explore EV insurance in Brazil, Chile, Colombia and Argentina. Separate injury schemes, liability and car cover before comparing battery and repair terms."
 slug: "ev-insurance-south-america-guide"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Avery J. Parker"
+author_id: "avery-j-parker"
 draft: false
 categories: ["Insurance coverage"]
 tags: ["south america", "regional guides", "motor insurance", "coverage checklist"]
 popular: false
-image: "/images/blog-cars/volkswagen-id4.jpg"
+image: "/images/editorial/south-america-ev-1024.webp"
 ---
 
 Two insurance documents can sit in the same glove compartment and protect very different things. One may address injury to people; another may address liability or damage to the vehicle.
@@ -28,6 +30,8 @@ Then separate injury benefits, liability to others and damage to your own vehicl
 The [regional selector on our homepage](/#eh-map) provides reading links. Its navigation grouping does not establish the law or contractual terms applicable to a particular driver.
 
 This article also does not reproduce current benefit amounts or premium tables. Use the responsible local authority and insurer when you need a figure that must be correct for a specific date and vehicle.
+
+{{< editorial-image name="south-america-ev" alt="Generic electric vehicle at a charging point in an illustrative South American city setting" caption="Start with the country examples below, then confirm your local policy and requirements." >}}
 
 ## Use the country comparison as a starting point
 
@@ -88,6 +92,8 @@ The Superintendencia de Seguros de la Nación's motor FAQs also address financed
 
 Keep the insurer, policy details and relevant approvals identifiable. A dealer or finance representative's explanation is useful, but the underlying agreement and insurance contract still need to be available.
 
+{{< editorial-image name="sealed-battery-pack" alt="Intact sealed electric vehicle battery enclosure in a workshop" caption="Ask how your policy treats the battery, cause of damage and proposed repairs; the regional label does not decide cover." >}}
+
 ## Translate “battery protection” into a specific question
 
 Describe the cause: an accident, theft, a suspected defect or gradual reduction in capacity. Ask which contract addresses that particular problem and where any exclusion appears.
@@ -107,6 +113,8 @@ Ask separately about towing, storage, parts and temporary transport. A repair au
 Our [repair-delay and temporary-transport guide](/blog/ev-insurance-repair-delays-rental-storage/) helps organise the workflow. Its jurisdiction-specific legal examples should not be treated as rules for every South American claim.
 
 If a part or procedure is unavailable locally, ask the insurer to explain the next step. This article does not invent a waiting time, shipping cost or repair estimate for your country.
+
+{{< editorial-image name="ev-contract-details" alt="Vehicle owner reviewing insurance contract pages at a desk" caption="Confirm the country, currency, territory and policy wording with the relevant local provider before relying on a general regional guide." >}}
 
 ## Compare currencies, travel and premiums carefully
 

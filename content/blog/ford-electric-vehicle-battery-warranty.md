@@ -3,9 +3,11 @@ title: "How Does Ford Handle Battery Warranty on Its Electric Vehicles?"
 seo_title: "Ford EV Battery Warranty: Coverage, 70% Rule, Exclusions"
 description: "Ford covers EV high-voltage batteries for 8 years or 100,000 miles, including capacity loss below 70%. See what is covered, excluded and how claims work."
 slug: "ford-electric-vehicle-battery-warranty"
-date: 2026-11-04
-lastmod: 2026-11-04
-author: "EV Insurance Guide"
+date: 2026-11-04T00:00:00+01:00
+publishDate: 2026-11-04T00:00:00+01:00
+lastmod: 2026-11-04T00:00:00+01:00
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Battery and warranty"]
 tags: ["ford ev", "battery warranty", "mustang mach-e", "f-150 lightning", "battery degradation"]

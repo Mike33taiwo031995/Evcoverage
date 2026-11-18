@@ -3,9 +3,11 @@ title: "Is EV Battery Replacement Covered by Car Insurance?"
 seo_title: "Is EV Battery Replacement Covered by Car Insurance?"
 description: "Is EV battery replacement covered by car insurance? Accidents, fire and theft usually are; wear and degradation aren't. See where the line is drawn."
 slug: "is-ev-battery-replacement-covered-by-insurance"
-date: 2026-09-27
-lastmod: 2026-09-27
-author: "EV Insurance Guide"
+date: 2026-09-27T00:00:00+01:00
+publishDate: 2026-09-27T00:00:00+01:00
+lastmod: 2026-09-27T00:00:00+01:00
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
 categories: ["Battery and warranty"]
 tags: ["battery replacement", "EV insurance", "battery damage", "insurance claims"]

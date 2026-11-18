@@ -6,9 +6,10 @@ slug: "ev-insurance"
 date: 2026-11-23T00:00:00+01:00
 publishDate: 2026-11-23T00:00:00+01:00
 lastmod: 2026-11-23T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Avery J. Parker"
+author_id: "avery-j-parker"
 draft: false
-categories: ["Insurance coverage"]
+categories: ["Insurance basics"]
 tags: ["ev insurance", "coverage", "buying insurance", "electric cars"]
 popular: true
 image: "/images/editorial/sealed-battery-pack-1024.webp"
@@ -23,6 +24,8 @@ A low premium can be a good deal. It can also reflect a larger deductible, fewer
 This is a U.S.-focused starting guide. Insurance requirements and terminology differ internationally; use our [regional guide and tools overview](/blog/how-to-use-ev-insurance-tools/) for other markets. No single coverage package is suitable for every driver.
 
 {{< adslot 1 >}}
+
+{{< editorial-graphic name="ev-insurance-infographic" >}}
 
 ## Build the policy in layers
 
@@ -82,6 +85,8 @@ A deductible is your agreed contribution to a covered loss, subject to the polic
 Suppose one hypothetical quote is $180 cheaper per year but raises the deductible by $1,000. That is a trade-off, not proof either policy is better. Your cash reserves, lender conditions and other coverage differences matter.
 
 Do not compare two prices until the liability limits, physical-damage coverages, deductibles and important extras match. Our [quote comparison checklist](/blog/how-to-compare-ev-insurance-quotes/) gives you a repeatable method.
+
+{{< editorial-graphic name="ev-insurance-chart" >}}
 
 ## Check the charger separately
 

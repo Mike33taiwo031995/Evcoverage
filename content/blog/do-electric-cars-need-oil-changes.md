@@ -3,9 +3,11 @@ title: "Do Electric Cars Need Oil Changes? EV Maintenance, Fluids, Costs and Ser
 seo_title: "Do Electric Cars Need Oil Changes? EV Maintenance Guide"
 description: "No, fully electric cars don't need oil changes. See what EVs need instead: tires, brake fluid, coolant and filters, plus Tesla, Ford and Chevy intervals."
 slug: "do-electric-cars-need-oil-changes"
-date: 2026-11-06
-lastmod: 2026-11-06
-author: "EV Insurance Guide"
+date: 2026-11-06T00:00:00+01:00
+publishDate: 2026-11-06T00:00:00+01:00
+lastmod: 2026-11-06T00:00:00+01:00
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Repairs and maintenance"]
 tags: ["ev maintenance", "oil changes", "ev fluids", "maintenance costs", "service intervals"]

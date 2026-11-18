@@ -3,9 +3,11 @@ title: "Vehicle Electrical Repair: Common Problems, Diagnosis, Costs, and Soluti
 seo_title: "Vehicle Electrical Repair: Causes, Diagnosis and Costs"
 description: "Vehicle electrical repair starts with diagnosis, not parts swaps. Learn common faults, how mechanics test them, what drives costs, and EV differences."
 slug: "vehicle-electrical-repair"
-date: 2026-10-28
-lastmod: 2026-10-28
-author: "EV Insurance Guide"
+date: 2026-10-28T00:00:00+01:00
+publishDate: 2026-10-28T00:00:00+01:00
+lastmod: 2026-10-28T00:00:00+01:00
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Repairs and maintenance"]
 tags: ["electrical repair", "repair costs", "12-volt battery", "ev maintenance"]

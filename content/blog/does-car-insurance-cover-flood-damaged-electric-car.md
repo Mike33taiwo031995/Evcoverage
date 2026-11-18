@@ -3,9 +3,11 @@ title: "Does Car Insurance Cover a Flood-Damaged Electric Car?"
 seo_title: "Does Car Insurance Cover a Flood-Damaged Electric Car?"
 description: "Comprehensive car insurance may cover a flood-damaged EV. Learn about battery safety, saltwater exposure, claims, deductibles and total-loss decisions."
 slug: "does-car-insurance-cover-flood-damaged-electric-car"
-date: 2026-11-15
-lastmod: 2026-11-17
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
 categories: ["Disasters and risk"]
 tags: ["flood damage", "comprehensive coverage", "battery safety", "insurance claims", "total loss"]

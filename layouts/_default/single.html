@@ -20,9 +20,10 @@
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="blog-article-description">{{ . }}</p>{{ end }}
       <div class="blog-article-meta">
-        {{ with .Params.author }}<span>By {{ . }}</span>{{ end }}
-        <time datetime="{{ .Date.Format "2006-01-02" }}">Published {{ .Date.Format "January 2, 2006" }}</time>
-        {{ if ne .Lastmod .Date }}<time datetime="{{ .Lastmod.Format "2006-01-02" }}">Updated {{ .Lastmod.Format "January 2, 2006" }}</time>{{ end }}
+        {{ $author := index .Site.Data.authors .Params.author_id }}
+        {{ with $author }}<span>By <a href="{{ .url | relURL }}" rel="author">{{ .name }}</a></span>{{ else }}{{ with .Params.author }}<span>By {{ . }}</span>{{ end }}{{ end }}
+        <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">Published {{ .PublishDate.Format "January 2, 2006" }}</time>
+        {{ if ne .Lastmod .PublishDate }}<time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">Updated {{ .Lastmod.Format "January 2, 2006" }}</time>{{ end }}
         <span>{{ .ReadingTime }} min read</span>
       </div>
       <div class="blog-article-taxonomies">

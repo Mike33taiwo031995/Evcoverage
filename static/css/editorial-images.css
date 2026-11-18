@@ -33,6 +33,34 @@
   font-size: .75rem;
 }
 
+.blog-article-content .ev-editorial-graphic {
+  width: min(100%, 520px);
+  margin: 32px auto;
+  overflow: hidden;
+  border: 1px solid #dce5ee;
+  border-radius: 15px;
+  background: #f5f8fc;
+}
+
+.blog-article-content .ev-editorial-graphic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  margin: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.blog-article-content .ev-editorial-graphic figcaption {
+  padding: 14px 17px;
+  border-top: 3px solid #61A9BD;
+  color: #43576c;
+  font-size: .82rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 480px) {
   .blog-article-content .ev-editorial-figure {
     margin: 26px 0;

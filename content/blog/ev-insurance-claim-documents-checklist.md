@@ -3,14 +3,16 @@ title: "EV Insurance Claim Documents: What to Keep Before and After a Loss"
 seo_title: "EV Insurance Claim Documents: A Practical Checklist"
 description: "Keep the policy, incident evidence, repair reports and receipts your EV claim may need. Use this checklist to organise records without risking your safety."
 slug: "ev-insurance-claim-documents-checklist"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
 categories: ["Claims and total loss"]
 tags: ["insurance claims", "claim documents", "battery damage", "repair records"]
 popular: false
-image: "/images/blog-cars/hyundai-ioniq-5.jpg"
+image: "/images/editorial/ev-policy-review-1024.webp"
 ---
 
 An insurance claim becomes harder to follow when the policy is in one inbox, the towing receipt is on paper and the repairer's diagnosis exists only in a phone conversation. You do not need a perfect filing system. You need records that show what happened, what was found and what each person agreed to do.
@@ -28,6 +30,8 @@ Save the policy schedule or declarations page, full policy wording and endorseme
 Also record the insurer's claim contact and the vehicle's identifying details. The NAIC advises reporting a claim promptly using the insurer's contact information and keeping notes of conversations with the adjuster, the person assessing the loss. [1]
 
 This folder is a reference, not a reason to delay reporting. Tell the insurer what you have and ask how to provide anything missing.
+
+{{< editorial-image name="ev-policy-review" alt="EV owner organising insurance policy papers at a desk" caption="A claim folder is most useful when the policy, incident record and correspondence are easy to find." >}}
 
 ## The EV claim document checklist
 
@@ -66,6 +70,8 @@ Keep a copy of what you sent, not just proof that an email was delivered. If you
 
 Ask the insurer to explain an unfamiliar request rather than guessing. “Please identify the document and why it is needed” is clearer than repeatedly sending an unrelated invoice.
 
+{{< editorial-image name="ev-repair-estimate" alt="Workshop professional discussing an EV repair estimate with an owner" caption="Keep the diagnosis and itemised estimate, not just a final repair total." >}}
+
 ## Ask for the diagnosis, not just the repair total
 
 A repair estimate answers what work is proposed and what it may cost. The diagnosis should explain the condition being addressed. Keep both, especially where a battery or another high-voltage component is involved.
@@ -95,6 +101,8 @@ Washington's regulator advises keeping roadside-service receipts and warns that 
 Ask who is booking the service and whether payment is direct or reimbursement after you pay. A card charge shows money was spent; the policy and insurer's decision determine whether it is reimbursable.
 
 For ongoing delays, our [EV repair delays and temporary transport guide](/blog/ev-insurance-repair-delays-rental-storage/) explains the questions to ask without assuming unlimited replacement transport.
+
+{{< editorial-image name="battery-warranty-records" alt="Sealed electric vehicle battery and a separate folder of warranty records" caption="Warranty documents and finance records answer different questions. Keep them clearly separated in your claim file." >}}
 
 ## Keep warranty and finance records in separate groups
 

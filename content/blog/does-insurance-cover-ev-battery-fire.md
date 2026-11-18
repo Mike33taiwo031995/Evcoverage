@@ -6,9 +6,10 @@ slug: "does-insurance-cover-ev-battery-fire"
 date: 2026-11-17T00:00:00+01:00
 publishDate: 2026-11-17T00:00:00+01:00
 lastmod: 2026-11-17T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
-categories: ["Disasters and risk"]
+categories: ["Coverage and claims"]
 tags: ["battery fire", "comprehensive coverage", "ev insurance", "claims"]
 popular: false
 image: "/images/editorial/sealed-battery-pack-1024.webp"
@@ -33,6 +34,8 @@ If there is smoke, fire, sparking or an immediate danger, get out, move away and
 After an incident, let emergency responders, the manufacturer and appropriately trained recovery personnel decide how the vehicle should be handled. Do not assume a fire being extinguished means the battery is safe to touch or transport normally.
 
 Evidence matters, but no claim photograph is worth approaching a dangerous vehicle.
+
+{{< editorial-graphic name="does-insurance-cover-ev-battery-fire-infographic" >}}
 
 ## Which insurance might respond?
 
@@ -88,6 +91,8 @@ A covered event does not guarantee a brand-new battery. The insurer considers th
 The battery may be only one part of the repair. Wiring, interior materials, cooling components and other systems can also need assessment. Conversely, the presence of a battery does not mean every incident requires replacing the complete pack.
 
 If a total loss is proposed, ask for the valuation report, the condition and equipment assumptions, the deductible and any other deductions. Your loan balance is not the same as the vehicle's insured value. Read [battery damage, total loss and GAP](/blog/ev-battery-total-loss-gap-coverage/) before assuming the settlement will clear the finance.
+
+{{< editorial-graphic name="does-insurance-cover-ev-battery-fire-chart" >}}
 
 ## Four questions that can prevent expensive surprises
 

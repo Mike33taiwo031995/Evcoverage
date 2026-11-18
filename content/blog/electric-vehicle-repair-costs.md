@@ -3,9 +3,11 @@ title: "Electric Vehicle Repair Costs: What Insurance Covers, What It Doesn't, a
 seo_title: "Electric Vehicle Repair Costs: Insurance & Savings Guide"
 description: "Repairable EV collision claims averaged $5,684 vs $4,955 for gas cars in Q2 2026. See what insurance covers and how to cut EV repair costs."
 slug: "electric-vehicle-repair-costs"
-date: 2026-10-27
-lastmod: 2026-10-27
-author: "EV Insurance Guide"
+date: 2026-10-27T00:00:00+01:00
+publishDate: 2026-10-27T00:00:00+01:00
+lastmod: 2026-10-27T00:00:00+01:00
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
 categories: ["Battery and warranty"]
 tags: ["repair costs", "EV repair", "collision repair", "insurance coverage"]

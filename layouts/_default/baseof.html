@@ -12,14 +12,16 @@
 
 {{ $ogImage := "" }}
 {{ with .Params.image }}{{ $ogImage = . }}{{ else }}{{ if eq .Section "blog" }}{{ with findRE `!\[[^\]]*\]\((https?://[^)\s]+)\)` .RawContent 1 }}{{ $ogImage = replaceRE `^!\[[^\]]*\]\(([^)]+)\)$` "$1" (index . 0) }}{{ end }}{{ if not $ogImage }}{{ $ogImage = .Site.Home.Params.image }}{{ end }}{{ end }}{{ end }}
-<meta property="og:type" content="{{ if eq .Section "blog" }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "blog") }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 {{ with $ogImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
-{{ if .Date }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}">{{ end }}
-{{ if .Lastmod }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02" }}">{{ end }}
+{{ if and .IsPage (eq .Section "blog") }}
+{{ if not .PublishDate.IsZero }}<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{ if not .Lastmod.IsZero }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+{{ end }}
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
@@ -50,7 +52,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id={{ .Site.Params.pixel_id }}&ev=PageView&noscript=1"
 /></noscript>
 
-{{ if eq .Section "blog" }}
+{{ if and .IsPage (eq .Section "blog") }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,16 +61,16 @@ src="https://www.facebook.com/tr?id={{ .Site.Params.pixel_id }}&ev=PageView&nosc
   "description": {{ .Description | jsonify | safeJS }},
   "mainEntityOfPage": {"@type": "WebPage", "@id": {{ .Permalink | jsonify | safeJS }}},
   {{ with $ogImage }}"image": [{{ . | absURL | jsonify | safeJS }}],{{ end }}
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "wordCount": {{ .WordCount }},
   {{ with .Params.tags }}"keywords": {{ . | jsonify | safeJS }},{{ end }}
   {{ with .Params.categories }}"articleSection": {{ . | jsonify | safeJS }},{{ end }}
   "inLanguage": {{ .Site.Language.LanguageCode | default "en" | jsonify | safeJS }},
   "author": {
-    "@type": "Organization",
+    "@type": "Person",
     "name": {{ .Params.author | jsonify | safeJS }},
-    "url": "{{ "about/" | absURL }}"
+    "url": {{ with index .Site.Data.authors .Params.author_id }}{{ .url | absURL | jsonify | safeJS }}{{ else }}{{ "about/#editorial-team" | absURL | jsonify | safeJS }}{{ end }}
   },
   "publisher": {
     "@type": "Organization",

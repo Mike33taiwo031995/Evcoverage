@@ -3,14 +3,16 @@ title: "EV Loan Balance vs. Vehicle Value: How to Use the Calculator"
 seo_title: "EV Loan vs. Value Calculator: Understand Your Result"
 description: "Subtract your EV's estimated value from its loan balance to understand the difference. Learn which figures to use and why the result is not a GAP decision."
 slug: "ev-loan-balance-vs-value-calculator-guide"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
 categories: ["Costs and pricing"]
 tags: ["vehicle value", "auto loans", "gap coverage", "insurance tools"]
 popular: false
-image: "/images/blog-cars/volkswagen-id4.jpg"
+image: "/images/editorial/ev-finance-planning-1024.webp"
 ---
 
 You can know your monthly payment without knowing whether your EV is worth more or less than the remaining loan. Those are different questions. The first concerns your payment schedule; the second compares a debt figure with a vehicle-value estimate.
@@ -31,6 +33,8 @@ A positive result means the entered debt figure exceeds the entered value. A zer
 
 That is a useful snapshot of your assumptions. It is not a complete affordability calculation, a depreciation forecast or a calculation of the amount payable under any insurance agreement.
 
+{{< editorial-image name="ev-finance-planning" alt="Vehicle finance papers and a calculator arranged on a desk" caption="Use a current lender figure for the loan entry, not the vehicle's original purchase price." >}}
+
 ## Get a current debt figure from the right document
 
 Use a recent lender record and retain its date. Do not substitute the original amount financed, the purchase price or the monthly payment for the current amount you intend to compare.
@@ -40,6 +44,8 @@ The CFPB explains that a loan payoff amount can differ from an outstanding state
 Label your record clearly: “statement balance as of this date” and “payoff quote for this date” are not interchangeable. If you run both scenarios, identify each rather than presenting a changed result as an error.
 
 The homepage field is labelled current loan balance. Entering a separately obtained payoff is your own scenario, not evidence that the calculator requested or verified it.
+
+{{< editorial-image name="ev-vehicle-valuation" alt="Electric vehicle being considered alongside a valuation record" caption="Date the source of the value estimate. A calculator does not establish the insurer's eventual settlement." >}}
 
 ## Choose a value estimate that answers your question
 
@@ -91,6 +97,8 @@ Likewise, the calculator's positive difference does not prove that your EV has s
 If you are considering a sale or trade, discuss the current debt and payoff process with the lender. This article does not recommend refinancing, early repayment or carrying old debt into a new agreement.
 
 For questions after an actual insured loss, see our [EV total-loss and GAP guide](/blog/ev-battery-total-loss-gap-coverage/) rather than treating the planning tool as a settlement statement.
+
+{{< editorial-image name="ev-contract-details" alt="Close view of an owner reading vehicle insurance contract pages" caption="A difference between debt and value is arithmetic; eligibility and exclusions remain questions for the actual GAP contract." >}}
 
 ## Understand where GAP may fit
 

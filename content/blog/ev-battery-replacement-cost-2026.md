@@ -3,9 +3,11 @@ title: "How Much Does an EV Battery Cost to Replace in 2026?"
 seo_title: "EV Battery Replacement Cost in 2026: Ranges by Vehicle Type"
 description: "EV battery replacement cost in 2026: out-of-warranty prices run from about $4,000 to $25,000+. See ranges by vehicle class and why quotes vary so much."
 slug: "ev-battery-replacement-cost-2026"
-date: 2026-09-28
-lastmod: 2026-09-28
-author: "EV Insurance Guide"
+date: 2026-09-28T00:00:00+01:00
+publishDate: 2026-09-28T00:00:00+01:00
+lastmod: 2026-09-28T00:00:00+01:00
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
 categories: ["Battery and warranty"]
 tags: ["battery replacement", "EV battery cost", "repair costs", "battery warranty"]

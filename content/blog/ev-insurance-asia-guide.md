@@ -3,14 +3,16 @@ title: "EV Insurance in Asia: India, Singapore, Japan and UAE Compared"
 seo_title: "EV Insurance in Asia: Four Markets, Clearer Questions"
 description: "Explore EV insurance in India, Singapore, Japan and the UAE. Check compulsory cover, battery protection, repairs and the limits of regional guidance."
 slug: "ev-insurance-asia-guide"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Avery J. Parker"
+author_id: "avery-j-parker"
 draft: false
 categories: ["Insurance coverage"]
 tags: ["asia", "regional guides", "motor insurance", "coverage checklist"]
 popular: false
-image: "/images/blog-cars/kia-ev6.jpg"
+image: "/images/editorial/asia-ev-1024.webp"
 ---
 
 “Third-party insurance” is a familiar phrase across many markets. It is not a promise that the same people, property or losses are insured everywhere.
@@ -28,6 +30,8 @@ A continent-wide label cannot establish a policy's legal minimum, permitted prov
 Use the [homepage regional selector](/#eh-map) to find the reading guide, not to establish legal eligibility. Selecting a country does not send a quotation request to an insurer.
 
 This article deliberately provides a limited set of documented examples. If your country is not discussed, take the questions to its appropriate authority and insurer rather than treating another country's answer as your own.
+
+{{< editorial-image name="asia-ev" alt="Generic electric vehicle at a charging point in an illustrative Asian urban setting" caption="Start with the country examples below, then confirm your local policy and requirements." >}}
 
 ## Compare the starting points, not just the labels
 
@@ -88,6 +92,8 @@ Do not import a quoted premium, advertised benefit or discount from a general pu
 
 If a quotation uses terms you do not understand, request a written explanation tied to the contract. Keep the applicable original wording rather than relying solely on an informal translation or sales message.
 
+{{< editorial-image name="sealed-battery-pack" alt="Intact sealed electric vehicle battery enclosure in a workshop" caption="Ask how your policy treats the battery, cause of damage and proposed repairs; the regional label does not decide cover." >}}
+
 ## Ask what “battery cover” actually means
 
 Describe the problem you are trying to insure: accident damage, theft, a defect, an electrical failure or gradual capacity loss. Ask the provider which contract addresses that cause, if any.
@@ -107,6 +113,8 @@ Check transport, storage and temporary mobility separately. The time needed to o
 Our [EV repair-delay guide](/blog/ev-insurance-repair-delays-rental-storage/) supplies a workflow for those questions. Its jurisdiction-specific examples are not local legal guarantees.
 
 For price comparison, use the same vehicle, drivers, use, period, currency and selected protections. The [quote-comparison checklist](/blog/how-to-compare-ev-insurance-quotes/) can help expose a missing condition before a lower total appears attractive.
+
+{{< editorial-image name="ev-contract-details" alt="Vehicle owner reviewing insurance contract pages at a desk" caption="Confirm the country, currency, territory and policy wording with the relevant local provider before relying on a general regional guide." >}}
 
 ## Check travel and imported-vehicle assumptions explicitly
 

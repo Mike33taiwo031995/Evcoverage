@@ -3,9 +3,12 @@ title: "Does Home Insurance Cover Your EV Charger? What Actually Determines It"
 seo_title: "Does Home Insurance Cover an EV Charger? What Decides It"
 description: "Does home insurance cover an EV charger? Usually yes if permanently installed, but two conditions decide it. See why claims are denied and how to check."
 slug: "does-home-insurance-cover-ev-charger"
-date: 2026-09-25
-lastmod: 2026-09-25
-author: "EV Insurance Guide"
+date: 2026-09-25T00:00:00+01:00
+publishDate: 2026-09-25T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+image: "/images/editorial/ev-home-charging-1024.webp"
+author: "Jordan A. Brooks"
+author_id: "jordan-a-brooks"
 draft: false
 categories: ["Charging equipment"]
 tags: ["EV charger", "home insurance", "charging equipment", "property cover"]
@@ -14,7 +17,7 @@ popular: true
 
 
 
-![A home EV charger mounted on a house exterior](https://images.pexels.com/photos/27355833/pexels-photo-27355833.jpeg?auto=compress&cs=tinysrgb&w=1200)
+
 
 
 
@@ -23,6 +26,8 @@ Two EV owners install the exact same Level 2 home charger. One files a claim aft
 According to industry guidance from insurers including Liberty Mutual and Allstate, a permanently installed home charger is typically treated as part of your dwelling or personal property, and is covered under homeowners insurance when damaged by a covered peril like fire, lightning, or vandalism — subject to your deductible and policy limits. That's the good news. But "typically" and "permanently installed" are both doing a lot of work in that sentence, and that's where most owners get caught out.
 
 {{< adslot 1 >}}
+
+{{< editorial-image name="ev-home-charging" alt="Electric vehicle connected to an intact charger outside a home" caption="Check the equipment, installation records and policy terms for your home charging setup." >}}
 
 ### The two conditions that actually decide it
 
@@ -37,6 +42,8 @@ Coverage generally comes down to two things: **installation type**, and **whethe
 
 {{< adslot 3 >}}
 
+{{< editorial-image name="charger-equipment" alt="Closed wall-mounted EV charging unit with its cable neatly stowed" caption="Keep the charger model, installation records and insurer correspondence together. Do not open electrical equipment to inspect it yourself." >}}
+
 ### Why some claims still get denied
 
 Even a permanently installed charger can run into trouble if:
@@ -44,6 +51,8 @@ Even a permanently installed charger can run into trouble if:
 1. **It was never declared to the insurer.** Adding a charger is an electrical modification to your home — insurers generally expect you to report it, and an undeclared charger can complicate a claim.
 2. **It gets misclassified as "automotive equipment."** Some adjusters initially treat charging equipment as an extension of the vehicle rather than the home, especially if the paperwork doesn't clearly document it as a fixed installation.
 3. **State rules require specific coverage you don't have.** California and Oregon, for example, require homeowners and condo associations to carry liability coverage for EV charging stations — meaning "having home insurance" isn't automatically the same as "having the right home insurance" everywhere else.
+
+{{< editorial-image name="ev-contract-details" alt="Owner reading insurance contract documents on a desk" caption="Ask the insurer how the actual equipment and cause of loss are treated under your own policy." >}}
 
 ### A simple way to check where you stand
 

@@ -3,14 +3,16 @@ title: "EV Insurance in North America: U.S., Canada and Mexico"
 seo_title: "EV Insurance in North America: U.S., Canada and Mexico"
 description: "Check EV insurance across the U.S., Canada and Mexico. See why local rules, battery protection, lender terms and cross-border cover need separate checks."
 slug: "ev-insurance-north-america-guide"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Avery J. Parker"
+author_id: "avery-j-parker"
 draft: false
 categories: ["Insurance coverage"]
 tags: ["north america", "regional guides", "canada", "mexico", "cross-border insurance"]
 popular: false
-image: "/images/blog-cars/ford-mustang-mach-e.jpg"
+image: "/images/editorial/north-america-ev-1024.webp"
 ---
 
 A guide written for a U.S. driver is not automatically a guide for a Canadian or Mexican driver. A familiar vehicle, insurer name or product label does not erase the border between insurance systems.
@@ -28,6 +30,8 @@ The detailed examples here concern the U.S., Canada and Mexico. They are not an 
 Describe where the EV is registered and normally kept, who drives it, how it is used and whether it will cross a border. Ask which organisation is accepting those circumstances.
 
 Use the [homepage regional selector](/#eh-map) to navigate. It does not determine policy validity, fetch a premium or establish a vehicle's value.
+
+{{< editorial-image name="north-america-ev" alt="Generic electric vehicle at a charging point in an illustrative North American suburban setting" caption="Start with the country examples below, then confirm your local policy and requirements." >}}
 
 ## Separate law, finance and optional protection
 
@@ -72,6 +76,8 @@ If you are bringing in a foreign-registered vehicle, explain that fact and the i
 
 This guide does not publish a current legal-limit table or reproduce historical premiums from a consumer article. Ask the appropriate authority and insurer for the requirements relevant to the trip or registration you actually plan.
 
+{{< editorial-image name="sealed-battery-pack" alt="Intact sealed electric vehicle battery enclosure in a workshop" caption="Ask how your policy treats the battery, cause of damage and proposed repairs; the regional label does not decide cover." >}}
+
 ## Ask the same battery questions in each country
 
 Describe the cause of loss rather than asking only whether batteries are covered. Accident damage, a defect and gradual loss of capacity are different enquiries.
@@ -91,6 +97,8 @@ The CFPB's financing guidance concerns U.S. consumers; it should not be repackag
 Our [loan-versus-value calculator guide](/blog/ev-loan-balance-vs-value-calculator-guide/) explains the arithmetic and its limits. The tool does not establish eligibility for a finance-related product or promise the amount of an actual claim.
 
 If the agreement and policy use different currencies, ask how each obligation is denominated. Selecting a currency on the homepage does not convert an amount or resolve a cross-currency shortfall.
+
+{{< editorial-image name="ev-contract-details" alt="Vehicle owner reviewing insurance contract pages at a desk" caption="Confirm the country, currency, territory and policy wording with the relevant local provider before relying on a general regional guide." >}}
 
 ## Plan the border crossing before the accident
 

@@ -3,9 +3,11 @@ title: "Electric Vehicle Lifecycle Impact: Are EVs Really Better for the Environ
 seo_title: "EV Lifecycle Impact: Are Electric Cars Greener?"
 description: "EVs usually emit less over their lifetime: DOE models 46% fewer, the IEA over 55%. See what battery mining, the grid, recycling and disposal change."
 slug: "electric-vehicle-lifecycle-impact"
-date: 2026-11-05
-lastmod: 2026-11-05
-author: "EV Insurance Guide"
+date: 2026-11-05T00:00:00+01:00
+publishDate: 2026-11-05T00:00:00+01:00
+lastmod: 2026-11-05T00:00:00+01:00
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
 categories: ["Battery and warranty"]
 tags: ["ev lifecycle", "battery recycling", "lifecycle emissions", "battery manufacturing", "ev environment"]

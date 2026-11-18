@@ -3,14 +3,16 @@ title: "EV battery insurance, warranty and replacement cost: the complete guide"
 seo_title: "EV Battery Insurance, Warranty and Replacement Cost Guide"
 description: "EV battery insurance may cover accidental damage, while warranties address eligible defects. Learn about degradation, replacement costs and total loss."
 slug: "ev-battery-insurance-warranty-replacement-cost-guide"
-date: 2026-11-15
-lastmod: 2026-11-15
-author: "EV Insurance Guide"
+date: 2026-11-15T00:00:00+01:00
+publishDate: 2026-11-15T00:00:00+01:00
+lastmod: 2026-11-17T00:00:00+01:00
+author: "Quinn R. Morgan"
+author_id: "quinn-r-morgan"
 draft: false
 categories: ["Battery and warranty"]
 tags: ["battery warranty", "battery replacement", "battery degradation", "total loss", "insurance coverage"]
 popular: false
-image: "/images/blog-cars/volkswagen-id4.jpg"
+image: "/images/editorial/sealed-battery-pack-1024.webp"
 ---
 
 An electric vehicle battery problem can raise three different questions: is the damage insured, does the manufacturer’s warranty apply, and what would repair or replacement cost? The answer starts with the cause of the problem, not simply the fact that the battery needs attention.
@@ -34,6 +36,8 @@ For the broader distinction, see our guide to [EV battery warranty versus insura
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="sealed-battery-pack" alt="Intact sealed EV traction battery enclosure on a workshop platform" caption="Start with the cause of the problem: the same battery can raise different insurance, warranty and maintenance questions." >}}
 
 ## Compare insurance, warranty and self-funded repairs
 
@@ -61,6 +65,8 @@ For example, an impact that damages a battery enclosure should be reported as an
 Your own liability coverage is different: California’s guide describes it as protection for injury or damage you cause to others. It is not the coverage section to rely on for repairing your own battery.
 
 Ask the insurer which coverage it is considering, what evidence it needs and which deductible applies. Our article on [whether insurance covers EV battery replacement](/blog/is-ev-battery-replacement-covered-by-insurance/) explores that question in more detail.
+
+{{< editorial-image name="battery-warranty-records" alt="Sealed EV battery enclosure beside a separate folder of service and warranty records" caption="Keep the warranty booklet and service history with the diagnosis." >}}
 
 ## What a battery warranty actually promises
 
@@ -99,6 +105,8 @@ Useful questions include:
 - Which charges remain uncertain pending inspection?
 
 For a focused discussion of estimates and their limitations, see [EV battery replacement cost](/blog/ev-battery-replacement-cost-2026/).
+
+{{< editorial-image name="ev-battery-assessment" alt="Electric vehicle on a workshop lift for professional battery assessment" caption="A qualified assessment helps establish the proposed work." >}}
 
 ## Repair does not always mean a brand-new battery
 

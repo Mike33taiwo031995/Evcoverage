@@ -6,9 +6,10 @@ slug: "hurricane-storm-damage-electric-car-insurance"
 date: 2026-11-18T00:00:00+01:00
 publishDate: 2026-11-18T00:00:00+01:00
 lastmod: 2026-11-18T00:00:00+01:00
-author: "EV Insurance Guide"
+author: "Riley M. Bennett"
+author_id: "riley-m-bennett"
 draft: false
-categories: ["Disasters and risk"]
+categories: ["Coverage and claims"]
 tags: ["storm damage", "hurricane", "comprehensive coverage", "flood damage"]
 popular: false
 image: "/images/editorial/ev-storm-parking-1024.webp"
@@ -31,6 +32,8 @@ Hail on an otherwise unaffected roof is not the same situation as water reaching
 [NHTSA's guidance for damaged electric vehicles](https://www.nhtsa.gov/sites/nhtsa.gov/files/811577-interimguidehev-hv-batt_owner-v2.pdf) warns of electrical shock, hazardous gases and immediate or delayed fire following battery damage. Contact the manufacturer or an authorized service center after significant damage or flooding. Let trained personnel arrange recovery and appropriate storage.
 
 If there is smoke, heat, sparking, leaking fluid or an immediate danger, move away and call emergency services. Do not plug in a suspected flood-damaged EV to “see if it works.”
+
+{{< editorial-graphic name="hurricane-storm-damage-electric-car-insurance-infographic" >}}
 
 ## A storm-damage coverage map
 
@@ -94,6 +97,8 @@ No universal rule says that every wet EV must be written off. Nor is a vehicle s
 The assessment depends on the exposure, contamination, component condition, manufacturer procedures, repair feasibility, valuation and applicable rules. Let the qualified assessor establish the damage and the insurer explain its financial decision.
 
 If a total loss is proposed, request the valuation and deductions. The outstanding loan does not set the vehicle's value. Our [loan balance versus vehicle value guide](/blog/ev-loan-balance-vs-value-calculator-guide/) explains why a covered claim can still leave a finance question.
+
+{{< editorial-graphic name="hurricane-storm-damage-electric-car-insurance-chart" >}}
 
 ## Before the next warning: five checks worth making
 
