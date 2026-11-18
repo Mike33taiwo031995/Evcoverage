@@ -8,7 +8,7 @@ publishDate: 2026-11-23T00:00:00+01:00
 lastmod: 2026-11-23T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Insurance basics"]
+categories: ["Insurance coverage"]
 tags: ["ev insurance", "coverage", "buying insurance", "electric cars"]
 popular: true
 image: "/images/editorial/sealed-battery-pack-1024.webp"
