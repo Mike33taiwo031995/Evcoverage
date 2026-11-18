@@ -8,7 +8,7 @@ publishDate: 2026-11-24T00:00:00+01:00
 lastmod: 2026-11-24T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Ownership costs"]
+categories: ["Costs and pricing"]
 tags: ["insurance cost", "premiums", "insurance quotes", "deductibles"]
 popular: false
 image: "/images/editorial/ev-vehicle-valuation-1024.webp"
