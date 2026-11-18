@@ -10,7 +10,7 @@ author: "Jordan A. Brooks"
 author_id: "jordan-a-brooks"
 draft: false
 categories: ["Repairs and maintenance"]
-tags: ["ev repair", "repair shops", "high-voltage safety", "ev maintenance", "ase certification"]
+tags: ["EV repair", "repair shops", "high-voltage safety", "ev maintenance", "ase certification"]
 popular: false
 image: "/images/editorial/ev-battery-assessment-1024.webp"
 ---

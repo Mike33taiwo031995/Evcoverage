@@ -148,7 +148,7 @@
           {{ if not $image }}{{ $image = "/images/blog-cars/tesla-model-y.jpg" }}{{ end }}
           {{ $categoryTerms := slice }}
           {{ range .Params.categories }}{{ $categoryTerms = $categoryTerms | append (urlize .) }}{{ end }}
-          {{ $searchText := printf "%s %s %s %s %s" .Title .Description .Plain (delimit .Params.categories " ") (delimit .Params.tags " ") }}
+          {{ $searchText := printf "%s %s %s" .Title .Description (delimit .Params.tags " ") }}
           <article class="blog-card" data-blog-card data-categories="{{ delimit $categoryTerms "|" }}" data-search="{{ $searchText | plainify | lower }}">
             <a class="blog-card-image" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
               <img src="{{ $image }}" alt="" loading="lazy" decoding="async">
@@ -173,11 +173,13 @@
         <section class="blog-topics" aria-labelledby="popular-topics-title">
           <div>
             <p class="blog-eyebrow"><span></span> Follow a thread</p>
-            <h2 id="popular-topics-title">Explore every topic</h2>
+            <h2 id="popular-topics-title">Explore common topics</h2>
           </div>
           <div class="blog-topic-links">
             {{ range $term, $taxonomy := .Site.Taxonomies.tags }}
+            {{ if ge $taxonomy.Count 2 }}
             <a href="{{ printf "/tags/%s/" (urlize $term) | relLangURL }}"><span aria-hidden="true">#</span>{{ $term }}</a>
+            {{ end }}
             {{ end }}
           </div>
         </section>
@@ -219,11 +221,6 @@
     </div>
   </div>
 
-  {{ $searchIndex := slice }}
-  {{ range $posts }}
-    {{ $searchIndex = $searchIndex | append (dict "title" .Title "url" .RelPermalink "description" .Description "categories" .Params.categories "tags" .Params.tags "content" .Plain) }}
-  {{ end }}
-  <script id="blog-search-index" type="application/json">{{ $searchIndex | jsonify | safeJS }}</script>
   <script src="{{ "js/blog.js" | relURL }}" defer></script>
 </div>
 {{ end }}

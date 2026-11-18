@@ -1,7 +1,7 @@
 ---
 title: "Electric Vehicle Repair Costs: What Insurance Covers, What It Doesn't, and How to Save Money"
 seo_title: "Electric Vehicle Repair Costs: Insurance & Savings Guide"
-description: "Repairable EV collision claims averaged $5,684 vs $4,955 for gas cars in Q2 2026. See what insurance covers and how to cut EV repair costs."
+description: "Repairable EV collision claims averaged $5,684 vs $4,955 for gas cars in Q2 2026. Learn what insurance covers and how to lower repair costs."
 slug: "electric-vehicle-repair-costs"
 date: 2026-10-27T00:00:00+01:00
 publishDate: 2026-10-27T00:00:00+01:00
@@ -20,6 +20,8 @@ Electric vehicles (EVs) can cost less to maintain than gasoline cars, but when s
 Those are averages, not quotes. They describe repairable claims in one dataset, not the bill any individual owner should expect. The useful question is which repairs are likely, what drives their cost, and which insurance coverage may help.
 
 {{< adslot 1 >}}
+
+{{< editorial-image name="ev-repair-estimate" alt="EV owner reviewing a repair estimate with a workshop professional" caption="A written estimate helps separate diagnostic work, parts and labor." >}}
 
 ## 1. Why electric vehicle repairs can be expensive
 
@@ -59,6 +61,8 @@ A repair can take longer when a replacement component is unavailable, and the ca
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-body-panel-workshop" alt="Vehicle body panel being handled in an EV repair workshop" caption="Collision repairs can involve bodywork alongside inspections of high-voltage components." >}}
 
 ## 2. Common electric vehicle repairs and their cost drivers
 

@@ -19,7 +19,9 @@ Every EV battery loses some capacity over time — that's normal chemistry, not 
 
 {{< adslot 1 >}}
 
-### The 70% rule, by automaker
+{{< editorial-image name="battery-warranty-records" alt="EV battery warranty documents beside a sealed battery enclosure" caption="Warranty terms define the capacity threshold and time or mileage limits for the specific vehicle." >}}
+
+## The 70% rule, by automaker
 
 | Automaker | Battery warranty | Capacity guarantee |
 |---|---|---|
@@ -34,7 +36,9 @@ Every EV battery loses some capacity over time — that's normal chemistry, not 
 
 {{< adslot 3 >}}
 
-### Where the line actually gets drawn
+{{< editorial-image name="ev-battery-assessment" alt="Electric vehicle undergoing a professional battery assessment" caption="A qualified battery assessment can help document capacity and distinguish gradual wear from sudden damage." >}}
+
+## Where the line actually gets drawn
 
 Think of it as two separate systems handling two separate problems:
 
@@ -43,13 +47,13 @@ Think of it as two separate systems handling two separate problems:
 
 The confusion usually happens because both can eventually lead to the same outcome — "my range dropped" or "my battery needs replacing" — but insurers and warranty administrators are asking a completely different question to decide who pays: *was this caused by wear, or by an event?*
 
-### What if your battery degrades faster than normal — but stays above the threshold?
+## What if your battery degrades faster than normal — but stays above the threshold?
 
 This is the real gap most owners don't know exists. If your capacity drops noticeably but technically stays above the warranty's guaranteed floor, you're in a genuine coverage no-man's-land: not bad enough for a warranty claim, not caused by an insurable event either. Some owners in this position look at extended battery protection plans as a middle option — worth weighing on their own terms, which we cover separately.
 
 {{< adslot 4 >}}
 
-### Frequently asked questions
+## Frequently asked questions
 
 **How is battery capacity actually measured?**
 Typically via a diagnostic test at a dealer or specialist (state-of-health, or SOH, reported as a percentage of original capacity) — not something you can reliably self-diagnose from range alone.
@@ -62,7 +66,7 @@ No — accident damage is an insurance claim, evaluated on its own, separate fro
 
 {{< adslot 5 >}}
 
-### Sources
+## Sources
 
 - Recharged — [EV Battery Warranty: What Is Covered in 2026?](https://recharged.com/articles/ev-battery-warranty-what-is-covered)
 - Midtronics — [What Warranty Does An EV Battery Cover](https://www.midtronics.com/blog/what-warranty-does-an-ev-battery-cover/)

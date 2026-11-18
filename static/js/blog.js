@@ -69,27 +69,11 @@
     const noResults = listPage.querySelector("[data-no-results]");
     const filterButtons = [...listPage.querySelectorAll("[data-category-filter]")];
     let activeCategory = "all";
-    let bodyIndex = new Map();
-
-    try {
-      const source = document.getElementById("blog-search-index");
-      const records = JSON.parse(source?.textContent || "[]");
-      bodyIndex = new Map(records.map((record) => [
-        record.url,
-        [record.title, record.description, ...(record.categories || []), ...(record.tags || []), record.content || ""]
-          .join(" ")
-          .toLocaleLowerCase()
-      ]));
-    } catch {
-      // Visible titles, summaries, and topic labels remain searchable if the optional body index is unavailable.
-    }
-
     function filterCards() {
       const query = (search?.value || "").trim().toLocaleLowerCase();
       let visible = 0;
       cards.forEach((card) => {
-        const titleLink = card.querySelector("h3 a");
-        const searchableText = `${card.dataset.search || ""} ${bodyIndex.get(titleLink?.getAttribute("href")) || ""}`.toLocaleLowerCase();
+        const searchableText = (card.dataset.search || "").toLocaleLowerCase();
         const categoryMatch = activeCategory === "all" || (card.dataset.categories || "").split("|").includes(activeCategory);
         const queryMatch = !query || searchableText.includes(query);
         const show = categoryMatch && queryMatch;

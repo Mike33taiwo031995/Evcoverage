@@ -23,9 +23,11 @@ An EV battery pack can cost more to replace than most people paid for their firs
 
 The short answer, confirmed consistently across insurers including Liberty Mutual and industry guidance cited by Experian: **yes, if the damage comes from a covered event — no, if it's just the battery wearing out.** That single distinction — cause of damage — decides almost every case.
 
+For typical price ranges and the factors that move a quote, see our [2026 EV battery replacement cost guide](/blog/ev-battery-replacement-cost-2026/). To compare the separate roles of warranties and insurance, read [EV battery warranty vs. insurance](/blog/ev-battery-warranty-vs-insurance/).
+
 {{< adslot 1 >}}
 
-### What's actually covered
+## What's actually covered
 
 | Cause of battery damage | Typically covered? |
 |---|---|
@@ -41,13 +43,15 @@ The short answer, confirmed consistently across insurers including Liberty Mutua
 
 {{< adslot 3 >}}
 
-### Why "wear and tear" gets excluded
+{{< editorial-image name="sealed-battery-pack" alt="Sealed electric vehicle battery enclosure awaiting professional assessment" caption="A qualified inspection can help distinguish sudden damage from gradual battery wear." >}}
+
+## Why "wear and tear" gets excluded
 
 Every auto insurance policy — for gas cars and EVs alike — excludes routine maintenance and gradual deterioration. A gas car's battery, tires, and brake pads wear down with normal use; insurers treat this as an ownership cost, not an insurable loss. EV battery capacity loss over time falls into exactly the same category. It's predictable, gradual, and something every owner experiences — which is precisely why insurers don't treat it as a covered "loss" the way a collision is.
 
 This is also why the manufacturer's battery warranty — typically **8 years or 100,000 miles**, whichever comes first — exists as a separate safety net. Warranty and insurance are solving two different problems: one covers defects and premature failure, the other covers sudden, accidental damage.
 
-### Where people get caught out
+## Where people get caught out
 
 The two most common real-world denial scenarios:
 
@@ -56,7 +60,7 @@ The two most common real-world denial scenarios:
 
 {{< adslot 4 >}}
 
-### Frequently asked questions
+## Frequently asked questions
 
 **Does comprehensive coverage automatically include battery damage?**
 Yes, for the specific covered perils (fire, theft, vandalism, weather, falling objects) — but not for degradation or mechanical failure unrelated to one of those events.
@@ -69,7 +73,7 @@ Filing any claim can affect your rate, depending on your insurer and state. A si
 
 {{< adslot 5 >}}
 
-### Sources
+## Sources
 
 - Experian — [Does Car Insurance Cover Battery Replacement?](https://www.experian.com/blogs/ask-experian/does-car-insurance-cover-battery-replacement/)
 - Liberty Mutual — [EV battery & charging equipment: what insurance covers in 2026](https://www.libertymutual.com/insurance-resources/auto/ev-battery-and-charging-coverage)

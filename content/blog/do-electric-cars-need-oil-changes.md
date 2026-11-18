@@ -25,6 +25,8 @@ This guide explains why EVs skip oil changes, what they need instead, how Tesla,
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="ev-repair-estimate" alt="EV owner and repair professional reviewing a written service estimate" caption="Routine EV maintenance still includes inspections and repairs, even though a battery electric car has no engine oil to change." >}}
+
 ## Why electric cars don't need engine oil
 
 A gasoline engine has pistons, a crankshaft, valves and bearings that move under heat and friction. Engine oil lubricates these parts, helps manage heat and carries contaminants to the filter. Over time the oil breaks down and has to be replaced.
@@ -49,6 +51,8 @@ Do not assume ordinary automatic transmission fluid is suitable for an electric 
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-battery-assessment" alt="Electric vehicle receiving a professional battery-system assessment" caption="Follow the vehicle maker's service schedule for coolant, brakes, tires and high-voltage components." >}}
 
 ## What fluids do electric cars still need?
 

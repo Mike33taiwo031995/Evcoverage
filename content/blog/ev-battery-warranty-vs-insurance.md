@@ -17,6 +17,8 @@ By now, if you've read [what insurance actually covers](/blog/is-ev-battery-repl
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="battery-warranty-records" alt="EV battery warranty records beside a sealed battery pack" caption="Warranty documents set out the manufacturer's time, mileage and capacity terms." >}}
+
 <div class="compare-wrap">
   <div class="compare-head">
     <div class="compare-head-cell ch-a">🛡️ Battery Warranty</div>
@@ -52,20 +54,22 @@ By now, if you've read [what insurance actually covers](/blog/is-ev-battery-repl
 
 {{< adslot 3 >}}
 
-### The one-sentence test
+{{< editorial-image name="ev-policy-review" alt="EV owner reviewing an insurance policy and coverage documents" caption="Insurance terms apply to covered events, while warranty terms address their own defined conditions." >}}
+
+## The one-sentence test
 
 If you're ever unsure which one applies to your situation, ask: **"Did something happen to my car, or did my car just get older?"**
 
 - Something happened (crash, fire, flood, theft) → that's an **insurance** question.
 - Nothing happened, it just aged and lost capacity → that's a **warranty** question, and only matters once you cross the capacity threshold.
 
-### The gap between the two
+## The gap between the two
 
 Here's the scenario that catches people off guard: a battery that's degrading unusually fast, but hasn't yet crossed the warranty's capacity floor, and wasn't damaged by any insurable event. In that specific window, neither system is obligated to pay — which is exactly the gap that extended battery protection plans exist to fill, something we look at in detail separately.
 
 {{< adslot 4 >}}
 
-### Frequently asked questions
+## Frequently asked questions
 
 **Can I buy extra insurance specifically for battery degradation?**
 Standard auto insurance doesn't offer this, but some manufacturers and third parties sell extended battery protection or service contracts that go beyond the standard warranty window.
@@ -78,7 +82,7 @@ It can affect your warranty — unapproved aftermarket modifications to the batt
 
 {{< adslot 5 >}}
 
-### Sources
+## Sources
 
 This post synthesizes sourced data already cited in our companion guides — see [Is EV Battery Replacement Covered by Insurance?](/blog/is-ev-battery-replacement-covered-by-insurance/) and [Does Insurance Cover EV Battery Degradation?](/blog/does-insurance-cover-ev-battery-degradation/) for full source lists (Experian, Liberty Mutual, Recharged, Midtronics, GreenCars, Endurance Warranty).
 

@@ -10,7 +10,7 @@ image: "/images/editorial/ev-home-charging-1024.webp"
 author: "Jordan A. Brooks"
 author_id: "jordan-a-brooks"
 draft: false
-categories: ["Charging equipment"]
+categories: ["Insurance coverage"]
 tags: ["EV charger", "home insurance", "charging equipment", "property cover"]
 popular: true
 ---
@@ -29,7 +29,7 @@ According to industry guidance from insurers including Liberty Mutual and Allsta
 
 {{< editorial-image name="ev-home-charging" alt="Electric vehicle connected to an intact charger outside a home" caption="Check the equipment, installation records and policy terms for your home charging setup." >}}
 
-### The two conditions that actually decide it
+## The two conditions that actually decide it
 
 Coverage generally comes down to two things: **installation type**, and **whether the damage came from the home side or the vehicle side**.
 
@@ -44,7 +44,7 @@ Coverage generally comes down to two things: **installation type**, and **whethe
 
 {{< editorial-image name="charger-equipment" alt="Closed wall-mounted EV charging unit with its cable neatly stowed" caption="Keep the charger model, installation records and insurer correspondence together. Do not open electrical equipment to inspect it yourself." >}}
 
-### Why some claims still get denied
+## Why some claims still get denied
 
 Even a permanently installed charger can run into trouble if:
 
@@ -54,7 +54,7 @@ Even a permanently installed charger can run into trouble if:
 
 {{< editorial-image name="ev-contract-details" alt="Owner reading insurance contract documents on a desk" caption="Ask the insurer how the actual equipment and cause of loss are treated under your own policy." >}}
 
-### A simple way to check where you stand
+## A simple way to check where you stand
 
 <div class="step-flow">
   <div class="step-flow-item"><div class="step-flow-num" style="background:#0BA5A0;">1</div><div class="step-flow-text">Is your charger permanently hardwired — not just plugged into an outlet?</div></div>
@@ -65,9 +65,11 @@ Even a permanently installed charger can run into trouble if:
 
 If you answered "no" or "not sure" to #1 or #2, that's the gap worth closing before you ever need to file a claim.
 
+For a broader checklist covering limits, deductibles and repair terms, see our [guide to comparing EV insurance quotes](/blog/how-to-compare-ev-insurance-quotes/). U.S. readers can also check the state-specific questions in [our EV insurance rules by state guide](/blog/ev-insurance-rules-by-state/).
+
 {{< adslot 4 >}}
 
-### Frequently asked questions
+## Frequently asked questions
 
 **Does auto insurance ever cover a home charger?**
 Generally no — if your home charging station is damaged by fire, weather, or a similar event, that's a homeowners/renters insurance claim, not an auto insurance claim. Auto insurance becomes relevant mainly when your vehicle itself causes the damage.
@@ -80,7 +82,7 @@ Often, yes — since it isn't a fixed installation, it's more likely to be treat
 
 {{< adslot 5 >}}
 
-### Sources
+## Sources
 
 - Liberty Mutual — [EV battery & charging equipment: what insurance covers](https://www.libertymutual.com/insurance-resources/auto/ev-battery-and-charging-coverage)
 - Allstate — [EV charging station coverage](https://www.allstate.com/resources/car-insurance/ev-charging-station-coverage)

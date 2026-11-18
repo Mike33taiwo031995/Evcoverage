@@ -23,6 +23,8 @@ The hard part is finding the real cause instead of replacing parts at random. Lo
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="ev-repair-estimate" alt="Repair professional and vehicle owner reviewing a diagnostic estimate" caption="An electrical diagnosis should identify the fault before parts are replaced." >}}
+
 ## What is vehicle electrical repair?
 
 It is the diagnosis, repair or replacement of parts that generate, store, distribute, control or use electrical power in a vehicle. That can include the battery, alternator, starter motor, wiring, fuses, relays, switches, lights, sensors, control modules and, on plug-in vehicles, charging equipment.
@@ -40,6 +42,8 @@ Modern vehicles link many of these systems together, so a small fault can affect
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="charger-equipment" alt="Wall-mounted EV charging equipment with cable neatly stored" caption="Charging equipment is one part of the electrical system; diagnosis should identify whether the issue is in the vehicle or the supply." >}}
 
 ## Hybrids and EVs: a different electrical picture
 
