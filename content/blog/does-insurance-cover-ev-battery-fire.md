@@ -8,7 +8,7 @@ publishDate: 2026-11-17T00:00:00+01:00
 lastmod: 2026-11-17T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Coverage and claims"]
+categories: ["Disasters and risk"]
 tags: ["battery fire", "comprehensive coverage", "ev insurance", "claims"]
 popular: false
 image: "/images/editorial/sealed-battery-pack-1024.webp"
