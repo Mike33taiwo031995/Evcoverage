@@ -8,7 +8,7 @@ publishDate: 2026-11-25T00:00:00+01:00
 lastmod: 2026-11-25T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Insurance basics"]
+categories: ["Insurance coverage"]
 tags: ["tesla insurance", "tesla", "insurance quotes", "driving data"]
 popular: false
 image: "/images/editorial/tesla-model-y-editorial-1024.webp"
