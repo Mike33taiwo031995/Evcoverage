@@ -2,6 +2,8 @@ baseURL = "https://evinsuranceguide.org/"
 languageCode = "en-us"
 title = "EV Insurance Guide"
 enableRobotsTXT = true
+timeZone = "Africa/Lagos"
+buildFuture = false
 
 [taxonomies]
   tag = "tags"
