@@ -8,7 +8,7 @@ publishDate: 2026-11-18T00:00:00+01:00
 lastmod: 2026-11-18T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Coverage and claims"]
+categories: ["Disasters and risk"]
 tags: ["storm damage", "hurricane", "comprehensive coverage", "flood damage"]
 popular: false
 image: "/images/editorial/ev-storm-parking-1024.webp"
