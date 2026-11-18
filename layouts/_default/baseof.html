@@ -7,7 +7,7 @@
 {{ $desc := .Site.Params.description }}{{ if .Description }}{{ $desc = .Description }}{{ else if and .IsPage .Summary }}{{ $desc = .Summary | plainify | truncate 155 }}{{ end }}
 <meta name="description" content="{{ $desc }}">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="robots" content="{{ if .Draft }}noindex, nofollow{{ else }}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{{ end }}">
+<meta name="robots" content="{{ if or .Draft (and (eq .Kind "term") (eq .Data.Plural "tags")) }}noindex, follow{{ else }}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{{ end }}">
 <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
 
 {{ $ogImage := "" }}

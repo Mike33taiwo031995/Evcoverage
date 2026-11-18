@@ -10,7 +10,7 @@ author: "Riley M. Bennett"
 author_id: "riley-m-bennett"
 draft: false
 categories: ["Coverage and claims"]
-tags: ["battery fire", "comprehensive coverage", "ev insurance", "claims"]
+tags: ["battery fire", "comprehensive coverage", "EV insurance", "claims"]
 popular: false
 image: "/images/editorial/sealed-battery-pack-1024.webp"
 ---

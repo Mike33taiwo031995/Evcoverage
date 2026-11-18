@@ -23,6 +23,8 @@ If you are shopping for a new, fully electric Ford today, the choices are narrow
 
 {{< adslot 1 >}}
 
+![Illustrative image of a Ford Mustang Mach-E electric SUV](/images/blog-cars/ford-mustang-mach-e.jpg)
+
 ## Ford's electric lineup at a glance
 
 | Vehicle | Type | Status (November 2026) |
@@ -59,6 +61,8 @@ It seats five and offers all-wheel drive on most trims, but check rear-seat spac
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-home-charging" alt="Electric vehicle connected to a home charging station" caption="Charging needs and equipment are part of comparing an EV with your daily use." >}}
 
 ## Ford E-Transit
 

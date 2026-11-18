@@ -25,6 +25,8 @@ This guide explains how the warranty works, what the 70% capacity rule means, wh
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="battery-warranty-records" alt="EV battery warranty records beside a sealed battery enclosure" caption="Check the warranty document for the vehicle's exact model-year terms." >}}
+
 ## What is Ford's EV battery warranty?
 
 Ford's battery-electric vehicles are covered by the New Vehicle Limited Warranty, which includes several coverage periods. According to Ford's 2024 warranty guide, bumper-to-bumper coverage is 3 years or 36,000 miles, powertrain coverage is 5 years or 60,000 miles, and the Electric Vehicle Component coverage is 8 years or 100,000 miles. Whichever limit you reach first ends the coverage ([Ford 2024 BEV Warranty Guide](https://manuals.plus/m/d9526bad99542dfcffa184ae2dc3bb109a2189615dff979fb2a29c233e9d4e34)).
@@ -72,6 +74,8 @@ Ford also states that, during the warranty period, you will not be charged for d
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-battery-assessment" alt="Electric vehicle receiving a professional battery-system assessment" caption="A documented diagnosis can help establish whether a concern meets the manufacturer's warranty process." >}}
 
 ## What does Ford's 70% capacity rule mean?
 

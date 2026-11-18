@@ -1,7 +1,7 @@
 ---
 title: "Vehicle Electrical Repair Cost: A Complete Guide to Prices, Parts and Labor"
 seo_title: "Vehicle Electrical Repair Cost: 2026 Prices and Factors"
-description: "Vehicle electrical repair cost in 2026: RepairPal estimates diagnosis at $122-$179, starters at $565-$796 and alternators at $809-$1,088. See what drives your bill."
+description: "Vehicle electrical repair costs in 2026: RepairPal estimates diagnosis at $122-$179, starters $565-$796 and alternators $809-$1,088. Learn what drives prices."
 slug: "vehicle-electrical-repair-cost"
 date: 2026-10-29T00:00:00+01:00
 publishDate: 2026-10-29T00:00:00+01:00
@@ -24,6 +24,8 @@ This guide covers what each repair tends to cost, what mechanics charge for diag
 **Short answer:** Budget separately for diagnosis, parts, labor and any related repairs. Published U.S. estimates put diagnosis around $122-$179, starters around $565-$796 and alternators around $809-$1,088, but your quote can be higher or lower. Ask for a diagnosis and a written estimate before agreeing to replace a battery, alternator, starter or control module.
 
 {{< adslot 1 >}}
+
+{{< editorial-image name="ev-repair-estimate" alt="Vehicle owner and repair professional reviewing an electrical repair estimate" caption="Ask for diagnosis, parts and labor to be listed separately in the written estimate." >}}
 
 ## Vehicle electrical repair cost at a glance
 
@@ -66,6 +68,8 @@ Before you authorize work, ask whether the diagnostic fee will be credited towar
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-battery-assessment" alt="Electric vehicle receiving a professional battery-system assessment" caption="High-voltage EV electrical work requires appropriately trained technicians and model-specific procedures." >}}
 
 ## Cost by component
 

@@ -10,7 +10,7 @@ author: "Avery J. Parker"
 author_id: "avery-j-parker"
 draft: false
 categories: ["Insurance basics"]
-tags: ["ev insurance", "coverage", "buying insurance", "electric cars"]
+tags: ["EV insurance", "coverage", "buying insurance", "electric cars"]
 popular: true
 image: "/images/editorial/sealed-battery-pack-1024.webp"
 ---

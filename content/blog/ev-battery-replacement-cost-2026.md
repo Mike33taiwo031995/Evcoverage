@@ -20,7 +20,9 @@ Quotes for the same repair can vary by thousands of dollars depending on where y
 
 {{< adslot 1 >}}
 
-### Real cost ranges by vehicle class
+{{< editorial-image name="sealed-battery-pack" alt="Sealed EV battery enclosure prepared for professional assessment" caption="A replacement estimate depends on the vehicle, battery pack and repair method." >}}
+
+## Real cost ranges by vehicle class
 
 | Vehicle class | Example models | Estimated out-of-warranty cost |
 |---|---|---|
@@ -35,20 +37,22 @@ Quotes for the same repair can vary by thousands of dollars depending on where y
 
 {{< adslot 3 >}}
 
-### Why quotes vary so much for the same model
+{{< editorial-image name="ev-battery-assessment" alt="Electric vehicle on a workshop lift for a professional battery assessment" caption="A qualified diagnosis can determine whether a module repair or a full pack replacement is being quoted." >}}
+
+## Why quotes vary so much for the same model
 
 1. **OEM vs. remanufactured packs.** A factory-new Tesla pack can run $16,000+, while a refurbished pack (rebuilt from salvaged cells) is often $7,000–$10,000 for the same model.
 2. **Module-level repair vs. full pack swap.** Many failures only need one or two bad modules replaced — often $2,000–$5,000 at an independent EV specialist, instead of a full pack replacement at a dealer.
 3. **Dealer vs. independent specialist.** The gap between a dealership quote and an independent EV specialist for the same job can be several thousand dollars.
 4. **Recalls change the math entirely.** The Chevy Bolt is the clearest example — GM replaced large numbers of defective battery packs for free under a manufacturer recall, meaning some real Bolt owners paid nothing at all for what would otherwise be a $12,000+ repair.
 
-### Why this connects to your insurance decisions
+## Why this connects to your insurance decisions
 
-These are exactly the dollar figures that make gap coverage worth the roughly $15/month it typically costs — because if a covered accident totals your battery, your insurer pays based on your car's depreciated value, not what a replacement pack actually costs new. The bigger that gap, the more a missing gap-coverage rider can cost you out of pocket. We cover exactly how this plays out in a dedicated post on total-loss battery damage, coming up next in this series.
+These prices also make it important to separate repair coverage from total-loss finance protection. Auto insurance generally addresses sudden damage from a covered event, while gradual battery wear is usually a warranty or owner-paid question. If a covered event totals the car, the insurer's valuation and loan balance may differ; GAP may address some of that difference under its contract terms. See our guides to [whether EV battery replacement is covered by insurance](/blog/is-ev-battery-replacement-covered-by-insurance/) and [battery damage, total loss and GAP coverage](/blog/ev-battery-total-loss-gap-coverage/).
 
 {{< adslot 4 >}}
 
-### Frequently asked questions
+## Frequently asked questions
 
 **Is it ever cheaper to replace the car than the battery?**
 Sometimes, yes — for older, lower-value EVs, a battery replacement quote can approach or exceed the car's actual market value, which is when owners start weighing total-loss economics instead of repair.
@@ -61,7 +65,7 @@ Ranges above are typically parts-plus-labor "installed" estimates, though always
 
 {{< adslot 5 >}}
 
-### Sources
+## Sources
 
 - Recurrent Auto — [Electric Car Battery Replacement Costs](https://www.recurrentauto.com/research/costs-ev-battery-replacement)
 - AutoEdgeView — [EV Battery Replacement Cost Guide By Brand And Model](https://autoedgeview.com/battery-guides/ev-battery-replacement-costs-tesla-nissan-chevy) (data compiled via CarEdge)

@@ -10,7 +10,7 @@ image: "/images/editorial/sealed-battery-pack-1024.webp"
 author: "Riley M. Bennett"
 author_id: "riley-m-bennett"
 draft: false
-categories: ["Claims and GAP"]
+categories: ["Claims and total loss"]
 tags: ["total loss", "GAP coverage", "battery damage", "insurance claims"]
 ---
 
@@ -23,7 +23,7 @@ A damaged EV battery does not automatically mean your car is totaled. But becaus
 
 {{< adslot 1 >}}
 
-### Quick answer: can battery damage total your car?
+## Quick answer: can battery damage total your car?
 
 Yes — but not by itself, automatically. Insurers weigh the vehicle's pre-loss value against the full repair estimate (battery plus everything else), parts and labor availability, and state-specific rules. The National Association of Insurance Commissioners (NAIC) explains that when repair cost approaches or exceeds a vehicle's worth, an insurer may declare it a total loss and pay that value instead of repairing it. For EVs, NAIC's guidance specifically flags battery repair/replacement cost and limited specialist repair capacity as real factors in that calculation.
 
@@ -31,7 +31,7 @@ So the real question isn't "was the battery damaged?" — it's **"does the full 
 
 {{< adslot 2 >}}
 
-### How "total loss" is actually decided
+## How "total loss" is actually decided
 
 There's no single nationwide rule. The Texas Department of Insurance describes insurers comparing repair cost plus salvage value against the vehicle's actual cash value (ACV); California's insurance department notes insurers commonly use thresholds around 70–80% of ACV. The exact percentage depends on your state and insurer — never assume one fixed number applies everywhere.
 
@@ -44,7 +44,7 @@ There's no single nationwide rule. The Texas Department of Insurance describes i
 
 {{< editorial-image name="sealed-battery-pack" alt="Sealed EV traction battery enclosure awaiting professional assessment" caption="Battery damage needs a qualified diagnosis. The presence of a battery problem alone does not establish a total loss." >}}
 
-### Why battery damage changes the math
+## Why battery damage changes the math
 
 A collision can affect the battery modules, housing, cooling system, high-voltage wiring, and the battery management system — not just visible bodywork. That means a car can look externally repairable while the battery still needs specialist inspection before anyone knows the real cost. (We cover that inspection process in a companion piece on what happens after an accident.) Three realistic scenarios show how differently this can play out:
 
@@ -60,7 +60,7 @@ There's no rule that "a battery replacement always totals an EV." The relationsh
 
 {{< editorial-image name="ev-vehicle-valuation" alt="Electric vehicle beside paperwork used to review vehicle value" caption="The vehicle's value and the outstanding loan balance are separate figures; keep the source of each." >}}
 
-### The second problem: your loan balance isn't your car's value
+## The second problem: your loan balance isn't your car's value
 
 This catches financed owners off guard constantly. Standard insurance pays based on **actual cash value (ACV)** — what the car was worth right before the loss — not what you originally paid, and not what you still owe. The NAIC notes an insurer may pay less than a "Blue Book" figure, since that's only a guide; the real number comes from comparable vehicles in your market.
 
@@ -77,17 +77,17 @@ This catches financed owners off guard constantly. Standard insurance pays based
 
 {{< editorial-image name="ev-finance-planning" alt="Vehicle finance records and calculator laid out for careful review" caption="Read the GAP contract alongside the lender balance and insurer settlement rather than assuming it pays every remaining charge." >}}
 
-### Where GAP coverage fits
+## Where GAP coverage fits
 
 The Consumer Financial Protection Bureau (CFPB) describes GAP (Guaranteed Asset Protection) as an optional product that addresses the difference between what you owe on a loan/lease and what your insurer pays after a total loss or theft. Important: **GAP doesn't increase your car's insurance value** — your EV is still valued at whatever its ACV was. GAP instead covers some or all of the remaining loan deficiency after that settlement, depending on your specific contract's terms.
 
 {{< adslot 4 >}}
 
-### What GAP usually does NOT cover
+## What GAP usually does NOT cover
 
 The CFPB is explicit that GAP has real eligibility restrictions. It's generally not designed to cover: your deductible, rolled-over negative equity from a previous loan, late payment penalties, maintenance or mechanical issues, or battery degradation. Always read your actual GAP contract rather than assuming "I have GAP" means every dollar is protected.
 
-### How this connects to the rest of this series
+## How this connects to the rest of this series
 
 This is the fourth piece in our EV battery insurance series — see [EV Battery Warranty vs. Insurance](/blog/ev-battery-warranty-vs-insurance/) for how warranty and insurance divide responsibility in the first place, and our companion piece on what happens immediately after an accident for how the inspection process that leads to these numbers actually works.
 
@@ -95,7 +95,7 @@ This is the fourth piece in our EV battery insurance series — see [EV Battery 
 
 Before a loss occurs, use our [loan-versus-value calculator guide](/blog/ev-loan-balance-vs-value-calculator-guide/) to understand the figures you enter and why the result is not a GAP eligibility decision.
 
-### Frequently asked questions
+## Frequently asked questions
 
 **Does every EV owner need GAP coverage?**
 Not necessarily — it matters most when your loan balance is likely to stay higher than your car's depreciating value for a while: small down payments, long loan terms, or financed fees/taxes all increase that risk.
@@ -106,7 +106,7 @@ Yes — the deductible is subtracted from your ACV settlement regardless of whet
 **Can a battery be repaired instead of fully replaced?**
 Sometimes — module-level repairs are possible for some damage, but battery safety, manufacturer procedures, and technician qualifications all factor into whether that's viable, not cost alone.
 
-### Sources
+## Sources
 
 - National Association of Insurance Commissioners (NAIC) — consumer auto insurance and EV insurance guidance
 - Consumer Financial Protection Bureau (CFPB) — GAP coverage guidance

@@ -23,6 +23,8 @@ But the rules for vehicles are more complicated than "buy an EV and write it off
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="ev-finance-planning" alt="Vehicle finance records and calculator arranged for a purchase-cost review" caption="Compare the tax treatment with the broader cost of buying and operating a work vehicle." >}}
+
 ## What is Section 179?
 
 Section 179 allows a business to treat the cost of qualifying property as an expense in the year it is placed in service, up to a dollar limit, rather than recovering the cost gradually through regular depreciation.
@@ -44,6 +46,8 @@ The $2,560,000 figure applies to all of your qualifying property for the year, n
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="quote-comparison-desk" alt="Insurance folders and calculator arranged for a vehicle quote comparison" caption="A tax deduction does not replace comparing insurance, financing and operating costs." >}}
 
 ## Which electric work vehicles may qualify?
 

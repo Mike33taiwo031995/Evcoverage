@@ -25,6 +25,8 @@ This guide walks through each stage, focusing on the United States, and explains
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="sealed-battery-pack" alt="Sealed EV battery pack illustrating a major vehicle component considered in lifecycle studies" caption="Lifecycle comparisons include battery production as well as the vehicle's use phase." >}}
+
 ## What does "lifecycle impact" mean?
 
 A life cycle assessment (LCA) counts the environmental effects of a vehicle from raw materials to disposal, not just what comes out of the exhaust.
@@ -51,6 +53,8 @@ None of these percentages is a guarantee for your car. They depend on vehicle si
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-public-charging" alt="Electric vehicle connected to a public charging station" caption="The electricity used over a vehicle's lifetime is one factor in its overall emissions footprint." >}}
 
 ## Battery manufacturing: the cost before the first mile
 

@@ -25,6 +25,8 @@ This guide separates what the data says from what is speculation, then compares 
 
 {{< adslot 1 >}}
 
+![Illustrative image of a Tesla Model Y electric SUV](/images/blog-cars/tesla-model-y.jpg)
+
 ## Are Tesla owners really switching to Ford?
 
 Not in any way the available data can prove. Here is what is documented.
@@ -51,6 +53,8 @@ These are common reasons buyers give for comparing the two, not measured trends.
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+![Illustrative image of a Ford Mustang Mach-E electric SUV](/images/blog-cars/ford-mustang-mach-e.jpg)
 
 ## Mustang Mach-E vs. Tesla Model Y
 

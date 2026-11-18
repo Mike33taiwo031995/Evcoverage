@@ -10,7 +10,7 @@ author: "Quinn R. Morgan"
 author_id: "quinn-r-morgan"
 draft: false
 categories: ["Costs and pricing"]
-tags: ["vehicle value", "auto loans", "gap coverage", "insurance tools"]
+tags: ["vehicle value", "auto loans", "GAP coverage", "insurance tools"]
 popular: false
 image: "/images/editorial/ev-finance-planning-1024.webp"
 ---

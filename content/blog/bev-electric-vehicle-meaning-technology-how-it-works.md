@@ -25,6 +25,8 @@ Knowing how a BEV works helps you compare models, plan charging, understand repa
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="sealed-battery-pack" alt="Sealed battery pack used to store energy in a battery electric vehicle" caption="A BEV stores electricity in its traction battery rather than carrying a gasoline engine and fuel tank." >}}
+
 ## What is a BEV electric vehicle?
 
 A BEV is a car, SUV, truck or van propelled exclusively by electricity from its battery. The U.S. Department of Energy describes all-electric vehicles, also called battery electric vehicles, as having an electric motor instead of an internal combustion engine and a large traction battery pack that must be plugged in to charge ([DOE Alternative Fuels Data Center](https://afdc.energy.gov:443/vehicles/how-do-all-electric-cars-work)).
@@ -65,6 +67,8 @@ When you slow down, the motor can act as a generator and send some of the car's 
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-public-charging" alt="Electric vehicle connected to a public charging station" caption="Charging replenishes the battery that powers a battery electric vehicle." >}}
 
 ## Main components of a BEV
 

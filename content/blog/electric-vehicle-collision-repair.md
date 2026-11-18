@@ -23,6 +23,8 @@ Those extra steps can affect repair costs, how long you are without the car, and
 
 {{< adslot 1 >}}
 
+{{< editorial-image name="ev-collision-assessment" alt="Electric vehicle undergoing a professional post-collision assessment" caption="After a collision, inspection may need to cover the body, battery enclosure and high-voltage systems." >}}
+
 ## What does EV collision repair involve?
 
 EV collision repair is the process of inspecting, repairing and testing an electric vehicle after accident damage. Depending on what was hit, it can include:
@@ -61,6 +63,8 @@ The gap has also moved quickly. Mitchell's Q1 2026 report put BEV severity at $6
 {{< adslot 2 >}}
 
 {{< adslot 3 >}}
+
+{{< editorial-image name="ev-body-panel-workshop" alt="Vehicle body panel being repaired in an EV-capable workshop" caption="The repair plan depends on the damage, vehicle procedures and qualified assessment." >}}
 
 ## Why can EV collision repairs cost more?
 
