@@ -8,7 +8,7 @@ publishDate: 2026-11-19T00:00:00+01:00
 lastmod: 2026-11-19T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Coverage and claims"]
+categories: ["Claims and total loss"]
 tags: ["crash", "collision", "ev safety", "claims"]
 popular: false
 image: "/images/editorial/ev-collision-assessment-1024.webp"
