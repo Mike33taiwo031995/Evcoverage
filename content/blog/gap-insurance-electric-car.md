@@ -8,7 +8,7 @@ publishDate: 2026-11-26T00:00:00+01:00
 lastmod: 2026-11-26T00:00:00+01:00
 author: "EV Insurance Guide"
 draft: false
-categories: ["Finance and total loss"]
+categories: ["Claims and total loss"]
 tags: ["gap insurance", "car finance", "total loss", "electric cars"]
 popular: false
 image: "/images/editorial/ev-finance-planning-1024.webp"
