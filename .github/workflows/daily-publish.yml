@@ -1,19 +1,68 @@
-name: Daily publish
+name: Scheduled article publishing
 
 on:
+  # GitHub cron is UTC. 23:10 UTC is 00:10 in Africa/Lagos.
+  # Hourly catch-up runs limit the impact of a delayed or missed schedule event.
   schedule:
-    - cron: '5 23 * * *'
-    - cron: '35 23 * * *'
-    - cron: '5 0 * * *'
+    - cron: '10 23 * * *'
+    - cron: '10 0-3 * * *'
   workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: Trigger Cloudflare even if recent articles already appear live
+        required: false
+        type: boolean
+        default: false
 
-permissions: {}
+permissions:
+  contents: read
+
+concurrency:
+  group: scheduled-article-publish
+  cancel-in-progress: false
 
 jobs:
   rebuild:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
+      - name: Check out the published source
+        uses: actions/checkout@v4
+
+      - name: Install the site's Hugo version
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.147.3'
+          extended: true
+
+      - name: Build the site with Hugo
+        env:
+          TZ: Africa/Lagos
+          HUGO_ENV: production
+        run: hugo --minify --destination public
+
+      - name: Verify recently due articles are in the Hugo output
+        env:
+          TZ: Africa/Lagos
+        run: python3 scripts/check_due_posts.py build --site-dir public
+
+      - name: Check whether recent due articles are live
+        id: live
+        env:
+          TZ: Africa/Lagos
+        run: python3 scripts/check_due_posts.py live
+
       - name: Trigger Cloudflare Pages rebuild
+        if: steps.live.outputs.needs_deploy == 'true' || inputs.force_deploy
         env:
           HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
-        run: curl --fail --silent --show-error -X POST "$HOOK" > /dev/null
+        run: |
+          test -n "$HOOK" || { echo "CLOUDFLARE_DEPLOY_HOOK is not configured"; exit 1; }
+          curl --fail --silent --show-error --request POST "$HOOK" > /dev/null
+
+      - name: Wait until due articles appear on the live site
+        if: steps.live.outputs.needs_deploy == 'true'
+        env:
+          MISSING_SLUGS: ${{ steps.live.outputs.missing_slugs }}
+          TZ: Africa/Lagos
+        run: python3 scripts/check_due_posts.py wait --slugs "$MISSING_SLUGS" --timeout-seconds 900
