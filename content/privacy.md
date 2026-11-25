@@ -2,11 +2,11 @@
 title: "Privacy Policy"
 description: "EV Insurance Guide Privacy Policy: how we collect, use, protect, and disclose information through our website, calculators, educational resources, and digital products."
 date: 2026-10-02T00:00:00+01:00
-lastmod: 2026-10-08T00:00:00+01:00
+lastmod: 2026-11-25T00:00:00+01:00
 draft: false
 ---
 
-<p class="legal-updated"><strong>Last Updated: October 8, 2026</strong></p>
+<p class="legal-updated"><strong>Last Updated: November 25, 2026</strong></p>
 
 <div class="legal-intro">
 
@@ -107,9 +107,14 @@ Information published on the Site is for general educational purposes and should
 <p>If EV Insurance Guide is involved in a merger, acquisition, financing, reorganization, or sale of assets, information may be transferred as part of that transaction, subject to applicable law.</p>
 
 <h2 id="advertising">VIII. Advertising and Marketing Technologies</h2>
-<p>EV Insurance Guide may use advertising and marketing technologies, including Google and Meta products, to measure campaigns and understand visitor behavior. Some jurisdictions define certain forms of targeted advertising as a regulated use of personal information.</p>
-<p>We do not sell personal information for money. However, depending on the technology used and the law applicable to you, certain advertising-related processing may legally be characterized as "sharing," "targeted advertising," or a similar regulated activity. Where applicable law gives you the right to opt out, you may exercise that right using the methods described in this Privacy Notice.</p>
-<p>See [YourAdChoices consumer controls](https://youradchoices.com/control), provided by the Digital Advertising Alliance, for additional advertising-choice tools.</p>
+<p>EV Insurance Guide has applied to display advertising through Google AdSense. Where ads are shown, they help support the free content on this Site. Our articles are written independently of advertisers, and we do not accept payment from insurance carriers for placement or reviews.</p>
+<h3>Google and other third-party advertising vendors</h3>
+<p>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this Site or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this Site and/or other sites on the Internet.</p>
+<p>You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" rel="noopener">Google Ads Settings</a>. You can also opt out of some third-party vendors' use of cookies for personalized advertising by visiting <a href="http://www.aboutads.info/choices/" rel="noopener">www.aboutads.info</a>.</p>
+<p>Other third-party vendors and ad networks may also place and read cookies, or use web beacons or IP addresses, when ads are served on this Site. For information about how Google handles data, see <a href="https://www.google.com/intl/en/privacy.html" rel="noopener">Google's Privacy Policy</a>.</p>
+<h3>Marketing and measurement tools</h3>
+<p>We also use Google Analytics and Meta Pixel, described in Section III, to measure site activity and campaign performance. We do not sell personal information for money. However, depending on the technology used and the law applicable to you, certain advertising-related processing may legally be characterized as "sharing," "targeted advertising," or a similar regulated activity. Where applicable law gives you the right to opt out, you may exercise that right using the methods described in this Privacy Notice.</p>
+<p>See <a href="https://youradchoices.com/control" rel="noopener">YourAdChoices consumer controls</a>, provided by the Digital Advertising Alliance, for additional advertising-choice tools.</p>
 
 <h2 id="not-collect-sell">IX. Information We Do Not Collect or Sell</h2>
 <p>EV Insurance Guide is designed to minimize the amount of personal information necessary to use the Site. We do not intentionally collect medical records, health insurance records, Social Security numbers, driver's license numbers, bank-account passwords, full credit-card numbers, insurance policy login credentials, biometric information, or other highly sensitive information, unless you voluntarily provide it to us. Please do not send sensitive information unless reasonably necessary for your request.</p>
